@@ -1,0 +1,32 @@
+# зависимости
+node_modules/
+
+# сборка Next.js
+.next/
+out/
+
+# окружение
+.env
+.env.local
+.env.*.local
+
+# кэши инструментов
+tsconfig.tsbuildinfo
+*.tsbuildinfo
+.eslintcache
+
+# ОС
+.DS_Store
+Thumbs.db
+
+# служебные папки инструментов
+.freebuff/
+.mimosa/
+.v2c/
+.video_agent/
+
+# архивы-снапшоты проекта
+*.zip
+
+# аудио-снапшоты аудита (тяжёлые картинки)
+audit/
