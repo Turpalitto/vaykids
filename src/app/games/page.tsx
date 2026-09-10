@@ -13,6 +13,7 @@ const GAMES = [
   { id: "memory", emoji: "🧠", label: T.memory, color: "from-purple-400 to-fuchsia-500" },
   { id: "what", emoji: "❓", label: T.whatIsIt, color: "from-sky-400 to-blue-500" },
   { id: "word", emoji: "🔤", label: T.buildWord, color: "from-amber-400 to-orange-500" },
+  { id: "sentence", emoji: "🧩", label: T.buildSentence, color: "from-rose-400 to-pink-500" },
   { id: "find", emoji: "🔎", label: T.findInWorld, color: "from-lime-400 to-green-500" },
 ];
 
@@ -90,6 +91,15 @@ export default function GamesPage() {
           <span className="text-5xl">📖</span>
           <span className="font-black text-xl leading-tight">Словарь</span>
           <span className="ml-auto text-sm font-black bg-white/25 rounded-full px-3 py-1">все слова</span>
+        </Link>
+        <Link
+          href="/cards?filter=practice"
+          onClick={() => sfx("tap")}
+          className="col-span-2 press soft rounded-[28px] bg-gradient-to-br from-violet-400 to-purple-500 text-white p-5 flex flex-row items-center gap-3 min-h-[80px]"
+        >
+          <span className="text-5xl">🔁</span>
+          <span className="font-black text-xl leading-tight">{T.again}</span>
+          <span className="ml-auto text-sm font-black bg-white/25 rounded-full px-3 py-1">{Object.values(p.seen).filter((count) => count >= 2).length}</span>
         </Link>
         <Link
           href="/achievements"

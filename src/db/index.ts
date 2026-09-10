@@ -1,24 +1,32 @@
 import { drizzle } from "drizzle-orm/node-postgres";
 import { Pool } from "pg";
 
-const databaseUrl = process.env.DATABASE_URL;
+/**
+ * The app is deliberately usable without PostgreSQL: the vocabulary and the
+ * local progress store are the primary experience. API routes can still be
+ * deployed next to a database and will return a clear 503 until it is set up.
+ */
+const databaseUrl = process.env.DATABASE_URL?.trim();
 
-if (!databaseUrl) {
-  throw new Error("DATABASE_URL is required");
-}
+type DbPool = Pool | null;
 
 const globalForDb = globalThis as typeof globalThis & {
   __arenaNextJsPostgresqlPool?: Pool;
 };
 
-export const pool =
-  globalForDb.__arenaNextJsPostgresqlPool ??
-  new Pool({
-    connectionString: databaseUrl,
-  });
+const configuredPool: DbPool = databaseUrl
+  ? globalForDb.__arenaNextJsPostgresqlPool ?? new Pool({
+      connectionString: databaseUrl,
+      max: 10,
+      idleTimeoutMillis: 30_000,
+      connectionTimeoutMillis: 5_000,
+    })
+  : null;
 
-if (process.env.NODE_ENV !== "production") {
-  globalForDb.__arenaNextJsPostgresqlPool = pool;
+if (configuredPool && process.env.NODE_ENV !== "production") {
+  globalForDb.__arenaNextJsPostgresqlPool = configuredPool;
 }
 
-export const db = drizzle(pool);
+export const pool = configuredPool;
+export const db = pool ? drizzle(pool) : null;
+export const databaseConfigured = Boolean(databaseUrl);

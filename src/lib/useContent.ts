@@ -1,7 +1,7 @@
 "use client";
 /* eslint-disable react-hooks/set-state-in-effect -- async server/cache hydration updates local state intentionally. */
 
-import { useEffect, useState, useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { CARDS, TOPICS } from "@/data/words";
 import type { Card } from "@/data/types";
 
@@ -18,6 +18,9 @@ export interface Override {
 
 let cache: Card[] | null = null;
 let cacheError = false;
+let pending: Promise<Card[]> | null = null;
+
+const localAsset = (value?: string | null) => (value && value.startsWith("/") && !value.startsWith("//") ? value : undefined);
 
 function applyOverrides(list: Override[]): Card[] {
   const map = new Map(list.map((o) => [o.cardId, o]));
@@ -26,14 +29,39 @@ function applyOverrides(list: Override[]): Card[] {
     if (!o) return c;
     return {
       ...c,
-      che: o.che || c.che,
-      stress: o.stress || c.stress,
-      emoji: o.emoji || c.emoji,
-      image: o.image || c.image,
-      audio: o.audio || c.audio,
-      example: o.exampleChe ? { che: o.exampleChe, ru: c.example?.ru ?? "" } : c.example,
+      che: o.che?.trim() || c.che,
+      stress: o.stress?.trim() || c.stress,
+      emoji: o.emoji?.trim() || c.emoji,
+      image: localAsset(o.image) || c.image,
+      audio: localAsset(o.audio) || c.audio,
+      example: o.exampleChe?.trim() ? { che: o.exampleChe.trim(), ru: c.example?.ru ?? "" } : c.example,
     };
   });
+}
+
+function loadContent() {
+  if (cache) return Promise.resolve(cache);
+  if (pending) return pending;
+
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 4000);
+  pending = fetch("/api/overrides", { signal: controller.signal, cache: "no-store" })
+    .then((response) => (response.ok ? response.json() : Promise.reject(new Error("content_unavailable"))))
+    .then((data: unknown) => {
+      cache = applyOverrides(Array.isArray(data) ? data as Override[] : []);
+      cacheError = false;
+      return cache;
+    })
+    .catch(() => {
+      cache = CARDS;
+      cacheError = true;
+      return cache;
+    })
+    .finally(() => {
+      clearTimeout(timer);
+      pending = null;
+    });
+  return pending;
 }
 
 /**
@@ -53,33 +81,21 @@ export function useContent() {
   }, []);
 
   useEffect(() => {
+    let alive = true;
     if (cache) {
       setCards(cache);
       setLoading(false);
       setError(cacheError);
-      return;
+      return () => { alive = false; };
     }
-    let alive = true;
+
     setLoading(true);
-    const ctrl = new AbortController();
-    const timer = setTimeout(() => ctrl.abort(), 4000);
-    fetch("/api/overrides", { signal: ctrl.signal })
-      .then((r) => (r.ok ? r.json() : Promise.reject(new Error("bad"))))
-      .then((data: Override[]) => {
-        cache = applyOverrides(Array.isArray(data) ? data : []);
-        cacheError = false;
-      })
-      .catch(() => {
-        cache = CARDS;
-        cacheError = true;
-      })
-      .finally(() => {
-        clearTimeout(timer);
-        if (!alive) return;
-        setCards(cache ?? CARDS);
-        setError(cacheError);
-        setLoading(false);
-      });
+    void loadContent().then((next) => {
+      if (!alive) return;
+      setCards(next);
+      setError(cacheError);
+      setLoading(false);
+    });
     return () => {
       alive = false;
     };
@@ -105,7 +121,9 @@ export function pick<T>(arr: T[], n: number): T[] {
 const DIGRAPHS = ["аь", "оь", "уь", "юь", "яь", "кх", "къ", "кӀ", "хь", "хӀ", "гӀ", "пӀ", "тӀ", "цӀ", "чӀ", "Ӏь"];
 export function graphemes(word: string): string[] {
   const out: string[] = [];
-  const w = word.toLowerCase();
+  // Unicode lowercasing turns capital palochka Ӏ (U+04C0) into ӏ (U+04CF).
+  // Keep the canonical glyph so the digraph matcher remains stable.
+  const w = word.toLowerCase().replaceAll("ӏ", "Ӏ");
   let i = 0;
   while (i < w.length) {
     const two = w.slice(i, i + 2);

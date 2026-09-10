@@ -7,13 +7,14 @@ import { Shell, TopBar, CardArt, Progress, Loading, ErrorState, Empty, Helper } 
 import { T, HELPER_LINES } from "@/data/ui";
 import { topicById, SCENES } from "@/data/words";
 import { useContent } from "@/lib/useContent";
-import { useStore, emptyProgress } from "@/lib/store";
+import { useStore, emptyProgress, isUnlocked } from "@/lib/store";
 import { sfx } from "@/lib/audio";
 
 const GAMES: { id: string; emoji: string; label: string; color: string }[] = [
   { id: "memory", emoji: "🧠", label: T.memory, color: "from-purple-400 to-fuchsia-500" },
   { id: "what", emoji: "❓", label: T.whatIsIt, color: "from-sky-400 to-blue-500" },
   { id: "word", emoji: "🔤", label: T.buildWord, color: "from-amber-400 to-orange-500" },
+  { id: "sentence", emoji: "🧩", label: T.buildSentence, color: "from-rose-400 to-pink-500" },
   { id: "find", emoji: "🔎", label: T.findInWorld, color: "from-lime-400 to-green-500" },
 ];
 
@@ -25,6 +26,7 @@ export default function LocationPage() {
   const markSeen = useStore((s) => s.markSeen);
 
   if (!topic) return <Shell><TopBar /><Empty emoji="🗺️" /></Shell>;
+  if (!isUnlocked(p, topic.unlockStars)) return <Shell><TopBar title={topic.che} /><Empty emoji="🔒" text={`${T.needStars}: ${topic.unlockStars} ⭐`} /></Shell>;
 
   const list = cards.filter((c) => c.topicId === topic.id);
   const learned = list.filter((c) => p.learned.includes(c.id)).length;
