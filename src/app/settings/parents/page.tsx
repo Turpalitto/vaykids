@@ -11,15 +11,50 @@ import { sfx } from "@/lib/audio";
 import type { Override } from "@/lib/useContent";
 
 interface ReviewRow { id: number; cardId: string | null; che: string; ruInternal: string; reason: string; status: string; comment: string | null }
+interface ParentChallenge { id: string; a: number; b: number }
 
 /** Родительская зона (часть экрана настроек): русский язык допустим. */
 export default function ParentsPage() {
   const router = useRouter();
   const [gate, setGate] = useState(false);
-  const [a] = useState(() => 3 + Math.floor(Math.random() * 6));
-  const [b] = useState(() => 2 + Math.floor(Math.random() * 7));
+  const [challenge, setChallenge] = useState<ParentChallenge | null>(null);
+  const [challengeError, setChallengeError] = useState(false);
   const [answer, setAnswer] = useState("");
+  const [checking, setChecking] = useState(false);
   const [tab, setTab] = useState<"stats" | "content" | "review">("stats");
+
+  const loadChallenge = () => {
+    setChallengeError(false);
+    setChallenge(null);
+    fetch("/api/parents/challenge", { cache: "no-store" })
+      .then((response) => response.ok ? response.json() : Promise.reject(new Error("challenge_failed")))
+      .then((data: ParentChallenge) => setChallenge(data))
+      .catch(() => setChallengeError(true));
+  };
+
+  useEffect(() => {
+    if (!gate) loadChallenge();
+  }, [gate]);
+
+  const enterParents = async () => {
+    if (!challenge || checking) return;
+    setChecking(true);
+    try {
+      const response = await fetch("/api/parents/verify", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ id: challenge.id, answer: Number(answer) }),
+      });
+      if (!response.ok) throw new Error("invalid_answer");
+      setGate(true);
+    } catch {
+      sfx("error");
+      setAnswer("");
+      loadChallenge();
+    } finally {
+      setChecking(false);
+    }
+  };
 
   const profiles = useStore((s) => s.profiles);
   const activeId = useStore((s) => s.activeId);
@@ -34,9 +69,15 @@ export default function ParentsPage() {
           <h1 className="text-3xl font-black">👨‍👩‍👧 {RU.parents}</h1>
           <p className="mt-2 text-lg text-[#8b7a64] font-bold">Чтобы продолжить, решите пример:</p>
           <div className="mt-6 soft rounded-[32px] bg-white p-6 text-center">
-            <p className="text-4xl font-black">{a} × {b} = ?</p>
-            <input inputMode="numeric" value={answer} onChange={(e) => setAnswer(e.target.value)} className="mt-4 w-full rounded-2xl bg-[#f3ece0] px-5 py-4 text-3xl font-black text-center outline-none focus:ring-4 ring-[#F5A524]" aria-label="Ответ" />
-            <Btn className="mt-4 w-full" size="lg" onClick={() => { if (Number(answer) === a * b) setGate(true); else { sfx("error"); setAnswer(""); } }}>Войти</Btn>
+            {challenge && <p className="text-4xl font-black">{challenge.a} × {challenge.b} = ?</p>}
+            {!challenge && !challengeError && <Loading text="Загрузка задания…" />}
+            {challengeError && <ErrorState text="Не удалось загрузить задание" onRetry={loadChallenge} />}
+            {challenge && (
+              <>
+                <input inputMode="numeric" value={answer} onChange={(e) => setAnswer(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") void enterParents(); }} className="mt-4 w-full rounded-2xl bg-[#f3ece0] px-5 py-4 text-3xl font-black text-center outline-none focus:ring-4 ring-[#F5A524]" aria-label="Ответ" autoFocus />
+                <Btn className="mt-4 w-full" size="lg" disabled={checking} onClick={() => void enterParents()}>{checking ? "Проверка…" : "Войти"}</Btn>
+              </>
+            )}
             <button type="button" onClick={() => router.push("/settings")} className="mt-3 min-h-[48px] font-black text-[#8b7a64]">{RU.back}</button>
           </div>
         </div>

@@ -6,6 +6,7 @@ import { persist } from "zustand/middleware";
 
 export type AgeGroup = "small" | "middle" | "big";
 export type TextSize = "md" | "lg" | "xl";
+export type SyncStatus = "idle" | "syncing" | "offline";
 
 export interface Settings {
   volume: number;
@@ -37,6 +38,7 @@ export interface Progress {
   decor: string[];
   animals: string[];
   gamesPlayed: number;
+  /** Number of times a card was opened; kept for a future spaced-repetition queue. */
   seen: Record<string, number>;
 }
 
@@ -86,17 +88,94 @@ export const DECOR_ITEMS: { id: string; emoji: string; che: string; cost: number
   { id: "rainbow", emoji: "🌈", che: "Стела1ад", cost: 160, x: 50, y: 12 },
 ].map((d) => ({ ...d, che: d.che.replace(/1/g, "Ӏ") }));
 
-
 export const ANIMAL_IDS = [
   "borz", "cha", "cxogal", "phagal", "govr", "yett", "gaza", "uestag1", "cicig", "zh1aela",
   "kotam", "n1aena", "olkhazar", "ch1ara", "aerzu", "lom", "pil", "say", "vir", "kkhokkha",
 ];
 
-export const levelFromXp = (xp: number) => Math.floor(Math.sqrt(xp / 25)) + 1;
-export const xpForLevel = (lvl: number) => (lvl - 1) ** 2 * 25;
+export const levelFromXp = (xp: number) => Math.floor(Math.sqrt(Math.max(0, xp) / 25)) + 1;
+export const xpForLevel = (lvl: number) => Math.max(0, (lvl - 1) ** 2 * 25);
 
-const todayKey = () => new Date().toISOString().slice(0, 10);
-const yesterdayKey = () => new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+/** Local calendar dates, not UTC dates: streaks must follow the child's device. */
+const dateKey = (date = new Date()) => {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+};
+
+const todayKey = () => dateKey();
+const yesterdayKey = () => {
+  const date = new Date();
+  date.setDate(date.getDate() - 1);
+  return dateKey(date);
+};
+
+const DEFAULT_SETTINGS: Settings = {
+  volume: 0.8,
+  music: true,
+  sounds: true,
+  notifications: false,
+  textSize: "md",
+  contrast: false,
+};
+
+const isRecord = (value: unknown): value is Record<string, unknown> => typeof value === "object" && value !== null;
+const stringArray = (value: unknown, max = 1000) =>
+  Array.isArray(value) ? value.filter((item): item is string => typeof item === "string" && item.length > 0).slice(0, max) : [];
+const safeNumber = (value: unknown, fallback: number, max = Number.MAX_SAFE_INTEGER) =>
+  typeof value === "number" && Number.isFinite(value) ? Math.min(max, Math.max(0, Math.floor(value))) : fallback;
+
+export const sanitizeProgress = (value: unknown): Progress => {
+  const raw = isRecord(value) ? value : {};
+  const seen: Record<string, number> = {};
+  if (isRecord(raw.seen)) {
+    for (const [id, count] of Object.entries(raw.seen)) {
+      if (id && typeof count === "number" && Number.isFinite(count) && count >= 0) seen[id] = Math.min(1_000_000, Math.floor(count));
+    }
+  }
+  const date = (candidate: unknown) => (typeof candidate === "string" && /^\d{4}-\d{2}-\d{2}$/.test(candidate) ? candidate : null);
+  return {
+    learned: stringArray(raw.learned),
+    favorites: stringArray(raw.favorites),
+    stars: safeNumber(raw.stars, 0, 1_000_000),
+    xp: safeNumber(raw.xp, 0, 10_000_000),
+    medals: stringArray(raw.medals, 100),
+    streakCount: safeNumber(raw.streakCount, 0, 10_000),
+    streakLast: date(raw.streakLast),
+    giftDate: date(raw.giftDate),
+    dailyDate: date(raw.dailyDate),
+    decor: stringArray(raw.decor, 100),
+    animals: stringArray(raw.animals, 100),
+    gamesPlayed: safeNumber(raw.gamesPlayed, 0, 1_000_000),
+    seen,
+  };
+};
+
+const sanitizeSettings = (value: unknown): Settings => {
+  const raw = isRecord(value) ? value : {};
+  return {
+    ...DEFAULT_SETTINGS,
+    volume: typeof raw.volume === "number" && Number.isFinite(raw.volume) ? Math.min(1, Math.max(0, raw.volume)) : DEFAULT_SETTINGS.volume,
+    music: typeof raw.music === "boolean" ? raw.music : DEFAULT_SETTINGS.music,
+    sounds: typeof raw.sounds === "boolean" ? raw.sounds : DEFAULT_SETTINGS.sounds,
+    notifications: typeof raw.notifications === "boolean" ? raw.notifications : DEFAULT_SETTINGS.notifications,
+    textSize: raw.textSize === "lg" || raw.textSize === "xl" ? raw.textSize : "md",
+    contrast: typeof raw.contrast === "boolean" ? raw.contrast : DEFAULT_SETTINGS.contrast,
+  };
+};
+
+const sanitizeProfile = (value: unknown): Profile | null => {
+  if (!isRecord(value) || typeof value.id !== "string" || !value.id || typeof value.name !== "string") return null;
+  const ageGroup: AgeGroup = value.ageGroup === "middle" || value.ageGroup === "big" ? value.ageGroup : "small";
+  return {
+    id: value.id.slice(0, 64),
+    name: value.name.slice(0, 40) || "Игрок",
+    avatar: typeof value.avatar === "string" ? value.avatar.slice(0, 24) : "🦊",
+    ageGroup,
+    createdAt: typeof value.createdAt === "number" ? value.createdAt : Date.now(),
+  };
+};
 
 interface State {
   hydrated: boolean;
@@ -104,6 +183,8 @@ interface State {
   profiles: Profile[];
   activeId: string | null;
   progress: Record<string, Progress>;
+  syncStatus: SyncStatus;
+  lastSyncedAt: number | null;
   lastResult: { stars: number; correct: number; total: number; game: string; newMedals: string[]; newAnimal?: string } | null;
 
   setHydrated: () => void;
@@ -122,43 +203,79 @@ interface State {
   resetProgress: () => void;
 }
 
+type PersistedState = Pick<State, "settings" | "profiles" | "activeId" | "progress">;
+
+const migratePersisted = (value: unknown): PersistedState => {
+  const raw = isRecord(value) ? value : {};
+  const rawProfiles = Array.isArray(raw.profiles) ? raw.profiles : [];
+  const profiles = rawProfiles.map(sanitizeProfile).filter((profile): profile is Profile => profile !== null);
+  const rawProgress = isRecord(raw.progress) ? raw.progress : {};
+  const progress: Record<string, Progress> = {};
+  for (const profile of profiles) progress[profile.id] = sanitizeProgress(rawProgress[profile.id]);
+  const activeId = typeof raw.activeId === "string" && profiles.some((profile) => profile.id === raw.activeId) ? raw.activeId : profiles[0]?.id ?? null;
+  return { settings: sanitizeSettings(raw.settings), profiles, activeId, progress };
+};
+
 const uid = () => Math.random().toString(36).slice(2, 10) + Date.now().toString(36);
 
 export const useStore = create<State>()(
   persist(
     (set, get) => ({
       hydrated: false,
-      settings: { volume: 0.8, music: true, sounds: true, notifications: false, textSize: "md", contrast: false },
+      settings: DEFAULT_SETTINGS,
       profiles: [],
       activeId: null,
       progress: {},
+      syncStatus: "idle",
+      lastSyncedAt: null,
       lastResult: null,
 
       setHydrated: () => set({ hydrated: true }),
-      setSettings: (s) => set((st) => ({ settings: { ...st.settings, ...s } })),
+      setSettings: (s) => set((st) => ({ settings: sanitizeSettings({ ...st.settings, ...s }) })),
 
       createProfile: (p) => {
         const id = uid();
+        const profile: Profile = { ...p, id, createdAt: Date.now() };
         set((st) => ({
-          profiles: [...st.profiles, { ...p, id, createdAt: Date.now() }],
+          profiles: [...st.profiles, profile],
           progress: { ...st.progress, [id]: emptyProgress() },
           activeId: id,
+          syncStatus: "syncing",
         }));
         void fetch("/api/profiles", {
           method: "POST",
           headers: { "content-type": "application/json" },
           body: JSON.stringify({ id, ...p }),
-        }).catch(() => {});
+        }).then((response) => {
+          if (!response.ok) throw new Error("profile_sync_failed");
+          useStore.setState({ syncStatus: "idle", lastSyncedAt: Date.now() });
+        }).catch(() => useStore.setState({ syncStatus: "offline" }));
         return id;
       },
-      deleteProfile: (id) =>
+      deleteProfile: (id) => {
+        const existed = get().profiles.some((profile) => profile.id === id);
+        if (!existed) return;
         set((st) => {
           const profiles = st.profiles.filter((p) => p.id !== id);
           const progress = { ...st.progress };
           delete progress[id];
-          return { profiles, progress, activeId: st.activeId === id ? profiles[0]?.id ?? null : st.activeId };
-        }),
-      setActive: (id) => set({ activeId: id }),
+          return {
+            profiles,
+            progress,
+            activeId: st.activeId === id ? profiles[0]?.id ?? null : st.activeId,
+            lastResult: null,
+          };
+        });
+        void fetch(`/api/profiles?id=${encodeURIComponent(id)}`, { method: "DELETE" })
+          .then((response) => {
+            if (!response.ok) throw new Error("profile_delete_failed");
+            useStore.setState({ syncStatus: "idle", lastSyncedAt: Date.now() });
+          })
+          .catch(() => useStore.setState({ syncStatus: "offline" }));
+      },
+      setActive: (id) => {
+        if (get().profiles.some((profile) => profile.id === id)) set({ activeId: id, lastResult: null });
+      },
       active: () => {
         const { activeId, progress } = get();
         return (activeId && progress[activeId]) || emptyProgress();
@@ -168,8 +285,8 @@ export const useStore = create<State>()(
         if (!activeId) return;
         set((st) => {
           const prev = st.progress[activeId] ?? emptyProgress();
-          let next = fn(prev);
-          // серии занятий — мягко, без наказаний
+          let next = sanitizeProgress(fn(prev));
+          // Серии занятий мягкие: новый день продолжает серию только со вчерашнего дня.
           const t = todayKey();
           if (next.streakLast !== t) {
             const cont = next.streakLast === yesterdayKey();
@@ -257,39 +374,75 @@ export const useStore = create<State>()(
       resetProgress: () => {
         const { activeId } = get();
         if (!activeId) return;
-        set((st) => ({ progress: { ...st.progress, [activeId]: emptyProgress() } }));
+        set((st) => ({ progress: { ...st.progress, [activeId]: emptyProgress() }, lastResult: null }));
         syncProgress();
       },
     }),
     {
       name: "nokhchiin-mott-v1",
+      version: 2,
       skipHydration: true,
-      partialize: (s) => ({ settings: s.settings, profiles: s.profiles, activeId: s.activeId, progress: s.progress }),
-      onRehydrateStorage: () => (state) => state?.setHydrated(),
+      partialize: (s): PersistedState => ({ settings: s.settings, profiles: s.profiles, activeId: s.activeId, progress: s.progress }),
+      migrate: (persisted) => migratePersisted(persisted),
+      onRehydrateStorage: () => (state, error) => {
+        if (error) {
+          console.warn("Local progress could not be restored", error);
+          useStore.setState({ hydrated: true });
+          return;
+        }
+        state?.setHydrated();
+      },
     },
   ),
 );
 
 let syncTimer: ReturnType<typeof setTimeout> | null = null;
+let syncInFlight = false;
+
+/** Retry a local snapshot after reconnecting or returning to the app. */
+export function syncNow() {
+  if (typeof window === "undefined" || syncInFlight) return;
+  if (typeof navigator !== "undefined" && !navigator.onLine) {
+    useStore.setState({ syncStatus: "offline" });
+    return;
+  }
+  const { activeId, progress, profiles } = useStore.getState();
+  if (!activeId || !progress[activeId]) return;
+  const profile = profiles.find((p) => p.id === activeId);
+  syncInFlight = true;
+  useStore.setState({ syncStatus: "syncing" });
+  void fetch("/api/progress", {
+    method: "PUT",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ profileId: activeId, profile, data: progress[activeId] }),
+  }).then((response) => {
+    if (!response.ok) throw new Error("progress_sync_failed");
+    useStore.setState({ syncStatus: "idle", lastSyncedAt: Date.now() });
+  }).catch(() => {
+    useStore.setState({ syncStatus: "offline" });
+  }).finally(() => {
+    syncInFlight = false;
+  });
+}
+
 function syncProgress() {
   if (typeof window === "undefined") return;
   if (syncTimer) clearTimeout(syncTimer);
   syncTimer = setTimeout(() => {
-    const { activeId, progress, profiles } = useStore.getState();
-    if (!activeId || !progress[activeId]) return;
-    const profile = profiles.find((p) => p.id === activeId);
-    void fetch("/api/progress", {
-      method: "PUT",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ profileId: activeId, profile, data: progress[activeId] }),
-    }).catch(() => {});
+    syncTimer = null;
+    syncNow();
   }, 1500);
 }
 
 /** Вызывать один раз на клиенте: гидратация из localStorage после монтирования. */
+let hydrationStarted = false;
 export function useHydrate() {
   useEffect(() => {
-    if (!useStore.getState().hydrated) void useStore.persist.rehydrate();
+    if (useStore.getState().hydrated || hydrationStarted) return;
+    hydrationStarted = true;
+    void Promise.resolve(useStore.persist.rehydrate()).catch(() => {
+      useStore.setState({ hydrated: true });
+    });
   }, []);
 }
 

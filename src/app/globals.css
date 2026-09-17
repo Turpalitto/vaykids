@@ -3,6 +3,7 @@
 :root {
   --bg: #fff8ec;
   --ink: #2a1f14;
+  --muted: #8b7a64;
   --sun: #f5a524;
   --sky: #2b6cb0;
   --meadow: #3fa34d;
@@ -11,6 +12,7 @@
   --radius: 28px;
   --tap: 60px;
   font-size: 16px;
+  color-scheme: light;
 }
 
 html[data-text="lg"] { font-size: 18px; }
@@ -24,21 +26,41 @@ html[data-contrast="1"] {
 html[data-contrast="1"] .soft { box-shadow: 0 0 0 3px #000 !important; }
 
 html, body {
-  height: 100%;
+  min-height: 100%;
   background: var(--bg);
   color: var(--ink);
   font-family: "Nunito", "Segoe UI Rounded", ui-rounded, "SF Pro Rounded", "Segoe UI", system-ui, -apple-system, sans-serif;
   -webkit-tap-highlight-color: transparent;
   overscroll-behavior-y: contain;
+  text-rendering: optimizeLegibility;
 }
 
+body {
+  margin: 0;
+  padding: env(safe-area-inset-top) 0 0;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
 * { touch-action: manipulation; }
 
+button, input, select, textarea { font: inherit; }
 button { cursor: pointer; }
+button:disabled { cursor: not-allowed; }
+
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 4px solid var(--sun);
+  outline-offset: 3px;
+}
+
+::selection { background: #f5a524; color: #2a1f14; }
 
 .soft { box-shadow: 0 10px 30px -12px rgba(42, 31, 20, 0.25), 0 2px 0 rgba(42, 31, 20, 0.05); }
 .press { transition: transform 0.12s ease, box-shadow 0.12s ease; }
 .press:active { transform: scale(0.95); }
+
+@media (hover: hover) {
+  .press:hover:not(:disabled) { transform: translateY(-2px); }
+}
 
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { scrollbar-width: none; }

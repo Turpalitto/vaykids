@@ -1,9 +1,9 @@
 "use client";
 
 import { useParams, useSearchParams, useRouter } from "next/navigation";
-import { Suspense, useEffect, useMemo, useState } from "react";
+import { Suspense, useMemo, useState } from "react";
 import { Shell, IconBtn, Loading, Empty, Btn, Confetti, Helper } from "@/components/ui";
-import { BuildWord, FindInWorld, Memory, WhatIsIt, type GameResult } from "@/components/games";
+import { BuildSentence, BuildWord, FindInWorld, Memory, WhatIsIt, type GameResult } from "@/components/games";
 import { T, HELPER_LINES } from "@/data/ui";
 import { SCENES, SENTENCES, TOPICS, cardById } from "@/data/words";
 import type { GameId } from "@/data/types";
@@ -19,8 +19,14 @@ const TITLES: Record<GameId, string> = {
 const DAILY_QUEUE: { game: GameId; rounds: number }[] = [
   { game: "what", rounds: 3 },
   { game: "word", rounds: 2 },
+  { game: "sentence", rounds: 1 },
   { game: "memory", rounds: 1 },
 ];
+
+// The initial content pack contains four illustrated backgrounds. Missing topic
+// backgrounds use a local fallback instead of producing a broken game screen.
+const AVAILABLE_SCENE_IMAGES = new Set(["/img/scene-home.jpg", "/img/scene-nature.jpg", "/img/scene-school.jpg", "/img/scene-village.jpg"]);
+const FALLBACK_SCENE_IMAGE = "/img/scene-village.jpg";
 
 function PlayInner() {
   const { game } = useParams<{ game: GameId }>();
@@ -37,19 +43,6 @@ function PlayInner() {
   const [seed, setSeed] = useState(0);
   const [qi, setQi] = useState(0);
   const [acc, setAcc] = useState<GameResult>({ correct: 0, total: 0, cardIds: [] });
-  const [sceneImagesOk, setSceneImagesOk] = useState<Set<string>>(new Set());
-
-  // Проверяем, какие фоновые сцены реально существуют (файлов меньше, чем ссылок в данных).
-  useEffect(() => {
-    let alive = true;
-    SCENES.forEach((s) => {
-      const img = new window.Image();
-      img.onload = () => { if (alive) setSceneImagesOk((prev) => new Set(prev).add(s.image)); };
-      img.onerror = () => {};
-      img.src = s.image;
-    });
-    return () => { alive = false; };
-  }, []);
 
   const age = profile?.ageGroup ?? "small";
   const cfg = age === "small" ? { rounds: 4, options: 3, pairs: 4 } : age === "middle" ? { rounds: 6, options: 4, pairs: 6 } : { rounds: 8, options: 4, pairs: 8 };
@@ -57,7 +50,8 @@ function PlayInner() {
   const unlockedTopics = TOPICS.filter((t) => isUnlocked(p, t.unlockStars)).map((t) => t.id);
   const unlockedKey = unlockedTopics.join(",");
   const pool = useMemo(() => cards.filter((c) => unlockedTopics.includes(c.topicId)), [cards, unlockedKey]); // eslint-disable-line react-hooks/exhaustive-deps
-  const topicCards = useMemo(() => (topicId ? cards.filter((c) => c.topicId === topicId) : pool), [cards, topicId, pool]);
+  const topicUnlocked = !topicId || unlockedTopics.includes(topicId);
+  const topicCards = useMemo(() => (topicId && topicUnlocked ? cards.filter((c) => c.topicId === topicId) : topicId ? [] : pool), [cards, topicId, topicUnlocked, pool]);
   const distractors = topicCards.length >= 6 ? topicCards : pool;
   const scene = useMemo(() => SCENES.find((s) => topicId && s.topicIds.includes(topicId)) ?? SCENES[seed % SCENES.length], [topicId, seed]);
 
@@ -84,12 +78,10 @@ function PlayInner() {
     setPhase("play");
   };
 
-  useEffect(() => {
-  }, [game]);
-
   if (loading) return <Loading />;
   if (!TITLES[game]) return <Empty emoji="🎮" />;
-  if (topicCards.length < 3 && current !== "sentence") return <Empty emoji="🔒" text={T.needStars} />;
+  if (current === "sentence" && SENTENCES.length === 0) return <Empty emoji="🧩" text={T.error} />;
+  if (topicCards.length < 3 && current !== "sentence") return <Empty emoji="🔒" text={topicId && !topicUnlocked ? T.needStars : T.empty} />;
 
   if (phase === "result" && lastResult) {
     const pct = lastResult.total ? lastResult.correct / lastResult.total : 1;
@@ -134,8 +126,9 @@ function PlayInner() {
 
   const common = { cards: topicCards, pool: distractors, rounds, options: cfg.options, onFinish };
   const key = `${current}-${seed}-${qi}`;
-  const sceneUsable = !!scene && (sceneImagesOk.size === 0 || sceneImagesOk.has(scene.image));
-  const currentScene = current === "find" && !sceneUsable ? null : scene;
+  const currentScene = current === "find" && scene
+    ? AVAILABLE_SCENE_IMAGES.has(scene.image) ? scene : { ...scene, image: FALLBACK_SCENE_IMAGE }
+    : scene;
   return (
     <>
       <header className="sticky top-0 z-30 flex items-center gap-3 px-4 py-3 bg-[var(--bg)]/85 backdrop-blur">
@@ -145,6 +138,7 @@ function PlayInner() {
       {current === "what" && <WhatIsIt key={key} {...common} />}
       {current === "memory" && <Memory key={key} {...common} rounds={cfg.pairs} />}
       {current === "word" && <BuildWord key={key} {...common} options={age === "big" ? 5 : 3} />}
+      {current === "sentence" && <BuildSentence key={key} sentences={SENTENCES} rounds={Math.min(rounds, SENTENCES.length)} onFinish={onFinish} />}
       {current === "find" && (currentScene
         ? <FindInWorld key={key} {...common} cards={cards} rounds={Math.min(6, cfg.rounds + 1)} scene={currentScene} />
         : <Empty emoji="🖼️" text={T.error} />)}

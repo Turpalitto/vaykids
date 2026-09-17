@@ -36,7 +36,7 @@ export function Frame({ step, total, children, feedback, prompt }: { step: numbe
       <div className="mt-4">{children}</div>
       <div className={`fixed left-1/2 -translate-x-1/2 bottom-8 z-50 transition-all duration-300 ${feedback ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6 pointer-events-none"}`}>
         {feedback && (
-          <div className={`soft flex items-center gap-3 rounded-full px-6 py-3 text-2xl font-black text-white anim-pop ${feedback === "ok" ? "bg-[#3FA34D]" : "bg-[#D9633B]"}`}>
+          <div role="status" aria-live="polite" className={`soft flex items-center gap-3 rounded-full px-6 py-3 text-2xl font-black text-white anim-pop ${feedback === "ok" ? "bg-[#3FA34D]" : "bg-[#D9633B]"}`}>
             <Image src="/img/seda-deer.png" alt="" width={44} height={44} className="rounded-full bg-white" />
             {feedback === "ok" ? rnd(HELPER_LINES.good) : rnd(HELPER_LINES.bad)}
           </div>
@@ -48,10 +48,15 @@ export function Frame({ step, total, children, feedback, prompt }: { step: numbe
 
 function useFeedback() {
   const [fb, setFb] = useState<"ok" | "bad" | null>(null);
+  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(() => () => {
+    if (timer.current) clearTimeout(timer.current);
+  }, []);
   const show = useCallback((k: "ok" | "bad", ms = 900) => {
+    if (timer.current) clearTimeout(timer.current);
     setFb(k);
     sfx(k === "ok" ? "success" : "error");
-    setTimeout(() => setFb(null), ms);
+    timer.current = setTimeout(() => setFb(null), ms);
   }, []);
   return [fb, show] as const;
 }

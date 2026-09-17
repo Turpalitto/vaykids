@@ -1,13 +1,20 @@
-import { NextResponse } from "next/server";
 import { eq } from "drizzle-orm";
 import { db } from "@/db";
 import { reviewItems } from "@/db/schema";
 import { REVIEW_LIST } from "@/data/words";
 import { UI_REVIEW } from "@/data/ui";
 import { ReviewPostSchema, ReviewPatchSchema } from "@/lib/validation";
+import { apiJson, badRequest, dbUnavailable } from "@/lib/api";
+import { hasParentSession } from "@/lib/parent-auth";
+
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
 
 /** Список проверки носителем: встроенные сомнительные элементы + записи из БД. */
 export async function GET() {
+  if (!(await hasParentSession())) return apiJson({ error: "parent_auth_required" }, 401);
+  if (!db) return dbUnavailable();
+
   try {
     const existing = await db.select().from(reviewItems);
     const known = new Set(existing.map((r) => r.cardId));
@@ -20,9 +27,9 @@ export async function GET() {
     ];
     if (toInsert.length) await db.insert(reviewItems).values(toInsert);
     const rows = await db.select().from(reviewItems).orderBy(reviewItems.id);
-    return NextResponse.json(rows);
+    return apiJson(rows);
   } catch {
-    return NextResponse.json({ error: "db_unavailable", fallback: REVIEW_LIST }, { status: 503 });
+    return dbUnavailable();
   }
 }
 
@@ -31,18 +38,21 @@ export async function POST(req: Request) {
   try {
     raw = await req.json();
   } catch {
-    return NextResponse.json({ error: "bad_request", message: "Invalid JSON" }, { status: 400 });
+    return badRequest("Invalid JSON");
   }
   const validated = ReviewPostSchema.safeParse(raw);
   if (!validated.success) {
-    return NextResponse.json({ error: "validation_error", issues: validated.error.issues }, { status: 400 });
+    return apiJson({ error: "validation_error", issues: validated.error.issues }, 400);
   }
+  if (!(await hasParentSession())) return apiJson({ error: "parent_auth_required" }, 401);
+  if (!db) return dbUnavailable();
+
   const b = validated.data;
   try {
     await db.insert(reviewItems).values({ cardId: b.cardId ?? null, che: b.che, ruInternal: b.ruInternal ?? "", reason: b.reason });
-    return NextResponse.json({ ok: true });
+    return apiJson({ ok: true });
   } catch {
-    return NextResponse.json({ error: "db_unavailable" }, { status: 503 });
+    return dbUnavailable();
   }
 }
 
@@ -51,17 +61,20 @@ export async function PATCH(req: Request) {
   try {
     raw = await req.json();
   } catch {
-    return NextResponse.json({ error: "bad_request", message: "Invalid JSON" }, { status: 400 });
+    return badRequest("Invalid JSON");
   }
   const validated = ReviewPatchSchema.safeParse(raw);
   if (!validated.success) {
-    return NextResponse.json({ error: "validation_error", issues: validated.error.issues }, { status: 400 });
+    return apiJson({ error: "validation_error", issues: validated.error.issues }, 400);
   }
+  if (!(await hasParentSession())) return apiJson({ error: "parent_auth_required" }, 401);
+  if (!db) return dbUnavailable();
+
   const b = validated.data;
   try {
     await db.update(reviewItems).set({ status: b.status, comment: b.comment ?? null }).where(eq(reviewItems.id, b.id));
-    return NextResponse.json({ ok: true });
+    return apiJson({ ok: true });
   } catch {
-    return NextResponse.json({ error: "db_unavailable" }, { status: 503 });
+    return dbUnavailable();
   }
 }

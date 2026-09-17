@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Shell, TopBar, CardArt, Loading, ErrorState, Empty } from "@/components/ui";
 import { T } from "@/data/ui";
 import { TOPICS } from "@/data/words";
@@ -9,7 +9,7 @@ import { useContent } from "@/lib/useContent";
 import { useStore, emptyProgress, isUnlocked } from "@/lib/store";
 import { sfx } from "@/lib/audio";
 
-type Filter = "all" | "fav" | "learned" | "new";
+type Filter = "all" | "fav" | "learned" | "new" | "practice";
 
 export default function CardsPage() {
   const { cards, loading, error, retry } = useContent();
@@ -17,6 +17,14 @@ export default function CardsPage() {
   const [topic, setTopic] = useState<string>("all");
   const [level, setLevel] = useState<0 | 1 | 2 | 3>(0);
   const [filter, setFilter] = useState<Filter>("all");
+
+  useEffect(() => {
+    if (new URLSearchParams(window.location.search).get("filter") === "practice") {
+      // The query is read only after hydration to avoid a server/client mismatch.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setFilter("practice");
+    }
+  }, []);
 
   const list = useMemo(
     () =>
@@ -26,9 +34,10 @@ export default function CardsPage() {
         if (filter === "fav" && !p.favorites.includes(c.id)) return false;
         if (filter === "learned" && !p.learned.includes(c.id)) return false;
         if (filter === "new" && p.learned.includes(c.id)) return false;
+        if (filter === "practice" && (p.seen[c.id] ?? 0) < 2) return false;
         return true;
       }),
-    [cards, topic, level, filter, p.favorites, p.learned],
+    [cards, topic, level, filter, p.favorites, p.learned, p.seen],
   );
 
   const chip = (active: boolean, extra = "") =>
@@ -46,6 +55,7 @@ export default function CardsPage() {
             ["fav", "💛", T.favorite],
             ["learned", "✅", T.learned],
             ["new", "✨", T.words],
+            ["practice", "🔁", T.again],
           ] as [Filter, string, string][]
         ).map(([f, e, l]) => (
           <button key={f} type="button" className={chip(filter === f)} onClick={() => { sfx("tap"); setFilter(f); }}>
@@ -76,7 +86,7 @@ export default function CardsPage() {
       <div className="px-4 mt-4">
         {loading && <Loading />}
         {!loading && error && cards.length === 0 && <ErrorState onRetry={retry} />}
-        {!loading && list.length === 0 && <Empty emoji={filter === "fav" ? "💛" : "🌱"} />}
+        {!loading && list.length === 0 && <Empty emoji={filter === "fav" ? "💛" : filter === "practice" ? "🔁" : "🌱"} />}
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
           {list.map((c) => (
             <Link

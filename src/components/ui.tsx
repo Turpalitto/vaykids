@@ -66,13 +66,24 @@ export function IconBtn({ children, onClick, href, label, className = "", active
 /* ---------- Верхняя панель ---------- */
 export function TopBar({ title, back = "/map", right }: { title?: string; back?: string | null; right?: ReactNode }) {
   const p = useStore((s) => (s.activeId ? s.progress[s.activeId] : undefined));
+  const syncStatus = useStore((s) => s.syncStatus);
   return (
     <header className="sticky top-0 z-30 flex items-center gap-3 px-4 py-3 bg-[var(--bg)]/85 backdrop-blur">
       {back !== null && <IconBtn href={back} label={T.back}>←</IconBtn>}
       <h1 className="flex-1 text-2xl font-black truncate">{title ?? ""}</h1>
       {right}
+      {syncStatus === "offline" && (
+        <span className="grid min-h-[48px] min-w-[48px] place-items-center rounded-full bg-[#FDE8E1] text-xl" title="Синхронизация недоступна — прогресс сохранён на устройстве" aria-label="Синхронизация недоступна">
+          ☁️
+        </span>
+      )}
+      {syncStatus === "syncing" && (
+        <span className="grid min-h-[48px] min-w-[48px] place-items-center rounded-full bg-white text-xl" title="Синхронизация…" aria-label="Синхронизация…">
+          ↻
+        </span>
+      )}
       <div className="flex items-center gap-1 bg-white soft rounded-full px-4 min-h-[48px] font-black text-lg" aria-label={T.stars}>
-        <span>⭐</span>
+        <span aria-hidden>⭐</span>
         <span>{p?.stars ?? 0}</span>
       </div>
     </header>
@@ -120,7 +131,7 @@ export function Helper({ text, size = "md", mood = "happy" }: { text?: string; s
   return (
     <div className="flex items-end gap-3">
       <div className={`relative shrink-0 ${mood === "cheer" ? "anim-wiggle" : "anim-float"}`} style={{ width: px, height: px }}>
-        <Image src="/img/seda-deer.png" alt={T.helperName} fill sizes={`${px}px`} className="object-contain drop-shadow-xl rounded-full" priority />
+        <Image src="/img/seda-deer.png" alt={T.helperName} fill sizes={`${px}px`} className="object-contain drop-shadow-xl rounded-full" />
         {mood === "think" && <span className="absolute -top-1 -right-1 text-3xl">💭</span>}
         {mood === "cheer" && <span className="absolute -top-1 -right-1 text-3xl anim-bounceIn">🎉</span>}
       </div>
@@ -152,9 +163,9 @@ export function CardArt({ card, className = "", emojiSize = "text-7xl" }: { card
 /* ---------- Состояния ---------- */
 export function Loading({ text = T.loading }: { text?: string }) {
   return (
-    <div className="flex flex-col items-center justify-center gap-4 py-16 text-center">
-      <div className="text-6xl anim-float">🦌</div>
-      <div className="h-3 w-40 rounded-full shimmer" />
+    <div className="flex flex-col items-center justify-center gap-4 py-16 text-center" role="status" aria-live="polite">
+      <div className="text-6xl anim-float" aria-hidden>🦌</div>
+      <div className="h-3 w-40 rounded-full shimmer" aria-hidden />
       <p className="text-xl font-extrabold text-[#8b7a64]">{text}</p>
     </div>
   );
@@ -201,10 +212,12 @@ export function Confetti({ count = 40 }: { count?: number }) {
 }
 
 /* ---------- Прогресс-бар ---------- */
-export function Progress({ value, max, color = "#F5A524" }: { value: number; max: number; color?: string }) {
-  const pct = Math.min(100, Math.round((value / Math.max(1, max)) * 100));
+export function Progress({ value, max, color = "#F5A524", label }: { value: number; max: number; color?: string; label?: string }) {
+  const safeMax = Math.max(1, max);
+  const safeValue = Math.min(safeMax, Math.max(0, value));
+  const pct = Math.min(100, Math.round((safeValue / safeMax) * 100));
   return (
-    <div className="h-4 w-full rounded-full bg-[#efe4d0] overflow-hidden" role="progressbar" aria-valuenow={value} aria-valuemax={max}>
+    <div className="h-4 w-full rounded-full bg-[#efe4d0] overflow-hidden" role="progressbar" aria-label={label} aria-valuemin={0} aria-valuenow={safeValue} aria-valuemax={safeMax}>
       <div className="h-full rounded-full transition-all duration-700" style={{ width: `${pct}%`, background: color }} />
     </div>
   );
@@ -214,14 +227,8 @@ export function Progress({ value, max, color = "#F5A524" }: { value: number; max
 export function Shell({ children, nav = true, requireProfile = true, className = "" }: { children: ReactNode; nav?: boolean; requireProfile?: boolean; className?: string }) {
   const hydrated = useStore((s) => s.hydrated);
   const activeId = useStore((s) => s.activeId);
-  const settings = useStore((s) => s.settings);
   const router = useRouter();
   useHydrate();
-
-  useEffect(() => {
-    document.documentElement.dataset.text = settings.textSize;
-    document.documentElement.dataset.contrast = settings.contrast ? "1" : "0";
-  }, [settings.textSize, settings.contrast]);
 
   useEffect(() => {
     if (!hydrated) return;

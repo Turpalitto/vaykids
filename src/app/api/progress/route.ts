@@ -1,59 +1,52 @@
-import { NextResponse } from "next/server";
 import { eq } from "drizzle-orm";
 import { db } from "@/db";
 import { profiles, progress } from "@/db/schema";
 import { ProgressUpdateSchema, ProfileIdParamSchema } from "@/lib/validation";
-import { ZodError } from "zod";
+import { apiJson, badRequest, dbUnavailable } from "@/lib/api";
+
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
 
 export async function GET(req: Request) {
+  const url = new URL(req.url);
+  const profileId = url.searchParams.get("profileId");
+  const validated = ProfileIdParamSchema.safeParse({ profileId });
+
+  if (!validated.success) {
+    return apiJson({ error: "validation_error", issues: validated.error.issues }, 400);
+  }
+  if (!db) return dbUnavailable();
+
   try {
-    const url = new URL(req.url);
-    const profileId = url.searchParams.get("profileId");
-
-    if (!profileId) {
-      return NextResponse.json(
-        { error: "bad_request", message: "profileId is required" },
-        { status: 400 }
-      );
-    }
-
-    const validated = ProfileIdParamSchema.safeParse({ profileId });
-    if (!validated.success) {
-      return NextResponse.json(
-        { error: "validation_error", issues: validated.error.issues },
-        { status: 400 }
-      );
-    }
-
     const [row] = await db
       .select()
       .from(progress)
-      .where(eq(progress.profileId, profileId));
+      .where(eq(progress.profileId, validated.data.profileId));
 
-    return NextResponse.json(row ?? null);
+    return apiJson(row ?? null);
   } catch (error) {
     console.error("GET /api/progress error:", error);
-    return NextResponse.json(
-      { error: "internal_server_error", message: "Database unavailable" },
-      { status: 503 }
-    );
+    return dbUnavailable();
   }
 }
 
 export async function PUT(req: Request) {
+  let raw: unknown;
   try {
-    const body = await req.json();
+    raw = await req.json();
+  } catch {
+    return badRequest("Invalid JSON");
+  }
 
-    const validated = ProgressUpdateSchema.safeParse(body);
-    if (!validated.success) {
-      return NextResponse.json(
-        { error: "validation_error", issues: validated.error.issues },
-        { status: 400 }
-      );
-    }
+  const validated = ProgressUpdateSchema.safeParse(raw);
+  if (!validated.success) {
+    return apiJson({ error: "validation_error", issues: validated.error.issues }, 400);
+  }
+  if (!db) return dbUnavailable();
 
-    const { profileId, profile: profileData, data } = validated.data;
+  const { profileId, profile: profileData, data } = validated.data;
 
+  try {
     if (profileData) {
       await db
         .insert(profiles)
@@ -61,7 +54,7 @@ export async function PUT(req: Request) {
           id: profileId,
           name: profileData.name ?? "Неизвестный",
           avatar: profileData.avatar ?? "👤",
-          ageGroup: profileData.ageGroup ?? "7-9",
+          ageGroup: profileData.ageGroup ?? "small",
         })
         .onConflictDoNothing();
     }
@@ -87,19 +80,9 @@ export async function PUT(req: Request) {
         },
       });
 
-    return NextResponse.json({ ok: true });
+    return apiJson({ ok: true });
   } catch (error) {
-    if (error instanceof ZodError) {
-      return NextResponse.json(
-        { error: "validation_error", issues: error.issues },
-        { status: 400 }
-      );
-    }
-
     console.error("PUT /api/progress error:", error);
-    return NextResponse.json(
-      { error: "internal_server_error", message: "Database unavailable" },
-      { status: 503 }
-    );
+    return dbUnavailable();
   }
 }
