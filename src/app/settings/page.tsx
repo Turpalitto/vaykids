@@ -70,6 +70,7 @@ export default function SettingsPage() {
           </div>
         </div>
         <Row label={RU.contrast}><Toggle on={settings.contrast} onChange={(v) => setSettings({ contrast: v })} /></Row>
+        <Row label={RU.immersive}><Toggle on={settings.immersive} onChange={(v) => setSettings({ immersive: v })} /></Row>
 
         <Btn color="sky" size="lg" href="/settings/parents" className="mt-2">👨‍👩‍👧 {RU.parents}</Btn>
 

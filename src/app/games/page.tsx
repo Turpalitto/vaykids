@@ -10,6 +10,7 @@ import { sfx } from "@/lib/audio";
 
 const GAMES = [
   { id: "daily", emoji: "🎯", label: T.daily, color: "from-[#F5A524] to-[#D9633B]", big: true },
+  { id: "match", emoji: "🔗", label: T.matchPairs, color: "from-teal-400 to-emerald-500" },
   { id: "memory", emoji: "🧠", label: T.memory, color: "from-purple-400 to-fuchsia-500" },
   { id: "what", emoji: "❓", label: T.whatIsIt, color: "from-sky-400 to-blue-500" },
   { id: "word", emoji: "🔤", label: T.buildWord, color: "from-amber-400 to-orange-500" },

@@ -107,4 +107,35 @@ describe("Словарь", () => {
       expect(s.ru).toBeTruthy();
     }
   });
+
+  it("все 26 тем имеют сбалансированные требования звёзд и валидные координаты карты", () => {
+    expect(TOPICS.length).toBe(26);
+    const coords = new Set<string>();
+
+    for (const t of TOPICS) {
+      expect(t.unlockStars).toBeGreaterThanOrEqual(0);
+      expect(t.unlockStars).toBeLessThanOrEqual(150);
+
+      // Координаты на карте
+      expect(t.map.x).toBeGreaterThanOrEqual(10);
+      expect(t.map.x).toBeLessThanOrEqual(90);
+      expect(t.map.y).toBeGreaterThanOrEqual(5);
+      expect(t.map.y).toBeLessThanOrEqual(95);
+
+      const coordKey = `${t.map.x},${t.map.y}`;
+      expect(coords.has(coordKey)).toBe(false);
+      coords.add(coordKey);
+    }
+  });
+
+  it("каждая тема содержит не менее 8 карточек для качественного обучения", () => {
+    for (const t of TOPICS) {
+      const cards = cardsByTopic(t.id);
+      expect(cards.length).toBeGreaterThanOrEqual(8);
+    }
+  });
+
+  it("словарь содержит не менее 1000 карточек для полноценного обучения", () => {
+    expect(CARDS.length).toBeGreaterThanOrEqual(1000);
+  });
 });

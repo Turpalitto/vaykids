@@ -9,14 +9,27 @@ import { TOPICS, CARDS } from "@/data/words";
 import { useStore, isUnlocked, todayStr, emptyProgress } from "@/lib/store";
 import { sfx } from "@/lib/audio";
 
+type Realm = "all" | "village" | "nature" | "city" | "peaks";
+
+const REALMS: { id: Realm; label: string; emoji: string; minStars: number; maxStars: number }[] = [
+  { id: "all", label: "Массо", emoji: "✨", minStars: 0, maxStars: 999 },
+  { id: "village", label: "Юрт", emoji: "🏡", minStars: 0, maxStars: 15 },
+  { id: "nature", label: "Ӏалам", emoji: "🌿", minStars: 20, maxStars: 45 },
+  { id: "city", label: "ГӀала", emoji: "🏫", minStars: 50, maxStars: 85 },
+  { id: "peaks", label: "Ламанаш", emoji: "🏔️", minStars: 90, maxStars: 999 },
+];
+
 export default function MapPage() {
   const p = useStore((s) => (s.activeId ? s.progress[s.activeId] : undefined)) ?? emptyProgress();
   const claimGift = useStore((s) => s.claimGift);
   const [gift, setGift] = useState<number | null>(null);
   const [showConfetti, setShowConfetti] = useState(false);
+  const [realm, setRealm] = useState<Realm>("all");
   const today = todayStr();
   const giftReady = p.giftDate !== today;
   const dailyDone = p.dailyDate === today;
+
+  const sortedTopics = [...TOPICS].sort((a, b) => a.unlockStars - b.unlockStars);
 
   const onGift = () => {
     const n = claimGift();
@@ -27,6 +40,8 @@ export default function MapPage() {
       setTimeout(() => setShowConfetti(false), 3000);
     }
   };
+
+  const currentRealm = REALMS.find((r) => r.id === realm)!;
 
   return (
     <Shell>
@@ -59,44 +74,74 @@ export default function MapPage() {
         </button>
       </div>
 
+      {/* Фильтр областей мира */}
+      <div className="px-4 mt-3 flex gap-1.5 overflow-x-auto no-scrollbar">
+        {REALMS.map((r) => (
+          <button
+            key={r.id}
+            type="button"
+            onClick={() => {
+              sfx("tap");
+              setRealm(r.id);
+            }}
+            className={`press shrink-0 rounded-full px-3.5 py-1.5 font-black text-sm flex items-center gap-1 transition-all ${
+              realm === r.id
+                ? "bg-[#2a1f14] text-white shadow-md scale-[1.03]"
+                : "bg-white text-[#5c4a38] soft hover:bg-[#FAF6EE]"
+            }`}
+          >
+            <span>{r.emoji}</span>
+            <span>{r.label}</span>
+          </button>
+        ))}
+      </div>
+
       {/* Карта */}
-      <div className="relative mx-4 mt-4 rounded-[32px] overflow-hidden soft" style={{ aspectRatio: "3 / 5" }}>
+      <div className="relative mx-4 mt-3 rounded-[32px] overflow-hidden soft shadow-inner" style={{ aspectRatio: "3 / 5" }}>
         <Image src="/img/map.jpg" alt="" fill sizes="(max-width: 640px) 100vw, 576px" className="object-cover" priority />
         <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none">
           <polyline
-            points={TOPICS.map((t) => `${t.map.x},${t.map.y}`).join(" ")}
+            points={sortedTopics.map((t) => `${t.map.x},${t.map.y}`).join(" ")}
             fill="none"
-            stroke="rgba(255,255,255,0.75)"
-            strokeWidth="1.2"
-            strokeDasharray="2 2"
+            stroke="rgba(255,255,255,0.8)"
+            strokeWidth="1.4"
+            strokeDasharray="2.5 2.5"
             strokeLinecap="round"
             vectorEffect="non-scaling-stroke"
           />
         </svg>
-        {TOPICS.map((t, i) => {
+        {sortedTopics.map((t, i) => {
           const unlocked = isUnlocked(p, t.unlockStars);
           const total = CARDS.filter((c) => c.topicId === t.id).length;
           const learned = CARDS.filter((c) => c.topicId === t.id && p.learned.includes(c.id)).length;
           const done = total > 0 && learned === total;
+          const inRealm =
+            realm === "all" ||
+            (t.unlockStars >= currentRealm.minStars && t.unlockStars <= currentRealm.maxStars);
+
           const inner = (
             <>
               <span
-                className={`grid place-items-center rounded-full text-3xl sm:text-4xl w-[64px] h-[64px] sm:w-[76px] sm:h-[76px] border-4 border-white ${unlocked ? "bg-gradient-to-br " + t.gradient : "bg-[#cfc6b8]"} ${unlocked && !done ? "anim-float" : ""}`}
-                style={{ animationDelay: `${i * 0.2}s` }}
+                className={`grid place-items-center rounded-full text-2xl sm:text-3xl w-[52px] h-[52px] sm:w-[66px] sm:h-[66px] border-3 sm:border-4 border-white shadow-md transition-all ${
+                  unlocked ? "bg-gradient-to-br " + t.gradient : "bg-[#cfc6b8]"
+                } ${unlocked && !done && inRealm ? "anim-float" : ""}`}
+                style={{ animationDelay: `${(i % 5) * 0.25}s` }}
               >
                 {unlocked ? t.emoji : "🔒"}
               </span>
-              <span className="mt-1 rounded-full bg-white/95 px-2.5 py-0.5 text-[13px] sm:text-sm font-black leading-tight text-center max-w-[120px] soft">
+              <span className="mt-0.5 rounded-full bg-white/95 px-2 py-0.5 text-[11px] sm:text-xs font-black leading-tight text-center max-w-[100px] truncate shadow-sm">
                 {unlocked ? t.che : `${t.unlockStars} ⭐`}
               </span>
               {unlocked && total > 0 && (
-                <span className="mt-0.5 rounded-full bg-[#2a1f14]/70 text-white px-2 text-[11px] font-black">
+                <span className="mt-0.5 rounded-full bg-[#2a1f14]/80 text-white px-1.5 text-[10px] font-black">
                   {done ? "🏅" : `${learned}/${total}`}
                 </span>
               )}
             </>
           );
-          const cls = "press absolute flex flex-col items-center -translate-x-1/2 -translate-y-1/2";
+          const cls = `press absolute flex flex-col items-center -translate-x-1/2 -translate-y-1/2 transition-all duration-200 ${
+            inRealm ? "opacity-100 z-10 scale-100" : "opacity-30 z-0 scale-90"
+          }`;
           const style = { left: `${t.map.x}%`, top: `${t.map.y}%` };
           return unlocked ? (
             <Link key={t.id} href={`/location/${t.id}`} className={cls} style={style} onClick={() => sfx("tap")} aria-label={t.che}>

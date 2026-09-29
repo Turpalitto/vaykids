@@ -3,7 +3,7 @@
 import { useParams, useSearchParams, useRouter } from "next/navigation";
 import { Suspense, useMemo, useState } from "react";
 import { Shell, IconBtn, Loading, Empty, Btn, Confetti, Helper } from "@/components/ui";
-import { BuildSentence, BuildWord, FindInWorld, Memory, WhatIsIt, type GameResult } from "@/components/games";
+import { BuildSentence, BuildWord, FindInWorld, MatchPairs, Memory, WhatIsIt, type GameResult } from "@/components/games";
 import { T, HELPER_LINES } from "@/data/ui";
 import { SCENES, SENTENCES, TOPICS, cardById } from "@/data/words";
 import type { GameId } from "@/data/types";
@@ -13,11 +13,12 @@ import { sfx } from "@/lib/audio";
 
 const TITLES: Record<GameId, string> = {
   memory: T.memory, what: T.whatIsIt, word: T.buildWord, find: T.findInWorld,
-  sentence: T.buildSentence, daily: T.daily,
+  sentence: T.buildSentence, match: T.matchPairs, daily: T.daily,
 };
 
 const DAILY_QUEUE: { game: GameId; rounds: number }[] = [
   { game: "what", rounds: 3 },
+  { game: "match", rounds: 4 },
   { game: "word", rounds: 2 },
   { game: "sentence", rounds: 1 },
   { game: "memory", rounds: 1 },
@@ -136,6 +137,7 @@ function PlayInner() {
         <h1 className="flex-1 text-2xl font-black truncate">{TITLES[game]}{game === "daily" ? ` · ${qi + 1}/${DAILY_QUEUE.length}` : ""}</h1>
       </header>
       {current === "what" && <WhatIsIt key={key} {...common} />}
+      {current === "match" && <MatchPairs key={key} {...common} rounds={4} />}
       {current === "memory" && <Memory key={key} {...common} rounds={cfg.pairs} />}
       {current === "word" && <BuildWord key={key} {...common} options={age === "big" ? 5 : 3} />}
       {current === "sentence" && <BuildSentence key={key} sentences={SENTENCES} rounds={Math.min(rounds, SENTENCES.length)} onFinish={onFinish} />}

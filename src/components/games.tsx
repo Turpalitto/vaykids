@@ -99,6 +99,9 @@ export function WhatIsIt({ cards, pool, rounds, options, onFinish }: GameProps) 
   const target = seq[i];
   const opts = useMemo(() => (target ? shuffle([target, ...pick(pool.filter((c) => c.id !== target.id && c.che !== target.che && c.emoji !== target.emoji), options - 1)]) : []), [target, pool, options]);
 
+  // Чередуем: раунд с поиском слова по картинке и раунд с поиском картинки по чеченскому слову
+  const isWordToImage = i % 2 === 1;
+
   const onPick = (c: Card) => {
     if (lock.current) return;
     if (c.id === target.id) {
@@ -123,13 +126,22 @@ export function WhatIsIt({ cards, pool, rounds, options, onFinish }: GameProps) 
   if (!target) return null;
   return (
     <Frame step={i} total={seq.length} feedback={fb}>
-      <div key={target.id} className="soft rounded-[32px] bg-white p-4 anim-pop">
-        <div className={`relative transition-all duration-300 ${flash === "ok" ? "ring-8 ring-[#3FA34D] shadow-[0_0_40px_rgba(63,163,77,0.5)]" : flash === "bad" ? "ring-8 ring-[#D9633B] shadow-[0_0_40px_rgba(217,99,59,0.5)]" : ""}`}>
-          <CardArt card={target} className="w-full h-[200px] rounded-3xl bg-[#FFF3DD]" emojiSize="text-[7rem]" />
+      <div key={target.id} className="soft rounded-[32px] bg-white p-5 anim-pop text-center">
+        <div className={`relative transition-all duration-300 rounded-3xl ${flash === "ok" ? "ring-8 ring-[#3FA34D] shadow-[0_0_40px_rgba(63,163,77,0.5)]" : flash === "bad" ? "ring-8 ring-[#D9633B] shadow-[0_0_40px_rgba(217,99,59,0.5)]" : ""}`}>
+          {isWordToImage ? (
+            <div className="w-full min-h-[170px] rounded-3xl bg-gradient-to-br from-[#FFF3DD] to-[#FFE8C2] flex flex-col items-center justify-center p-4">
+              <span className="text-4xl sm:text-5xl font-black text-[#2a1f14] tracking-wide">{target.stress || target.che}</span>
+              <span className="mt-2 text-sm font-extrabold text-[#8b7a64]">ХӀун сурт ду хӀара? (Найди картинку)</span>
+            </div>
+          ) : (
+            <CardArt card={target} className="w-full h-[190px] rounded-3xl bg-[#FFF3DD]" emojiSize="text-[7rem]" />
+          )}
         </div>
         <p className="mt-3 text-center text-2xl font-black text-[#8b7a64]">{T.whatIsIt}</p>
       </div>
-      <div className="mt-4"><OptionGrid items={opts} onPick={onPick} state={state} kind="text" /></div>
+      <div className="mt-4">
+        <OptionGrid items={opts} onPick={onPick} state={state} kind={isWordToImage ? "image" : "text"} />
+      </div>
     </Frame>
   );
 }
@@ -184,8 +196,9 @@ export function Memory({ cards, rounds, onFinish }: GameProps) {
                 <div className="flip-face soft rounded-3xl bg-gradient-to-br from-[#2B6CB0] to-[#6366F1] grid place-items-center text-4xl text-white ornament">
                   <span className="rounded-full bg-white/20 w-12 h-12 grid place-items-center">{(idx % 3) === 0 ? "🏔️" : (idx % 3) === 1 ? "⭐" : "🌸"}</span>
                 </div>
-                <div className={`flip-face flip-back soft rounded-3xl bg-white grid place-items-center ${matched.includes(d.key) ? "ring-4 ring-[#3FA34D]" : ""}`}>
-                  <CardArt card={d.c} className="w-full h-full rounded-3xl" emojiSize="text-5xl sm:text-6xl" />
+                <div className={`flip-face flip-back soft rounded-3xl bg-white p-2 flex flex-col items-center justify-center ${matched.includes(d.key) ? "ring-4 ring-[#3FA34D]" : ""}`}>
+                  <CardArt card={d.c} className="w-full aspect-square max-h-[68%] rounded-2xl" emojiSize="text-4xl sm:text-5xl" />
+                  <span className="mt-1 text-xs sm:text-sm font-black text-center leading-tight truncate px-1 text-[#2a1f14]">{d.c.che}</span>
                 </div>
               </div>
             </button>
@@ -213,11 +226,13 @@ export function BuildWord({ cards, rounds, options, onFinish }: GameProps) {
   }, [target, parts, options]);
 
   const answer = placed.map((idx) => tiles[idx].g).join("");
-  const done = !!target && answer.length >= target.che.length;
+  const done = !!target && parts.length > 0 && placed.length === parts.length;
 
   useEffect(() => {
     if (!target || !done) return;
-    if (answer === target.che.toLowerCase()) {
+    // Чеченская палочка Ӏ (U+04C0) должна канонизироваться в обоих строках
+    const norm = (s: string) => s.toLowerCase().replaceAll("ӏ", "Ӏ").trim();
+    if (norm(answer) === norm(target.che)) {
       show("ok");
       const ok = wrong === 0;
       if (ok) setCorrect((x) => x + 1);
@@ -252,8 +267,13 @@ export function BuildWord({ cards, rounds, options, onFinish }: GameProps) {
             <button
               key={k}
               type="button"
-              onClick={() => { if (tileIdx !== undefined) { sfx("tap"); setPlaced((p) => p.slice(0, k)); } }}
-              className={`grid place-items-center min-w-[56px] h-[64px] px-2 rounded-2xl text-3xl font-black border-4 border-dashed ${tileIdx !== undefined ? "bg-[#F5A524] border-[#F5A524] text-[#2a1f14] anim-pop" : "border-[#d9cbb3] bg-white/60"}`}
+              onClick={() => {
+                if (tileIdx !== undefined) {
+                  sfx("tap");
+                  setPlaced((p) => p.filter((_, idx) => idx !== k));
+                }
+              }}
+              className={`grid place-items-center min-w-[56px] h-[64px] px-2 rounded-2xl text-3xl font-black border-4 border-dashed transition-colors ${tileIdx !== undefined ? "bg-[#F5A524] border-[#F5A524] text-[#2a1f14] anim-pop" : "border-[#d9cbb3] bg-white/60"}`}
             >
               {tileIdx !== undefined ? tiles[tileIdx].g : ""}
             </button>
@@ -280,6 +300,7 @@ export function BuildWord({ cards, rounds, options, onFinish }: GameProps) {
     </Frame>
   );
 }
+
 
 /* ---------- Найди в мире ---------- */export function FindInWorld({ scene, cards, rounds, onFinish }: GameProps & { scene: Scene }) {
   const objects = useMemo(() => scene.objects.map((o) => ({ ...o, card: cards.find((c) => c.id === o.cardId) })).filter((o): o is typeof o & { card: Card } => !!o.card), [scene, cards]);
@@ -405,6 +426,126 @@ export function BuildSentence({ sentences, rounds, onFinish }: { sentences: Sent
             {c.w}
           </button>
         ))}
+      </div>
+    </Frame>
+  );
+}
+
+/* ---------- Соедини пару (MatchPairs) ---------- */
+export function MatchPairs({ cards, rounds, onFinish }: GameProps) {
+  const count = Math.min(rounds, 4, cards.length);
+  const currentBatch = useMemo(() => pick(cards, count), [cards, count]);
+  const [selectedWord, setSelectedWord] = useState<string | null>(null);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [matched, setMatched] = useState<string[]>([]);
+  const [wrongMatch, setWrongMatch] = useState<{ wordId: string; imgId: string } | null>(null);
+  const [fb, show] = useFeedback();
+  const lock = useRef(false);
+
+  const wordCards = useMemo(() => shuffle(currentBatch), [currentBatch]);
+  const imgCards = useMemo(() => shuffle(currentBatch), [currentBatch]);
+
+  const checkMatch = useCallback((wordId: string, imgId: string) => {
+    lock.current = true;
+    if (wordId === imgId) {
+      show("ok", 600);
+      setMatched((m) => {
+        const next = [...m, wordId];
+        if (next.length === currentBatch.length) {
+          setTimeout(() => {
+            onFinish({ correct: currentBatch.length, total: currentBatch.length, cardIds: currentBatch.map((c) => c.id) });
+          }, 800);
+        }
+        return next;
+      });
+      setSelectedWord(null);
+      setSelectedImage(null);
+      lock.current = false;
+    } else {
+      show("bad", 600);
+      setWrongMatch({ wordId, imgId });
+      setTimeout(() => {
+        setWrongMatch(null);
+        setSelectedWord(null);
+        setSelectedImage(null);
+        lock.current = false;
+      }, 700);
+    }
+  }, [currentBatch, onFinish, show]);
+
+  const handleWordClick = (id: string) => {
+    if (lock.current || matched.includes(id)) return;
+    sfx("tap");
+    setSelectedWord(id);
+    if (selectedImage) checkMatch(id, selectedImage);
+  };
+
+  const handleImgClick = (id: string) => {
+    if (lock.current || matched.includes(id)) return;
+    sfx("tap");
+    setSelectedImage(id);
+    if (selectedWord) checkMatch(selectedWord, id);
+  };
+
+  return (
+    <Frame step={matched.length} total={currentBatch.length} feedback={fb}>
+      <p className="text-center text-2xl font-black text-[#8b7a64] mb-3">🔗 {T.matchPairs}</p>
+      <div className="grid grid-cols-2 gap-3">
+        {/* Колонка слов */}
+        <div className="flex flex-col gap-2.5">
+          {wordCards.map((c) => {
+            const isDone = matched.includes(c.id);
+            const isSel = selectedWord === c.id;
+            const isErr = wrongMatch?.wordId === c.id;
+            return (
+              <button
+                key={c.id}
+                type="button"
+                disabled={isDone}
+                onClick={() => handleWordClick(c.id)}
+                className={`press soft min-h-[70px] rounded-3xl p-3 flex items-center justify-center font-black text-xl border-4 transition-all ${
+                  isDone
+                    ? "bg-[#E7F6E9] border-[#3FA34D] text-[#3FA34D] opacity-60 pointer-events-none"
+                    : isErr
+                    ? "border-[#D9633B] bg-[#FDE8E1] anim-shake"
+                    : isSel
+                    ? "border-[#F5A524] bg-[#FFF1D6] scale-[1.02]"
+                    : "bg-white border-transparent text-[#2a1f14]"
+                }`}
+              >
+                {c.che}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Колонка картинок */}
+        <div className="flex flex-col gap-2.5">
+          {imgCards.map((c) => {
+            const isDone = matched.includes(c.id);
+            const isSel = selectedImage === c.id;
+            const isErr = wrongMatch?.imgId === c.id;
+            return (
+              <button
+                key={c.id}
+                type="button"
+                disabled={isDone}
+                onClick={() => handleImgClick(c.id)}
+                className={`press soft min-h-[70px] rounded-3xl p-2 flex items-center justify-center border-4 transition-all ${
+                  isDone
+                    ? "bg-[#E7F6E9] border-[#3FA34D] opacity-60 pointer-events-none"
+                    : isErr
+                    ? "border-[#D9633B] bg-[#FDE8E1] anim-shake"
+                    : isSel
+                    ? "border-[#F5A524] bg-[#FFF1D6] scale-[1.02]"
+                    : "bg-white border-transparent"
+                }`}
+              >
+                <CardArt card={c} className="w-14 h-14 rounded-2xl bg-[#FFF3DD]" emojiSize="text-4xl" />
+              </button>
+            );
+          })}
+        </div>
       </div>
     </Frame>
   );

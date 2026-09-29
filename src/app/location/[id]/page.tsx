@@ -11,6 +11,7 @@ import { useStore, emptyProgress, isUnlocked } from "@/lib/store";
 import { sfx } from "@/lib/audio";
 
 const GAMES: { id: string; emoji: string; label: string; color: string }[] = [
+  { id: "match", emoji: "🔗", label: T.matchPairs, color: "from-teal-400 to-emerald-500" },
   { id: "memory", emoji: "🧠", label: T.memory, color: "from-purple-400 to-fuchsia-500" },
   { id: "what", emoji: "❓", label: T.whatIsIt, color: "from-sky-400 to-blue-500" },
   { id: "word", emoji: "🔤", label: T.buildWord, color: "from-amber-400 to-orange-500" },
@@ -23,6 +24,7 @@ export default function LocationPage() {
   const topic = topicById(id);
   const { cards, loading, error, retry } = useContent();
   const p = useStore((s) => (s.activeId ? s.progress[s.activeId] : undefined)) ?? emptyProgress();
+  const immersive = useStore((s) => s.settings.immersive);
   const markSeen = useStore((s) => s.markSeen);
 
   if (!topic) return <Shell><TopBar /><Empty emoji="🗺️" /></Shell>;
@@ -84,12 +86,12 @@ export default function LocationPage() {
                   sfx("flip");
                   markSeen(c.id);
                 }}
-                className="press soft relative rounded-3xl bg-white p-3 flex flex-col items-center anim-fadeUp"
+                className="press soft relative rounded-3xl bg-white p-3 flex flex-col items-center anim-fadeUp border border-[#F2E5D0] shadow-sm hover:shadow-md transition-all"
                 style={{ animationDelay: `${Math.min(i, 12) * 0.04}s` }}
               >
                 <CardArt card={c} className="w-full aspect-square rounded-2xl bg-[#FFF3DD]" emojiSize="text-6xl" />
                 <span className="mt-2 text-lg font-black text-center leading-tight">{c.che}</span>
-                <span className="mt-1 text-sm font-extrabold text-[#8b7a64] text-center leading-tight">{c.ru}</span>
+                {!immersive && <span className="mt-1 text-sm font-extrabold text-[#8b7a64] text-center leading-tight">{c.ru}</span>}
                 {isLearned && <span className="absolute top-2 right-2 text-2xl">✅</span>}
                 {p.favorites.includes(c.id) && <span className="absolute top-2 left-2 text-2xl">💛</span>}
               </Link>

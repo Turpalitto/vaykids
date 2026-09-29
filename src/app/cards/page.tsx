@@ -14,6 +14,7 @@ type Filter = "all" | "fav" | "learned" | "new" | "practice";
 export default function CardsPage() {
   const { cards, loading, error, retry } = useContent();
   const p = useStore((s) => (s.activeId ? s.progress[s.activeId] : undefined)) ?? emptyProgress();
+  const immersive = useStore((s) => s.settings.immersive);
   const [topic, setTopic] = useState<string>("all");
   const [level, setLevel] = useState<0 | 1 | 2 | 3>(0);
   const [filter, setFilter] = useState<Filter>("all");
@@ -93,11 +94,11 @@ export default function CardsPage() {
               key={c.id}
               href={`/cards/${c.id}`}
             onClick={() => sfx("flip")}
-              className="press soft relative rounded-3xl bg-white p-3 flex flex-col items-center"
+              className="press soft relative rounded-3xl bg-white p-3 flex flex-col items-center border border-[#F2E5D0] shadow-sm hover:shadow-md transition-all"
             >
               <CardArt card={c} className="w-full aspect-square rounded-2xl bg-[#FFF3DD]" emojiSize="text-6xl" />
               <span className="mt-2 text-lg font-black text-center leading-tight">{c.che}</span>
-              <span className="mt-1 text-sm font-extrabold text-[#8b7a64] text-center leading-tight">{c.ru}</span>
+              {!immersive && <span className="mt-1 text-sm font-extrabold text-[#8b7a64] text-center leading-tight">{c.ru}</span>}
               {p.learned.includes(c.id) && <span className="absolute top-2 right-2 text-2xl">✅</span>}
               {p.favorites.includes(c.id) && <span className="absolute top-2 left-2 text-2xl">💛</span>}
               <span className="absolute bottom-2 right-3 text-sm font-black text-[#c9b79c]">{"●".repeat(c.level)}</span>

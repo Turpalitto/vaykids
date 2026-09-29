@@ -1,0 +1,2486 @@
+{
+  "city_building": {
+    "id": "city_building",
+    "topicId": "city",
+    "che": "гӀишло",
+    "ru": "здание / строение"
+  },
+  "city_shop": {
+    "id": "city_shop",
+    "topicId": "city",
+    "che": "туька",
+    "ru": "магазин"
+  },
+  "city_market": {
+    "id": "city_market",
+    "topicId": "city",
+    "che": "базар",
+    "ru": "рынок"
+  },
+  "city_school": {
+    "id": "city_school",
+    "topicId": "city",
+    "che": "школа",
+    "ru": "школа"
+  },
+  "city_hospital": {
+    "id": "city_hospital",
+    "topicId": "city",
+    "che": "дарбанцӀа",
+    "ru": "больница"
+  },
+  "city_park": {
+    "id": "city_park",
+    "topicId": "city",
+    "che": "парк",
+    "ru": "парк"
+  },
+  "city_square": {
+    "id": "city_square",
+    "topicId": "city",
+    "che": "майдан",
+    "ru": "площадь"
+  },
+  "city_bridge": {
+    "id": "city_bridge",
+    "topicId": "city",
+    "che": "тӀай",
+    "ru": "мост"
+  },
+  "city_road": {
+    "id": "city_road",
+    "topicId": "city",
+    "che": "некъ",
+    "ru": "дорога"
+  },
+  "city_railway": {
+    "id": "city_railway",
+    "topicId": "city",
+    "che": "эчигнекъ",
+    "ru": "железная дорога"
+  },
+  "city_airport": {
+    "id": "city_airport",
+    "topicId": "city",
+    "che": "аэропорт",
+    "ru": "аэропорт"
+  },
+  "city_port": {
+    "id": "city_port",
+    "topicId": "city",
+    "che": "порт",
+    "ru": "порт"
+  },
+  "city_fountain": {
+    "id": "city_fountain",
+    "topicId": "city",
+    "che": "фонтан",
+    "ru": "фонтан"
+  },
+  "city_monument": {
+    "id": "city_monument",
+    "topicId": "city",
+    "che": "хӀоллам",
+    "ru": "памятник"
+  },
+  "city_museum": {
+    "id": "city_museum",
+    "topicId": "city",
+    "che": "музей",
+    "ru": "музей"
+  },
+  "city_theatre": {
+    "id": "city_theatre",
+    "topicId": "city",
+    "che": "театр",
+    "ru": "театр"
+  },
+  "city_cinema": {
+    "id": "city_cinema",
+    "topicId": "city",
+    "che": "кинотеатр",
+    "ru": "кинотеатр"
+  },
+  "city_bank": {
+    "id": "city_bank",
+    "topicId": "city",
+    "che": "банк",
+    "ru": "банк"
+  },
+  "city_hotel": {
+    "id": "city_hotel",
+    "topicId": "city",
+    "che": "хьешийн цӀа",
+    "ru": "гостиница"
+  },
+  "city_restaurant": {
+    "id": "city_restaurant",
+    "topicId": "city",
+    "che": "кхачан цӀа",
+    "ru": "ресторан / кафе"
+  },
+  "city_cafe": {
+    "id": "city_cafe",
+    "topicId": "city",
+    "che": "хӀусам-туька",
+    "ru": "кафетерий"
+  },
+  "city_pharmacy": {
+    "id": "city_pharmacy",
+    "topicId": "city",
+    "che": "молханийн туька",
+    "ru": "аптека"
+  },
+  "city_police": {
+    "id": "city_police",
+    "topicId": "city",
+    "che": "полици",
+    "ru": "полиция"
+  },
+  "city_firestation": {
+    "id": "city_firestation",
+    "topicId": "city",
+    "che": "цӀеяйаран дакъа",
+    "ru": "пожарная часть"
+  },
+  "city_mosque": {
+    "id": "city_mosque",
+    "topicId": "city",
+    "che": "маьждиг",
+    "ru": "мечеть"
+  },
+  "city_kindergarten": {
+    "id": "city_kindergarten",
+    "topicId": "city",
+    "che": "берийн беш",
+    "ru": "детский сад"
+  },
+  "city_playground": {
+    "id": "city_playground",
+    "topicId": "city",
+    "che": "ловзаран майда",
+    "ru": "детская площадка"
+  },
+  "city_post": {
+    "id": "city_post",
+    "topicId": "city",
+    "che": "пошт",
+    "ru": "почта"
+  },
+  "city_crosswalk": {
+    "id": "city_crosswalk",
+    "topicId": "city",
+    "che": "гӀашлойн некъ",
+    "ru": "пешеходный переход"
+  },
+  "city_lantern": {
+    "id": "city_lantern",
+    "topicId": "city",
+    "che": "ураман чиркх",
+    "ru": "уличный фонарь"
+  },
+  "city_bench": {
+    "id": "city_bench",
+    "topicId": "city",
+    "che": "лаьтта гӀант",
+    "ru": "скамейка"
+  },
+  "city_bakery": {
+    "id": "city_bakery",
+    "topicId": "city",
+    "che": "бепиг дотту меттиг",
+    "ru": "пекарня"
+  },
+  "city_zoo": {
+    "id": "city_zoo",
+    "topicId": "city",
+    "che": "дийнатийн беш",
+    "ru": "зоопарк"
+  },
+  "city_library": {
+    "id": "city_library",
+    "topicId": "city",
+    "che": "библиотека",
+    "ru": "библиотека"
+  },
+  "city_stadium": {
+    "id": "city_stadium",
+    "topicId": "city",
+    "che": "стадион",
+    "ru": "стадион"
+  },
+  "house_room": {
+    "id": "house_room",
+    "topicId": "house",
+    "che": "чоь",
+    "ru": "комната"
+  },
+  "house_kitchen": {
+    "id": "house_kitchen",
+    "topicId": "house",
+    "che": "кхачабен чоь",
+    "ru": "кухня"
+  },
+  "house_bedroom": {
+    "id": "house_bedroom",
+    "topicId": "house",
+    "che": "дижаран чоь",
+    "ru": "спальня"
+  },
+  "house_bathroom": {
+    "id": "house_bathroom",
+    "topicId": "house",
+    "che": "лийчаран чоь",
+    "ru": "ванная"
+  },
+  "house_living": {
+    "id": "house_living",
+    "topicId": "house",
+    "che": "хьешийн чоь",
+    "ru": "гостиная"
+  },
+  "house_table": {
+    "id": "house_table",
+    "topicId": "house",
+    "che": "стол",
+    "ru": "стол"
+  },
+  "house_chair": {
+    "id": "house_chair",
+    "topicId": "house",
+    "che": "гӀант",
+    "ru": "стул"
+  },
+  "house_bed": {
+    "id": "house_bed",
+    "topicId": "house",
+    "che": "маьнга",
+    "ru": "кровать"
+  },
+  "house_sofa": {
+    "id": "house_sofa",
+    "topicId": "house",
+    "che": "диван",
+    "ru": "диван"
+  },
+  "house_wardrobe": {
+    "id": "house_wardrobe",
+    "topicId": "house",
+    "che": "шкаф",
+    "ru": "шкаф"
+  },
+  "house_shelf": {
+    "id": "house_shelf",
+    "topicId": "house",
+    "che": "полка",
+    "ru": "полка"
+  },
+  "house_tv": {
+    "id": "house_tv",
+    "topicId": "house",
+    "che": "телевизор",
+    "ru": "телевизор"
+  },
+  "house_fridge": {
+    "id": "house_fridge",
+    "topicId": "house",
+    "che": "холодильник",
+    "ru": "холодильник"
+  },
+  "house_microwave": {
+    "id": "house_microwave",
+    "topicId": "house",
+    "che": "микроволновка",
+    "ru": "микроволновка"
+  },
+  "house_washing": {
+    "id": "house_washing",
+    "topicId": "house",
+    "che": "бедаршюьтту машен",
+    "ru": "стиральная машина"
+  },
+  "house_vacuum": {
+    "id": "house_vacuum",
+    "topicId": "house",
+    "che": "пылесос",
+    "ru": "пылесос"
+  },
+  "house_door": {
+    "id": "house_door",
+    "topicId": "house",
+    "che": "неӀ",
+    "ru": "дверь"
+  },
+  "house_window": {
+    "id": "house_window",
+    "topicId": "house",
+    "che": "кор",
+    "ru": "окно"
+  },
+  "house_roof": {
+    "id": "house_roof",
+    "topicId": "house",
+    "che": "тхов",
+    "ru": "крыша"
+  },
+  "house_floor": {
+    "id": "house_floor",
+    "topicId": "house",
+    "che": "цӀенкъа",
+    "ru": "пол"
+  },
+  "house_wall": {
+    "id": "house_wall",
+    "topicId": "house",
+    "che": "пен",
+    "ru": "стена"
+  },
+  "house_garden": {
+    "id": "house_garden",
+    "topicId": "house",
+    "che": "беш",
+    "ru": "сад"
+  },
+  "house_fence": {
+    "id": "house_fence",
+    "topicId": "house",
+    "che": "керт",
+    "ru": "забор, ограда"
+  },
+  "house_gate": {
+    "id": "house_gate",
+    "topicId": "house",
+    "che": "ков",
+    "ru": "ворота"
+  },
+  "house_curtain": {
+    "id": "house_curtain",
+    "topicId": "house",
+    "che": "пардо",
+    "ru": "занавеска, штора"
+  },
+  "house_lamp": {
+    "id": "house_lamp",
+    "topicId": "house",
+    "che": "чиркх",
+    "ru": "лампа, светильник"
+  },
+  "house_stairs": {
+    "id": "house_stairs",
+    "topicId": "house",
+    "che": "лами",
+    "ru": "лестница"
+  },
+  "house_ceiling": {
+    "id": "house_ceiling",
+    "topicId": "house",
+    "che": "тхов-кӀело",
+    "ru": "потолок"
+  },
+  "house_attic": {
+    "id": "house_attic",
+    "topicId": "house",
+    "che": "тхов-тӀе",
+    "ru": "чердак"
+  },
+  "house_chimney": {
+    "id": "house_chimney",
+    "topicId": "house",
+    "che": "кӀуьран биргӀа",
+    "ru": "печная труба, дымоход"
+  },
+  "house_stove": {
+    "id": "house_stove",
+    "topicId": "house",
+    "che": "пеш",
+    "ru": "печь, плита"
+  },
+  "house_lock": {
+    "id": "house_lock",
+    "topicId": "house",
+    "che": "догӀа",
+    "ru": "замок"
+  },
+  "house_handle": {
+    "id": "house_handle",
+    "topicId": "house",
+    "che": "тӀам",
+    "ru": "дверная ручка"
+  },
+  "house_tap": {
+    "id": "house_tap",
+    "topicId": "house",
+    "che": "кран",
+    "ru": "кран водопроводный"
+  },
+  "house_trash": {
+    "id": "house_trash",
+    "topicId": "house",
+    "che": "нехаш",
+    "ru": "мусор, урна"
+  },
+  "house_iron": {
+    "id": "house_iron",
+    "topicId": "house",
+    "che": "утюг",
+    "ru": "утюг"
+  },
+  "shop_store": {
+    "id": "shop_store",
+    "topicId": "shopping",
+    "che": "туька",
+    "ru": "магазин"
+  },
+  "shop_market": {
+    "id": "shop_market",
+    "topicId": "shopping",
+    "che": "базар",
+    "ru": "рынок"
+  },
+  "shop_supermarket": {
+    "id": "shop_supermarket",
+    "topicId": "shopping",
+    "che": "йоккха туька",
+    "ru": "супермаркет"
+  },
+  "shop_pharmacy": {
+    "id": "shop_pharmacy",
+    "topicId": "shopping",
+    "che": "молханийн туька",
+    "ru": "аптека"
+  },
+  "shop_bookshop": {
+    "id": "shop_bookshop",
+    "topicId": "shopping",
+    "che": "жайнаш дохка туька",
+    "ru": "книжный магазин"
+  },
+  "shop_bread": {
+    "id": "shop_bread",
+    "topicId": "shopping",
+    "che": "бепиг",
+    "ru": "хлеб"
+  },
+  "shop_milk": {
+    "id": "shop_milk",
+    "topicId": "shopping",
+    "che": "шура",
+    "ru": "молоко"
+  },
+  "shop_meat": {
+    "id": "shop_meat",
+    "topicId": "shopping",
+    "che": "жижиг",
+    "ru": "мясо"
+  },
+  "shop_fish": {
+    "id": "shop_fish",
+    "topicId": "shopping",
+    "che": "чӀара",
+    "ru": "рыба"
+  },
+  "shop_eggs": {
+    "id": "shop_eggs",
+    "topicId": "shopping",
+    "che": "хӀоа",
+    "ru": "яйца"
+  },
+  "shop_fruit": {
+    "id": "shop_fruit",
+    "topicId": "shopping",
+    "che": "стом",
+    "ru": "фрукты"
+  },
+  "shop_veg": {
+    "id": "shop_veg",
+    "topicId": "shopping",
+    "che": "хасстоьмаш",
+    "ru": "овощи"
+  },
+  "shop_sugar": {
+    "id": "shop_sugar",
+    "topicId": "shopping",
+    "che": "шекар",
+    "ru": "сахар"
+  },
+  "shop_salt": {
+    "id": "shop_salt",
+    "topicId": "shopping",
+    "che": "туьха",
+    "ru": "соль"
+  },
+  "shop_oil": {
+    "id": "shop_oil",
+    "topicId": "shopping",
+    "che": "даьтта",
+    "ru": "масло"
+  },
+  "shop_juice": {
+    "id": "shop_juice",
+    "topicId": "shopping",
+    "che": "мутта",
+    "ru": "сок"
+  },
+  "shop_water": {
+    "id": "shop_water",
+    "topicId": "shopping",
+    "che": "хи",
+    "ru": "вода"
+  },
+  "shop_buy": {
+    "id": "shop_buy",
+    "topicId": "shopping",
+    "che": "эца",
+    "ru": "покупать"
+  },
+  "shop_sell": {
+    "id": "shop_sell",
+    "topicId": "shopping",
+    "che": "дохка",
+    "ru": "продавать"
+  },
+  "shop_pay": {
+    "id": "shop_pay",
+    "topicId": "shopping",
+    "che": "мах бан",
+    "ru": "платить, рассчитываться"
+  },
+  "shop_price": {
+    "id": "shop_price",
+    "topicId": "shopping",
+    "che": "мах",
+    "ru": "цена"
+  },
+  "shop_money": {
+    "id": "shop_money",
+    "topicId": "shopping",
+    "che": "ахча",
+    "ru": "деньги"
+  },
+  "shop_change": {
+    "id": "shop_change",
+    "topicId": "shopping",
+    "che": "юхалург",
+    "ru": "сдача"
+  },
+  "shop_basket": {
+    "id": "shop_basket",
+    "topicId": "shopping",
+    "che": "тускар",
+    "ru": "корзина"
+  },
+  "shop_list": {
+    "id": "shop_list",
+    "topicId": "shopping",
+    "che": "могӀам",
+    "ru": "список покупок"
+  },
+  "shop_cart": {
+    "id": "shop_cart",
+    "topicId": "shopping",
+    "che": "гӀудалкх",
+    "ru": "магазинная тележка"
+  },
+  "shop_bag": {
+    "id": "shop_bag",
+    "topicId": "shopping",
+    "che": "тӀоьрмиг",
+    "ru": "сумка, пакет"
+  },
+  "shop_scales": {
+    "id": "shop_scales",
+    "topicId": "shopping",
+    "che": "терза",
+    "ru": "весы"
+  },
+  "shop_coins": {
+    "id": "shop_coins",
+    "topicId": "shopping",
+    "che": "кегий ахча",
+    "ru": "монеты, мелочь"
+  },
+  "shop_bankcard": {
+    "id": "shop_bankcard",
+    "topicId": "shopping",
+    "che": "банк-карта",
+    "ru": "банковская карта"
+  },
+  "shop_receipt": {
+    "id": "shop_receipt",
+    "topicId": "shopping",
+    "che": "чек",
+    "ru": "чек, квитанция"
+  },
+  "shop_cheap": {
+    "id": "shop_cheap",
+    "topicId": "shopping",
+    "che": "дорах",
+    "ru": "дешёвый"
+  },
+  "shop_expensive": {
+    "id": "shop_expensive",
+    "topicId": "shopping",
+    "che": "деза мах",
+    "ru": "дорогой (по цене)"
+  },
+  "health_hand": {
+    "id": "health_hand",
+    "topicId": "health",
+    "che": "куьг",
+    "ru": "рука"
+  },
+  "health_leg": {
+    "id": "health_leg",
+    "topicId": "health",
+    "che": "ког",
+    "ru": "нога"
+  },
+  "health_head": {
+    "id": "health_head",
+    "topicId": "health",
+    "che": "корта",
+    "ru": "голова"
+  },
+  "health_eye": {
+    "id": "health_eye",
+    "topicId": "health",
+    "che": "бӀаьрг",
+    "ru": "глаз"
+  },
+  "health_ear": {
+    "id": "health_ear",
+    "topicId": "health",
+    "che": "лерг",
+    "ru": "ухо"
+  },
+  "health_nose": {
+    "id": "health_nose",
+    "topicId": "health",
+    "che": "мара",
+    "ru": "нос"
+  },
+  "health_mouth": {
+    "id": "health_mouth",
+    "topicId": "health",
+    "che": "бага",
+    "ru": "рот"
+  },
+  "health_tooth": {
+    "id": "health_tooth",
+    "topicId": "health",
+    "che": "церг",
+    "ru": "зуб"
+  },
+  "health_heart": {
+    "id": "health_heart",
+    "topicId": "health",
+    "che": "дог",
+    "ru": "сердце"
+  },
+  "health_pain": {
+    "id": "health_pain",
+    "topicId": "health",
+    "che": "лазар",
+    "ru": "боль"
+  },
+  "health_flu": {
+    "id": "health_flu",
+    "topicId": "health",
+    "che": "шелдалар",
+    "ru": "простуда / грипп"
+  },
+  "health_fever": {
+    "id": "health_fever",
+    "topicId": "health",
+    "che": "йовхо",
+    "ru": "жар / температура"
+  },
+  "health_cough": {
+    "id": "health_cough",
+    "topicId": "health",
+    "che": "йовхарш",
+    "ru": "кашель"
+  },
+  "health_headache": {
+    "id": "health_headache",
+    "topicId": "health",
+    "che": "корта лазар",
+    "ru": "головная боль"
+  },
+  "health_doctor": {
+    "id": "health_doctor",
+    "topicId": "health",
+    "che": "лор",
+    "ru": "врач"
+  },
+  "health_nurse": {
+    "id": "health_nurse",
+    "topicId": "health",
+    "che": "лоьран гӀовс",
+    "ru": "медсестра"
+  },
+  "health_medicine": {
+    "id": "health_medicine",
+    "topicId": "health",
+    "che": "молха",
+    "ru": "лекарство"
+  },
+  "health_hospital": {
+    "id": "health_hospital",
+    "topicId": "health",
+    "che": "дарбанцӀа",
+    "ru": "больница"
+  },
+  "health_ambulance": {
+    "id": "health_ambulance",
+    "topicId": "health",
+    "che": "сиха гӀо",
+    "ru": "скорая помощь"
+  },
+  "health_pharmacy": {
+    "id": "health_pharmacy",
+    "topicId": "health",
+    "che": "молханийн туька",
+    "ru": "аптека"
+  },
+  "health_sport": {
+    "id": "health_sport",
+    "topicId": "health",
+    "che": "спорт",
+    "ru": "спорт"
+  },
+  "health_food": {
+    "id": "health_food",
+    "topicId": "health",
+    "che": "даар",
+    "ru": "еда"
+  },
+  "health_water": {
+    "id": "health_water",
+    "topicId": "health",
+    "che": "хи",
+    "ru": "вода"
+  },
+  "health_rest": {
+    "id": "health_rest",
+    "topicId": "health",
+    "che": "садаӀар",
+    "ru": "отдых"
+  },
+  "health_clean": {
+    "id": "health_clean",
+    "topicId": "health",
+    "che": "цӀеналла",
+    "ru": "чистота"
+  },
+  "health_soap": {
+    "id": "health_soap",
+    "topicId": "health",
+    "che": "саба",
+    "ru": "мыло"
+  },
+  "health_toothbrush": {
+    "id": "health_toothbrush",
+    "topicId": "health",
+    "che": "цергийн щетка",
+    "ru": "зубная щётка"
+  },
+  "health_wound": {
+    "id": "health_wound",
+    "topicId": "health",
+    "che": "чов",
+    "ru": "ранка, царапина"
+  },
+  "health_bandage": {
+    "id": "health_bandage",
+    "topicId": "health",
+    "che": "бинт",
+    "ru": "бинт, повязка"
+  },
+  "health_thermometer": {
+    "id": "health_thermometer",
+    "topicId": "health",
+    "che": "градусник",
+    "ru": "термометр, градусник"
+  },
+  "health_vitamins": {
+    "id": "health_vitamins",
+    "topicId": "health",
+    "che": "витаминаш",
+    "ru": "витамины"
+  },
+  "health_sleep": {
+    "id": "health_sleep",
+    "topicId": "health",
+    "che": "дижар",
+    "ru": "сон"
+  },
+  "health_healthy": {
+    "id": "health_healthy",
+    "topicId": "health",
+    "che": "могаш",
+    "ru": "здоровый"
+  },
+  "sport_run": {
+    "id": "sport_run",
+    "topicId": "sport",
+    "che": "хьадар",
+    "ru": "бег"
+  },
+  "sport_swim": {
+    "id": "sport_swim",
+    "topicId": "sport",
+    "che": "нека дар",
+    "ru": "плавание"
+  },
+  "sport_football": {
+    "id": "sport_football",
+    "topicId": "sport",
+    "che": "футбол",
+    "ru": "футбол"
+  },
+  "sport_volleyball": {
+    "id": "sport_volleyball",
+    "topicId": "sport",
+    "che": "волейбол",
+    "ru": "волейбол"
+  },
+  "sport_basketball": {
+    "id": "sport_basketball",
+    "topicId": "sport",
+    "che": "баскетбол",
+    "ru": "баскетбол"
+  },
+  "sport_tennis": {
+    "id": "sport_tennis",
+    "topicId": "sport",
+    "che": "теннис",
+    "ru": "теннис"
+  },
+  "sport_boxing": {
+    "id": "sport_boxing",
+    "topicId": "sport",
+    "che": "бокс",
+    "ru": "бокс"
+  },
+  "sport_wrestling": {
+    "id": "sport_wrestling",
+    "topicId": "sport",
+    "che": "латар",
+    "ru": "борьба"
+  },
+  "sport_gymnastics": {
+    "id": "sport_gymnastics",
+    "topicId": "sport",
+    "che": "гимнастика",
+    "ru": "гимнастика"
+  },
+  "sport_ski": {
+    "id": "sport_ski",
+    "topicId": "sport",
+    "che": "когсалаз",
+    "ru": "лыжи"
+  },
+  "sport_cycle": {
+    "id": "sport_cycle",
+    "topicId": "sport",
+    "che": "велосипед хахкар",
+    "ru": "велоспорт"
+  },
+  "sport_ball": {
+    "id": "sport_ball",
+    "topicId": "sport",
+    "che": "буьрка",
+    "ru": "мяч"
+  },
+  "sport_gate": {
+    "id": "sport_gate",
+    "topicId": "sport",
+    "che": "ков",
+    "ru": "ворота"
+  },
+  "sport_bat": {
+    "id": "sport_bat",
+    "topicId": "sport",
+    "che": "гӀаж",
+    "ru": "бита, клюшка"
+  },
+  "sport_play": {
+    "id": "sport_play",
+    "topicId": "sport",
+    "che": "ловза",
+    "ru": "играть"
+  },
+  "sport_win": {
+    "id": "sport_win",
+    "topicId": "sport",
+    "che": "тола",
+    "ru": "побеждать"
+  },
+  "sport_lose": {
+    "id": "sport_lose",
+    "topicId": "sport",
+    "che": "эша",
+    "ru": "проигрывать"
+  },
+  "sport_team": {
+    "id": "sport_team",
+    "topicId": "sport",
+    "che": "тоба",
+    "ru": "команда"
+  },
+  "sport_train": {
+    "id": "sport_train",
+    "topicId": "sport",
+    "che": "Ӏама",
+    "ru": "тренироваться, учиться"
+  },
+  "sport_stadium": {
+    "id": "sport_stadium",
+    "topicId": "sport",
+    "che": "стадион",
+    "ru": "стадион"
+  },
+  "sport_medal": {
+    "id": "sport_medal",
+    "topicId": "sport",
+    "che": "мидал",
+    "ru": "медаль"
+  },
+  "sport_cup": {
+    "id": "sport_cup",
+    "topicId": "sport",
+    "che": "кубок",
+    "ru": "кубок"
+  },
+  "sport_whistle": {
+    "id": "sport_whistle",
+    "topicId": "sport",
+    "che": "шатакх",
+    "ru": "свисток"
+  },
+  "sport_jump": {
+    "id": "sport_jump",
+    "topicId": "sport",
+    "che": "кхоссадалар",
+    "ru": "прыжки"
+  },
+  "sport_judo": {
+    "id": "sport_judo",
+    "topicId": "sport",
+    "che": "дзюдо",
+    "ru": "дзюдо"
+  },
+  "sport_skates": {
+    "id": "sport_skates",
+    "topicId": "sport",
+    "che": "коньки",
+    "ru": "коньки"
+  },
+  "sport_boxing_gloves": {
+    "id": "sport_boxing_gloves",
+    "topicId": "sport",
+    "che": "боксеран караш",
+    "ru": "боксёрские перчатки"
+  },
+  "sport_coach": {
+    "id": "sport_coach",
+    "topicId": "sport",
+    "che": "тренер",
+    "ru": "тренер"
+  },
+  "toy_doll": {
+    "id": "toy_doll",
+    "topicId": "toys",
+    "che": "тайниг",
+    "ru": "кукла"
+  },
+  "toy_ball": {
+    "id": "toy_ball",
+    "topicId": "toys",
+    "che": "буьрка",
+    "ru": "мяч"
+  },
+  "toy_car": {
+    "id": "toy_car",
+    "topicId": "toys",
+    "che": "машен",
+    "ru": "машинка"
+  },
+  "toy_bear": {
+    "id": "toy_bear",
+    "topicId": "toys",
+    "che": "ча",
+    "ru": "мишка"
+  },
+  "toy_blocks": {
+    "id": "toy_blocks",
+    "topicId": "toys",
+    "che": "гӀодамаш",
+    "ru": "кубики"
+  },
+  "toy_puzzle": {
+    "id": "toy_puzzle",
+    "topicId": "toys",
+    "che": "пазл",
+    "ru": "пазл"
+  },
+  "toy_robot": {
+    "id": "toy_robot",
+    "topicId": "toys",
+    "che": "робот",
+    "ru": "робот"
+  },
+  "toy_plane": {
+    "id": "toy_plane",
+    "topicId": "toys",
+    "che": "кема",
+    "ru": "самолётик"
+  },
+  "toy_train": {
+    "id": "toy_train",
+    "topicId": "toys",
+    "che": "цӀерпошт",
+    "ru": "поезд"
+  },
+  "toy_soldier": {
+    "id": "toy_soldier",
+    "topicId": "toys",
+    "che": "эскархо",
+    "ru": "солдатик"
+  },
+  "toy_sword": {
+    "id": "toy_sword",
+    "topicId": "toys",
+    "che": "тур",
+    "ru": "меч"
+  },
+  "toy_gun": {
+    "id": "toy_gun",
+    "topicId": "toys",
+    "che": "топ",
+    "ru": "ружье, пистолет"
+  },
+  "toy_play": {
+    "id": "toy_play",
+    "topicId": "toys",
+    "che": "ловза",
+    "ru": "играть"
+  },
+  "toy_hide": {
+    "id": "toy_hide",
+    "topicId": "toys",
+    "che": "лечкъа",
+    "ru": "прятаться"
+  },
+  "toy_seek": {
+    "id": "toy_seek",
+    "topicId": "toys",
+    "che": "лаха",
+    "ru": "искать"
+  },
+  "toy_run": {
+    "id": "toy_run",
+    "topicId": "toys",
+    "che": "ида",
+    "ru": "бегать"
+  },
+  "toy_jump": {
+    "id": "toy_jump",
+    "topicId": "toys",
+    "che": "кхоссадала",
+    "ru": "прыгать"
+  },
+  "toy_drum": {
+    "id": "toy_drum",
+    "topicId": "toys",
+    "che": "вота",
+    "ru": "барабанчик"
+  },
+  "toy_kite": {
+    "id": "toy_kite",
+    "topicId": "toys",
+    "che": "хӀаваан саьрмик",
+    "ru": "воздушный змей"
+  },
+  "toy_swing": {
+    "id": "toy_swing",
+    "topicId": "toys",
+    "che": "агас",
+    "ru": "качели"
+  },
+  "toy_slide": {
+    "id": "toy_slide",
+    "topicId": "toys",
+    "che": "хохкуьйриг",
+    "ru": "детская горка"
+  },
+  "toy_top": {
+    "id": "toy_top",
+    "topicId": "toys",
+    "che": "горгам",
+    "ru": "юла, волчок"
+  },
+  "toy_dice": {
+    "id": "toy_dice",
+    "topicId": "toys",
+    "che": "зар",
+    "ru": "игральный кубик"
+  },
+  "toy_ship": {
+    "id": "toy_ship",
+    "topicId": "toys",
+    "che": "хикема",
+    "ru": "кораблик"
+  },
+  "toy_balloon": {
+    "id": "toy_balloon",
+    "topicId": "toys",
+    "che": "хӀаваан шар",
+    "ru": "воздушный шарик"
+  },
+  "toy_pyramid": {
+    "id": "toy_pyramid",
+    "topicId": "toys",
+    "che": "пирамидка",
+    "ru": "пирамидка"
+  },
+  "toy_whistle": {
+    "id": "toy_whistle",
+    "topicId": "toys",
+    "che": "шок",
+    "ru": "свисток, свистулька"
+  },
+  "toy_bubbles": {
+    "id": "toy_bubbles",
+    "topicId": "toys",
+    "che": "сабанан ахкаргаш",
+    "ru": "мыльные пузыри"
+  },
+  "toy_sandbox": {
+    "id": "toy_sandbox",
+    "topicId": "toys",
+    "che": "гӀамаран майда",
+    "ru": "песочница"
+  },
+  "toy_watergun": {
+    "id": "toy_watergun",
+    "topicId": "toys",
+    "che": "хин топ",
+    "ru": "водяной пистолет"
+  },
+  "toy_castle": {
+    "id": "toy_castle",
+    "topicId": "toys",
+    "che": "гӀала",
+    "ru": "игрушечный замок"
+  },
+  "hol_newyear": {
+    "id": "hol_newyear",
+    "topicId": "holidays",
+    "che": "керла шо",
+    "ru": "Новый год"
+  },
+  "hol_birthday": {
+    "id": "hol_birthday",
+    "topicId": "holidays",
+    "che": "вина де",
+    "ru": "День рождения"
+  },
+  "hol_wedding": {
+    "id": "hol_wedding",
+    "topicId": "holidays",
+    "che": "ловзар",
+    "ru": "свадьба"
+  },
+  "hol_eid": {
+    "id": "hol_eid",
+    "topicId": "holidays",
+    "che": "Мархадосту де",
+    "ru": "Ураза-байрам"
+  },
+  "hol_kurban": {
+    "id": "hol_kurban",
+    "topicId": "holidays",
+    "che": "ГӀурба",
+    "ru": "Курбан-байрам"
+  },
+  "hol_victory": {
+    "id": "hol_victory",
+    "topicId": "holidays",
+    "che": "Толаман де",
+    "ru": "День Победы"
+  },
+  "hol_constitution": {
+    "id": "hol_constitution",
+    "topicId": "holidays",
+    "che": "Конституцин де",
+    "ru": "День Конституции"
+  },
+  "hol_gift": {
+    "id": "hol_gift",
+    "topicId": "holidays",
+    "che": "совгӀат",
+    "ru": "подарок"
+  },
+  "hol_balloon": {
+    "id": "hol_balloon",
+    "topicId": "holidays",
+    "che": "хӀаваан шар",
+    "ru": "воздушный шар"
+  },
+  "hol_cake": {
+    "id": "hol_cake",
+    "topicId": "holidays",
+    "che": "торт",
+    "ru": "торт"
+  },
+  "hol_candle": {
+    "id": "hol_candle",
+    "topicId": "holidays",
+    "che": "чӀурам",
+    "ru": "свеча"
+  },
+  "hol_fireworks": {
+    "id": "hol_fireworks",
+    "topicId": "holidays",
+    "che": "салют",
+    "ru": "фейерверк, салют"
+  },
+  "hol_music": {
+    "id": "hol_music",
+    "topicId": "holidays",
+    "che": "эшарш",
+    "ru": "музыка, песни"
+  },
+  "hol_dance": {
+    "id": "hol_dance",
+    "topicId": "holidays",
+    "che": "хелхар",
+    "ru": "танец"
+  },
+  "hol_celebrate": {
+    "id": "hol_celebrate",
+    "topicId": "holidays",
+    "che": "даздан",
+    "ru": "праздновать"
+  },
+  "hol_congratulate": {
+    "id": "hol_congratulate",
+    "topicId": "holidays",
+    "che": "декъалдан",
+    "ru": "поздравлять"
+  },
+  "hol_table": {
+    "id": "hol_table",
+    "topicId": "holidays",
+    "che": "шун",
+    "ru": "праздничный стол"
+  },
+  "hol_joy": {
+    "id": "hol_joy",
+    "topicId": "holidays",
+    "che": "хазахетар",
+    "ru": "радость, веселье"
+  },
+  "hol_card": {
+    "id": "hol_card",
+    "topicId": "holidays",
+    "che": "декъалден кехат",
+    "ru": "поздравительная открытка"
+  },
+  "hol_bouquet": {
+    "id": "hol_bouquet",
+    "topicId": "holidays",
+    "che": "зезагийн курс",
+    "ru": "букет цветов"
+  },
+  "hol_ribbon": {
+    "id": "hol_ribbon",
+    "topicId": "holidays",
+    "che": "лента",
+    "ru": "праздничная лента"
+  },
+  "hol_applause": {
+    "id": "hol_applause",
+    "topicId": "holidays",
+    "che": "тӀараш деттар",
+    "ru": "аплодисменты"
+  },
+  "hol_chechen_dance": {
+    "id": "hol_chechen_dance",
+    "topicId": "holidays",
+    "che": "нохчийн хелхар",
+    "ru": "лезгинка, чеченский танец"
+  },
+  "hol_blessing": {
+    "id": "hol_blessing",
+    "topicId": "holidays",
+    "che": "доӀа",
+    "ru": "благопожелание, дуа"
+  },
+  "verb_go": {
+    "id": "verb_go",
+    "topicId": "verbs",
+    "che": "ваха",
+    "ru": "идти"
+  },
+  "verb_come": {
+    "id": "verb_come",
+    "topicId": "verbs",
+    "che": "ван",
+    "ru": "приходить"
+  },
+  "verb_run": {
+    "id": "verb_run",
+    "topicId": "verbs",
+    "che": "хьада",
+    "ru": "бежать"
+  },
+  "verb_sit": {
+    "id": "verb_sit",
+    "topicId": "verbs",
+    "che": "хаа",
+    "ru": "сидеть"
+  },
+  "verb_stand": {
+    "id": "verb_stand",
+    "topicId": "verbs",
+    "che": "латта",
+    "ru": "стоять"
+  },
+  "verb_eat": {
+    "id": "verb_eat",
+    "topicId": "verbs",
+    "che": "даа",
+    "ru": "есть (кушать)"
+  },
+  "verb_drink": {
+    "id": "verb_drink",
+    "topicId": "verbs",
+    "che": "мала",
+    "ru": "пить"
+  },
+  "verb_sleep": {
+    "id": "verb_sleep",
+    "topicId": "verbs",
+    "che": "дижа",
+    "ru": "спать"
+  },
+  "verb_wake": {
+    "id": "verb_wake",
+    "topicId": "verbs",
+    "che": "самадала",
+    "ru": "просыпаться"
+  },
+  "verb_work": {
+    "id": "verb_work",
+    "topicId": "verbs",
+    "che": "болх бан",
+    "ru": "работать"
+  },
+  "verb_study": {
+    "id": "verb_study",
+    "topicId": "verbs",
+    "che": "деша",
+    "ru": "учиться"
+  },
+  "verb_write": {
+    "id": "verb_write",
+    "topicId": "verbs",
+    "che": "яздан",
+    "ru": "писать"
+  },
+  "verb_speak": {
+    "id": "verb_speak",
+    "topicId": "verbs",
+    "che": "дийца",
+    "ru": "говорить"
+  },
+  "verb_listen": {
+    "id": "verb_listen",
+    "topicId": "verbs",
+    "che": "ладогӀа",
+    "ru": "слушать"
+  },
+  "verb_see": {
+    "id": "verb_see",
+    "topicId": "verbs",
+    "che": "га",
+    "ru": "видеть"
+  },
+  "verb_look": {
+    "id": "verb_look",
+    "topicId": "verbs",
+    "che": "хьажа",
+    "ru": "смотреть"
+  },
+  "verb_smile": {
+    "id": "verb_smile",
+    "topicId": "verbs",
+    "che": "дела",
+    "ru": "улыбаться, смеяться"
+  },
+  "verb_cry": {
+    "id": "verb_cry",
+    "topicId": "verbs",
+    "che": "делха",
+    "ru": "плакать"
+  },
+  "verb_play": {
+    "id": "verb_play",
+    "topicId": "verbs",
+    "che": "ловза",
+    "ru": "играть"
+  },
+  "verb_draw": {
+    "id": "verb_draw",
+    "topicId": "verbs",
+    "che": "сурт дилла",
+    "ru": "рисовать"
+  },
+  "verb_dance": {
+    "id": "verb_dance",
+    "topicId": "verbs",
+    "che": "хелха дала",
+    "ru": "танцевать"
+  },
+  "verb_sing": {
+    "id": "verb_sing",
+    "topicId": "verbs",
+    "che": "илли ала",
+    "ru": "петь"
+  },
+  "verb_swim": {
+    "id": "verb_swim",
+    "topicId": "verbs",
+    "che": "нека дан",
+    "ru": "плавать"
+  },
+  "verb_fly": {
+    "id": "verb_fly",
+    "topicId": "verbs",
+    "che": "гӀатта",
+    "ru": "лететь, взлетать"
+  },
+  "verb_ride": {
+    "id": "verb_ride",
+    "topicId": "verbs",
+    "che": "хахка",
+    "ru": "ехать, скакать"
+  },
+  "verb_wash": {
+    "id": "verb_wash",
+    "topicId": "verbs",
+    "che": "дила",
+    "ru": "мыть"
+  },
+  "verb_clean": {
+    "id": "verb_clean",
+    "topicId": "verbs",
+    "che": "цӀандан",
+    "ru": "убирать, чистить"
+  },
+  "verb_cook": {
+    "id": "verb_cook",
+    "topicId": "verbs",
+    "che": "кхача бан",
+    "ru": "готовить еду"
+  },
+  "verb_walk": {
+    "id": "verb_walk",
+    "topicId": "verbs",
+    "che": "лела",
+    "ru": "гулять, ходить"
+  },
+  "verb_buy": {
+    "id": "verb_buy",
+    "topicId": "verbs",
+    "che": "эца",
+    "ru": "покупать"
+  },
+  "verb_sell": {
+    "id": "verb_sell",
+    "topicId": "verbs",
+    "che": "дохка",
+    "ru": "продавать"
+  },
+  "verb_give": {
+    "id": "verb_give",
+    "topicId": "verbs",
+    "che": "дала",
+    "ru": "давать"
+  },
+  "verb_take": {
+    "id": "verb_take",
+    "topicId": "verbs",
+    "che": "схьаэца",
+    "ru": "брать"
+  },
+  "verb_think": {
+    "id": "verb_think",
+    "topicId": "verbs",
+    "che": "ойла ян",
+    "ru": "думать"
+  },
+  "verb_know": {
+    "id": "verb_know",
+    "topicId": "verbs",
+    "che": "хаа",
+    "ru": "знать"
+  },
+  "verb_want": {
+    "id": "verb_want",
+    "topicId": "verbs",
+    "che": "лаьа",
+    "ru": "хотеть"
+  },
+  "verb_like": {
+    "id": "verb_like",
+    "topicId": "verbs",
+    "che": "деза",
+    "ru": "нравиться, любить"
+  },
+  "verb_must": {
+    "id": "verb_must",
+    "topicId": "verbs",
+    "che": "деза",
+    "ru": "нужно, должен"
+  },
+  "verb_help": {
+    "id": "verb_help",
+    "topicId": "verbs",
+    "che": "гӀо дан",
+    "ru": "помогать"
+  },
+  "verb_ask": {
+    "id": "verb_ask",
+    "topicId": "verbs",
+    "che": "хатта",
+    "ru": "спрашивать"
+  },
+  "verb_answer": {
+    "id": "verb_answer",
+    "topicId": "verbs",
+    "che": "жоп дала",
+    "ru": "отвечать"
+  },
+  "verb_find": {
+    "id": "verb_find",
+    "topicId": "verbs",
+    "che": "каро",
+    "ru": "находить"
+  },
+  "verb_throw": {
+    "id": "verb_throw",
+    "topicId": "verbs",
+    "che": "кхосса",
+    "ru": "бросать"
+  },
+  "verb_catch": {
+    "id": "verb_catch",
+    "topicId": "verbs",
+    "che": "лаца",
+    "ru": "ловить"
+  },
+  "verb_open": {
+    "id": "verb_open",
+    "topicId": "verbs",
+    "che": "схьаделла",
+    "ru": "открывать"
+  },
+  "verb_close": {
+    "id": "verb_close",
+    "topicId": "verbs",
+    "che": "дӀакъовла",
+    "ru": "закрывать"
+  },
+  "verb_bring": {
+    "id": "verb_bring",
+    "topicId": "verbs",
+    "che": "схьадахьа",
+    "ru": "приносить"
+  },
+  "verb_put": {
+    "id": "verb_put",
+    "topicId": "verbs",
+    "che": "дилла",
+    "ru": "класть, положить"
+  },
+  "verb_cut": {
+    "id": "verb_cut",
+    "topicId": "verbs",
+    "che": "хедо",
+    "ru": "резать"
+  },
+  "verb_sew": {
+    "id": "verb_sew",
+    "topicId": "verbs",
+    "che": "тега",
+    "ru": "шить"
+  },
+  "verb_count": {
+    "id": "verb_count",
+    "topicId": "verbs",
+    "che": "дагардан",
+    "ru": "считать"
+  },
+  "verb_show": {
+    "id": "verb_show",
+    "topicId": "verbs",
+    "che": "гайта",
+    "ru": "показывать"
+  },
+  "verb_hug": {
+    "id": "verb_hug",
+    "topicId": "verbs",
+    "che": "маракъовла",
+    "ru": "обнимать"
+  },
+  "verb_fall": {
+    "id": "verb_fall",
+    "topicId": "verbs",
+    "che": "дожа",
+    "ru": "падать"
+  },
+  "verb_build": {
+    "id": "verb_build",
+    "topicId": "verbs",
+    "che": "дотта",
+    "ru": "строить, возводить"
+  },
+  "verb_break": {
+    "id": "verb_break",
+    "topicId": "verbs",
+    "che": "дохо",
+    "ru": "ломать"
+  },
+  "verb_fix": {
+    "id": "verb_fix",
+    "topicId": "verbs",
+    "che": "тодан",
+    "ru": "чинить, ремонтировать"
+  },
+  "verb_plant": {
+    "id": "verb_plant",
+    "topicId": "verbs",
+    "che": "ден",
+    "ru": "сажать (растения)"
+  },
+  "verb_water": {
+    "id": "verb_water",
+    "topicId": "verbs",
+    "che": "хи тоха",
+    "ru": "поливать водой"
+  },
+  "verb_play_music": {
+    "id": "verb_play_music",
+    "topicId": "verbs",
+    "che": "лакха",
+    "ru": "играть (на инструменте)"
+  },
+  "verb_climb": {
+    "id": "verb_climb",
+    "topicId": "verbs",
+    "che": "тӀевала",
+    "ru": "залезать, подниматься"
+  },
+  "verb_rest": {
+    "id": "verb_rest",
+    "topicId": "verbs",
+    "che": "садаӀа",
+    "ru": "отдыхать"
+  },
+  "verb_dress": {
+    "id": "verb_dress",
+    "topicId": "verbs",
+    "che": "тӀеюха",
+    "ru": "одеваться, надевать"
+  },
+  "verb_undress": {
+    "id": "verb_undress",
+    "topicId": "verbs",
+    "che": "тӀераяккха",
+    "ru": "раздеваться, снимать"
+  },
+  "verb_comb": {
+    "id": "verb_comb",
+    "topicId": "verbs",
+    "che": "ехк хьакха",
+    "ru": "причёсываться"
+  },
+  "verb_breathe": {
+    "id": "verb_breathe",
+    "topicId": "verbs",
+    "che": "садеӀа",
+    "ru": "дышать"
+  },
+  "verb_dive": {
+    "id": "verb_dive",
+    "topicId": "verbs",
+    "che": "чубуза",
+    "ru": "нырять"
+  },
+  "verb_shout": {
+    "id": "verb_shout",
+    "topicId": "verbs",
+    "che": "мохь хьакха",
+    "ru": "кричать"
+  },
+  "verb_whisper": {
+    "id": "verb_whisper",
+    "topicId": "verbs",
+    "che": "шабар-шибар дан",
+    "ru": "шептать"
+  },
+  "verb_praise": {
+    "id": "verb_praise",
+    "topicId": "verbs",
+    "che": "хесто",
+    "ru": "хвалить"
+  },
+  "verb_remember": {
+    "id": "verb_remember",
+    "topicId": "verbs",
+    "che": "дагадан",
+    "ru": "вспоминать"
+  },
+  "verb_memorize": {
+    "id": "verb_memorize",
+    "topicId": "verbs",
+    "che": "дагахь латтадан",
+    "ru": "запоминать"
+  },
+  "verb_touch": {
+    "id": "verb_touch",
+    "topicId": "verbs",
+    "che": "куьг Ӏотта",
+    "ru": "дотрагиваться, трогать"
+  },
+  "verb_smell": {
+    "id": "verb_smell",
+    "topicId": "verbs",
+    "che": "хьожа яха",
+    "ru": "нюхать, чувствовать запах"
+  },
+  "verb_protect": {
+    "id": "verb_protect",
+    "topicId": "verbs",
+    "che": "Ӏалашдан",
+    "ru": "оберегать, защищать"
+  },
+  "verb_repeat": {
+    "id": "verb_repeat",
+    "topicId": "verbs",
+    "che": "юха ала",
+    "ru": "повторять"
+  },
+  "verb_greet": {
+    "id": "verb_greet",
+    "topicId": "verbs",
+    "che": "салам дала",
+    "ru": "здороваться"
+  },
+  "verb_thank": {
+    "id": "verb_thank",
+    "topicId": "verbs",
+    "che": "баркалла ала",
+    "ru": "благодарить"
+  },
+  "adj_big": {
+    "id": "adj_big",
+    "topicId": "adjectives",
+    "che": "доккха",
+    "ru": "большой"
+  },
+  "adj_small": {
+    "id": "adj_small",
+    "topicId": "adjectives",
+    "che": "жима",
+    "ru": "маленький"
+  },
+  "adj_tall": {
+    "id": "adj_tall",
+    "topicId": "adjectives",
+    "che": "лекха",
+    "ru": "высокий"
+  },
+  "adj_short": {
+    "id": "adj_short",
+    "topicId": "adjectives",
+    "che": "лоха",
+    "ru": "низкий"
+  },
+  "adj_wide": {
+    "id": "adj_wide",
+    "topicId": "adjectives",
+    "che": "шора",
+    "ru": "широкий"
+  },
+  "adj_narrow": {
+    "id": "adj_narrow",
+    "topicId": "adjectives",
+    "che": "готта",
+    "ru": "узкий"
+  },
+  "adj_long": {
+    "id": "adj_long",
+    "topicId": "adjectives",
+    "che": "деха",
+    "ru": "длинный"
+  },
+  "adj_short_len": {
+    "id": "adj_short_len",
+    "topicId": "adjectives",
+    "che": "доца",
+    "ru": "короткий (по длине)"
+  },
+  "adj_hot": {
+    "id": "adj_hot",
+    "topicId": "adjectives",
+    "che": "довха",
+    "ru": "горячий"
+  },
+  "adj_cold": {
+    "id": "adj_cold",
+    "topicId": "adjectives",
+    "che": "шийла",
+    "ru": "холодный"
+  },
+  "adj_warm": {
+    "id": "adj_warm",
+    "topicId": "adjectives",
+    "che": "йовхо йолу",
+    "ru": "тёплый"
+  },
+  "adj_cool": {
+    "id": "adj_cool",
+    "topicId": "adjectives",
+    "che": "салкъина",
+    "ru": "прохладный"
+  },
+  "adj_red": {
+    "id": "adj_red",
+    "topicId": "adjectives",
+    "che": "цӀен",
+    "ru": "красный"
+  },
+  "adj_blue": {
+    "id": "adj_blue",
+    "topicId": "adjectives",
+    "che": "сийна",
+    "ru": "синий"
+  },
+  "adj_green": {
+    "id": "adj_green",
+    "topicId": "adjectives",
+    "che": "баьццара",
+    "ru": "зелёный"
+  },
+  "adj_yellow": {
+    "id": "adj_yellow",
+    "topicId": "adjectives",
+    "che": "можа",
+    "ru": "жёлтый"
+  },
+  "adj_white": {
+    "id": "adj_white",
+    "topicId": "adjectives",
+    "che": "кӀайн",
+    "ru": "белый"
+  },
+  "adj_black": {
+    "id": "adj_black",
+    "topicId": "adjectives",
+    "che": "Ӏаьржа",
+    "ru": "чёрный"
+  },
+  "adj_gray": {
+    "id": "adj_gray",
+    "topicId": "adjectives",
+    "che": "сира",
+    "ru": "серый"
+  },
+  "adj_brown": {
+    "id": "adj_brown",
+    "topicId": "adjectives",
+    "che": "боьмаша",
+    "ru": "коричневый"
+  },
+  "adj_sweet": {
+    "id": "adj_sweet",
+    "topicId": "adjectives",
+    "che": "мерза",
+    "ru": "сладкий"
+  },
+  "adj_salty": {
+    "id": "adj_salty",
+    "topicId": "adjectives",
+    "che": "дуьра",
+    "ru": "солёный"
+  },
+  "adj_sour": {
+    "id": "adj_sour",
+    "topicId": "adjectives",
+    "che": "муьста",
+    "ru": "кислый"
+  },
+  "adj_bitter": {
+    "id": "adj_bitter",
+    "topicId": "adjectives",
+    "che": "къаьхьа",
+    "ru": "горький"
+  },
+  "adj_good": {
+    "id": "adj_good",
+    "topicId": "adjectives",
+    "che": "дика",
+    "ru": "хороший"
+  },
+  "adj_bad": {
+    "id": "adj_bad",
+    "topicId": "adjectives",
+    "che": "вон",
+    "ru": "плохой"
+  },
+  "adj_beautiful": {
+    "id": "adj_beautiful",
+    "topicId": "adjectives",
+    "che": "хаза",
+    "ru": "красивый"
+  },
+  "adj_ugly": {
+    "id": "adj_ugly",
+    "topicId": "adjectives",
+    "che": "ирча",
+    "ru": "некрасивый"
+  },
+  "adj_clean": {
+    "id": "adj_clean",
+    "topicId": "adjectives",
+    "che": "цӀена",
+    "ru": "чистый"
+  },
+  "adj_dirty": {
+    "id": "adj_dirty",
+    "topicId": "adjectives",
+    "che": "боьха",
+    "ru": "грязный"
+  },
+  "adj_light": {
+    "id": "adj_light",
+    "topicId": "adjectives",
+    "che": "дайн",
+    "ru": "лёгкий (по весу)"
+  },
+  "adj_heavy": {
+    "id": "adj_heavy",
+    "topicId": "adjectives",
+    "che": "деза",
+    "ru": "тяжёлый"
+  },
+  "adj_soft": {
+    "id": "adj_soft",
+    "topicId": "adjectives",
+    "che": "кӀеда",
+    "ru": "мягкий"
+  },
+  "adj_hard": {
+    "id": "adj_hard",
+    "topicId": "adjectives",
+    "che": "чӀогӀа",
+    "ru": "твёрдый, крепкий"
+  },
+  "adj_happy": {
+    "id": "adj_happy",
+    "topicId": "adjectives",
+    "che": "самукъане",
+    "ru": "весёлый, радостный"
+  },
+  "adj_sad": {
+    "id": "adj_sad",
+    "topicId": "adjectives",
+    "che": "гӀайгӀане",
+    "ru": "грустный"
+  },
+  "adj_angry": {
+    "id": "adj_angry",
+    "topicId": "adjectives",
+    "che": "оьгӀазе",
+    "ru": "злой, сердитый"
+  },
+  "adj_scared": {
+    "id": "adj_scared",
+    "topicId": "adjectives",
+    "che": "кхийрина",
+    "ru": "испуганный"
+  },
+  "adj_loving": {
+    "id": "adj_loving",
+    "topicId": "adjectives",
+    "che": "деза",
+    "ru": "любимый / дорогой"
+  },
+  "adj_fast": {
+    "id": "adj_fast",
+    "topicId": "adjectives",
+    "che": "сиха",
+    "ru": "быстрый"
+  },
+  "adj_slow": {
+    "id": "adj_slow",
+    "topicId": "adjectives",
+    "che": "меллаша",
+    "ru": "медленный"
+  },
+  "adj_new": {
+    "id": "adj_new",
+    "topicId": "adjectives",
+    "che": "керла",
+    "ru": "новый"
+  },
+  "adj_old": {
+    "id": "adj_old",
+    "topicId": "adjectives",
+    "che": "шира",
+    "ru": "старый (вещь)"
+  },
+  "adj_young": {
+    "id": "adj_young",
+    "topicId": "adjectives",
+    "che": "къона",
+    "ru": "молодой, юный"
+  },
+  "adj_old_age": {
+    "id": "adj_old_age",
+    "topicId": "adjectives",
+    "che": "къена",
+    "ru": "старый (человек)"
+  },
+  "adj_many": {
+    "id": "adj_many",
+    "topicId": "adjectives",
+    "che": "дукха",
+    "ru": "много"
+  },
+  "adj_few": {
+    "id": "adj_few",
+    "topicId": "adjectives",
+    "che": "кӀеззиг",
+    "ru": "мало"
+  },
+  "adj_smart": {
+    "id": "adj_smart",
+    "topicId": "adjectives",
+    "che": "хьекъале",
+    "ru": "умный"
+  },
+  "adj_strong": {
+    "id": "adj_strong",
+    "topicId": "adjectives",
+    "che": "чӀогӀа",
+    "ru": "сильный, крепкий"
+  },
+  "adj_kind": {
+    "id": "adj_kind",
+    "topicId": "adjectives",
+    "che": "дика",
+    "ru": "добрый"
+  },
+  "adj_brave": {
+    "id": "adj_brave",
+    "topicId": "adjectives",
+    "che": "майра",
+    "ru": "храбрый"
+  },
+  "adj_lazy": {
+    "id": "adj_lazy",
+    "topicId": "adjectives",
+    "che": "малонча",
+    "ru": "ленивый"
+  },
+  "adj_funny": {
+    "id": "adj_funny",
+    "topicId": "adjectives",
+    "che": "самукъане",
+    "ru": "смешной, весёлый"
+  },
+  "adj_sharp": {
+    "id": "adj_sharp",
+    "topicId": "adjectives",
+    "che": "ира",
+    "ru": "острый"
+  },
+  "adj_thick": {
+    "id": "adj_thick",
+    "topicId": "adjectives",
+    "che": "стомма",
+    "ru": "толстый"
+  },
+  "adj_thin": {
+    "id": "adj_thin",
+    "topicId": "adjectives",
+    "che": "дуткъа",
+    "ru": "тонкий"
+  },
+  "adj_deep": {
+    "id": "adj_deep",
+    "topicId": "adjectives",
+    "che": "кӀорга",
+    "ru": "глубокий"
+  },
+  "adj_round": {
+    "id": "adj_round",
+    "topicId": "adjectives",
+    "che": "горга",
+    "ru": "круглый"
+  },
+  "adj_smooth": {
+    "id": "adj_smooth",
+    "topicId": "adjectives",
+    "che": "шера",
+    "ru": "гладкий, ровный"
+  },
+  "adj_bright": {
+    "id": "adj_bright",
+    "topicId": "adjectives",
+    "che": "сирла",
+    "ru": "светлый, яркий"
+  },
+  "adj_dark": {
+    "id": "adj_dark",
+    "topicId": "adjectives",
+    "che": "бодане",
+    "ru": "тёмный"
+  },
+  "adj_quiet": {
+    "id": "adj_quiet",
+    "topicId": "adjectives",
+    "che": "тийна",
+    "ru": "тихий, спокойный"
+  },
+  "adj_loud": {
+    "id": "adj_loud",
+    "topicId": "adjectives",
+    "che": "гӀовгӀане",
+    "ru": "громкий, шумный"
+  },
+  "adj_wet": {
+    "id": "adj_wet",
+    "topicId": "adjectives",
+    "che": "тӀуьна",
+    "ru": "мокрый"
+  },
+  "adj_dry": {
+    "id": "adj_dry",
+    "topicId": "adjectives",
+    "che": "декъа",
+    "ru": "сухой"
+  },
+  "adj_tasty": {
+    "id": "adj_tasty",
+    "topicId": "adjectives",
+    "che": "чам болуш",
+    "ru": "вкусный, аппетитный"
+  },
+  "adj_polite": {
+    "id": "adj_polite",
+    "topicId": "adjectives",
+    "che": "эсала",
+    "ru": "вежливый, скромный"
+  },
+  "adj_straight": {
+    "id": "adj_straight",
+    "topicId": "adjectives",
+    "che": "нийса",
+    "ru": "прямой, правильный"
+  },
+  "adj_crooked": {
+    "id": "adj_crooked",
+    "topicId": "adjectives",
+    "che": "гамма",
+    "ru": "кривой, изогнутый"
+  },
+  "adj_generous": {
+    "id": "adj_generous",
+    "topicId": "adjectives",
+    "che": "комаьрша",
+    "ru": "щедрый"
+  },
+  "adj_greedy": {
+    "id": "adj_greedy",
+    "topicId": "adjectives",
+    "che": "сутара",
+    "ru": "жадный"
+  },
+  "adj_honest": {
+    "id": "adj_honest",
+    "topicId": "adjectives",
+    "che": "бакъ",
+    "ru": "честный, правдивый"
+  },
+  "adj_patient": {
+    "id": "adj_patient",
+    "topicId": "adjectives",
+    "che": "собаре",
+    "ru": "терпеливый"
+  },
+  "adj_safe": {
+    "id": "adj_safe",
+    "topicId": "adjectives",
+    "che": "кхерам боцу",
+    "ru": "безопасный"
+  },
+  "adj_dangerous": {
+    "id": "adj_dangerous",
+    "topicId": "adjectives",
+    "che": "кхераме",
+    "ru": "опасный"
+  },
+  "adj_useful": {
+    "id": "adj_useful",
+    "topicId": "adjectives",
+    "che": "пайдане",
+    "ru": "полезный"
+  },
+  "adj_pure": {
+    "id": "adj_pure",
+    "topicId": "adjectives",
+    "che": "цӀена",
+    "ru": "чистый, искренний"
+  },
+  "pron_i": {
+    "id": "pron_i",
+    "topicId": "pronouns",
+    "che": "со",
+    "ru": "я"
+  },
+  "pron_you": {
+    "id": "pron_you",
+    "topicId": "pronouns",
+    "che": "хьо",
+    "ru": "ты"
+  },
+  "pron_he": {
+    "id": "pron_he",
+    "topicId": "pronouns",
+    "che": "иза",
+    "ru": "он"
+  },
+  "pron_she": {
+    "id": "pron_she",
+    "topicId": "pronouns",
+    "che": "иза",
+    "ru": "она"
+  },
+  "pron_we": {
+    "id": "pron_we",
+    "topicId": "pronouns",
+    "che": "тхо",
+    "ru": "мы"
+  },
+  "pron_you_pl": {
+    "id": "pron_you_pl",
+    "topicId": "pronouns",
+    "che": "шу",
+    "ru": "вы"
+  },
+  "pron_they": {
+    "id": "pron_they",
+    "topicId": "pronouns",
+    "che": "уьш",
+    "ru": "они"
+  },
+  "pron_my": {
+    "id": "pron_my",
+    "topicId": "pronouns",
+    "che": "сан",
+    "ru": "мой"
+  },
+  "pron_your": {
+    "id": "pron_your",
+    "topicId": "pronouns",
+    "che": "хьан",
+    "ru": "твой"
+  },
+  "pron_his": {
+    "id": "pron_his",
+    "topicId": "pronouns",
+    "che": "цуьнан",
+    "ru": "его"
+  },
+  "pron_her": {
+    "id": "pron_her",
+    "topicId": "pronouns",
+    "che": "цуьнан",
+    "ru": "её"
+  },
+  "pron_our": {
+    "id": "pron_our",
+    "topicId": "pronouns",
+    "che": "тхан",
+    "ru": "наш"
+  },
+  "pron_your_pl": {
+    "id": "pron_your_pl",
+    "topicId": "pronouns",
+    "che": "шун",
+    "ru": "ваш"
+  },
+  "pron_their": {
+    "id": "pron_their",
+    "topicId": "pronouns",
+    "che": "церан",
+    "ru": "их"
+  },
+  "pron_who": {
+    "id": "pron_who",
+    "topicId": "pronouns",
+    "che": "мила",
+    "ru": "кто"
+  },
+  "pron_what": {
+    "id": "pron_what",
+    "topicId": "pronouns",
+    "che": "хӀун",
+    "ru": "что"
+  },
+  "pron_where": {
+    "id": "pron_where",
+    "topicId": "pronouns",
+    "che": "мичахь",
+    "ru": "где"
+  },
+  "pron_when": {
+    "id": "pron_when",
+    "topicId": "pronouns",
+    "che": "маца",
+    "ru": "когда"
+  },
+  "pron_why": {
+    "id": "pron_why",
+    "topicId": "pronouns",
+    "che": "хӀунда",
+    "ru": "почему"
+  },
+  "pron_how": {
+    "id": "pron_how",
+    "topicId": "pronouns",
+    "che": "муха",
+    "ru": "как"
+  },
+  "pron_how_much": {
+    "id": "pron_how_much",
+    "topicId": "pronouns",
+    "che": "маса",
+    "ru": "сколько"
+  },
+  "pron_which": {
+    "id": "pron_which",
+    "topicId": "pronouns",
+    "che": "муьлха",
+    "ru": "какой, который"
+  },
+  "pron_this": {
+    "id": "pron_this",
+    "topicId": "pronouns",
+    "che": "хӀара",
+    "ru": "этот"
+  },
+  "pron_that": {
+    "id": "pron_that",
+    "topicId": "pronouns",
+    "che": "дӀора",
+    "ru": "тот, вон тот"
+  },
+  "pron_these": {
+    "id": "pron_these",
+    "topicId": "pronouns",
+    "che": "хӀараш",
+    "ru": "эти"
+  },
+  "pron_those": {
+    "id": "pron_those",
+    "topicId": "pronouns",
+    "che": "дӀораш",
+    "ru": "те, вон те"
+  },
+  "pron_all": {
+    "id": "pron_all",
+    "topicId": "pronouns",
+    "che": "дерриг",
+    "ru": "все, всё"
+  },
+  "pron_some": {
+    "id": "pron_some",
+    "topicId": "pronouns",
+    "che": "цхьа",
+    "ru": "некоторый, один"
+  },
+  "pron_no": {
+    "id": "pron_no",
+    "topicId": "pronouns",
+    "che": "хӀумма а",
+    "ru": "ничто, никакой"
+  },
+  "pron_every": {
+    "id": "pron_every",
+    "topicId": "pronouns",
+    "che": "хӀора",
+    "ru": "каждый"
+  },
+  "pron_other": {
+    "id": "pron_other",
+    "topicId": "pronouns",
+    "che": "кхин",
+    "ru": "другой"
+  },
+  "pron_here": {
+    "id": "pron_here",
+    "topicId": "pronouns",
+    "che": "кхузахь",
+    "ru": "здесь, тут"
+  },
+  "pron_there": {
+    "id": "pron_there",
+    "topicId": "pronouns",
+    "che": "цигахь",
+    "ru": "там"
+  },
+  "pron_whither": {
+    "id": "pron_whither",
+    "topicId": "pronouns",
+    "che": "мича",
+    "ru": "куда"
+  },
+  "pron_whence": {
+    "id": "pron_whence",
+    "topicId": "pronouns",
+    "che": "мичара",
+    "ru": "откуда"
+  },
+  "pron_self": {
+    "id": "pron_self",
+    "topicId": "pronouns",
+    "che": "ша",
+    "ru": "сам, себя"
+  },
+  "pron_together": {
+    "id": "pron_together",
+    "topicId": "pronouns",
+    "che": "цхьаьна",
+    "ru": "вместе"
+  },
+  "pron_such": {
+    "id": "pron_such",
+    "topicId": "pronouns",
+    "che": "иштта",
+    "ru": "такой, так"
+  },
+  "pron_nobody": {
+    "id": "pron_nobody",
+    "topicId": "pronouns",
+    "che": "цхьа а",
+    "ru": "никто, ни один"
+  }
+}

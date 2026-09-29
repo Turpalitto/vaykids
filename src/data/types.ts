@@ -73,4 +73,5 @@ export type GameId =
   | "word"
   | "find"
   | "sentence"
+  | "match"
   | "daily";

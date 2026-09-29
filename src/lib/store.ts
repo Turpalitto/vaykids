@@ -15,6 +15,7 @@ export interface Settings {
   notifications: boolean;
   textSize: TextSize;
   contrast: boolean;
+  immersive: boolean;
 }
 
 export interface Profile {
@@ -118,6 +119,7 @@ const DEFAULT_SETTINGS: Settings = {
   notifications: false,
   textSize: "md",
   contrast: false,
+  immersive: false,
 };
 
 const isRecord = (value: unknown): value is Record<string, unknown> => typeof value === "object" && value !== null;
@@ -152,7 +154,7 @@ export const sanitizeProgress = (value: unknown): Progress => {
   };
 };
 
-const sanitizeSettings = (value: unknown): Settings => {
+export const sanitizeSettings = (value: unknown): Settings => {
   const raw = isRecord(value) ? value : {};
   return {
     ...DEFAULT_SETTINGS,
@@ -162,6 +164,7 @@ const sanitizeSettings = (value: unknown): Settings => {
     notifications: typeof raw.notifications === "boolean" ? raw.notifications : DEFAULT_SETTINGS.notifications,
     textSize: raw.textSize === "lg" || raw.textSize === "xl" ? raw.textSize : "md",
     contrast: typeof raw.contrast === "boolean" ? raw.contrast : DEFAULT_SETTINGS.contrast,
+    immersive: typeof raw.immersive === "boolean" ? raw.immersive : DEFAULT_SETTINGS.immersive,
   };
 };
 

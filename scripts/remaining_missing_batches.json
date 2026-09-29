@@ -1,0 +1,4553 @@
+[
+  {
+    "batchIndex": 13,
+    "cards": [
+      {
+        "id": "time_evening",
+        "topicId": "time",
+        "che": "суьйре",
+        "ru": "вечер",
+        "emoji": "🌇",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "time_noon",
+        "topicId": "time",
+        "che": "делкъе",
+        "ru": "полдень",
+        "emoji": "🌞",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "time_midnight",
+        "topicId": "time",
+        "che": "буьйсанан юккъ",
+        "ru": "полночь",
+        "emoji": "🌃",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "time_hour",
+        "topicId": "time",
+        "che": "сахьт",
+        "ru": "час",
+        "emoji": "⌚",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "time_minute",
+        "topicId": "time",
+        "che": "минот",
+        "ru": "минута",
+        "emoji": "⏱️",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "time_second",
+        "topicId": "time",
+        "che": "секунд",
+        "ru": "секунда",
+        "emoji": "⏲️",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "time_today",
+        "topicId": "time",
+        "che": "тахана",
+        "ru": "сегодня",
+        "emoji": "📅",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "time_yesterday",
+        "topicId": "time",
+        "che": "селхана",
+        "ru": "вчера",
+        "emoji": "📅",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "time_tomorrow",
+        "topicId": "time",
+        "che": "кхана",
+        "ru": "завтра",
+        "emoji": "📅",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "time_week",
+        "topicId": "time",
+        "che": "кӀира",
+        "ru": "неделя",
+        "emoji": "📅",
+        "level": 1,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 14,
+    "cards": [
+      {
+        "id": "time_month",
+        "topicId": "time",
+        "che": "бутт",
+        "ru": "месяц",
+        "emoji": "📅",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "time_year",
+        "topicId": "time",
+        "che": "шо",
+        "ru": "год",
+        "emoji": "📅",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "time_century",
+        "topicId": "time",
+        "che": "бӀешо",
+        "ru": "век",
+        "emoji": "📅",
+        "level": 3,
+        "source": "dictionary"
+      },
+      {
+        "id": "time_now",
+        "topicId": "time",
+        "che": "хӀинца",
+        "ru": "сейчас",
+        "emoji": "⏳",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "time_later",
+        "topicId": "time",
+        "che": "тӀаьхьа",
+        "ru": "позже",
+        "emoji": "⏳",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "time_early",
+        "topicId": "time",
+        "che": "хьалхе",
+        "ru": "рано",
+        "emoji": "⏳",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "time_late",
+        "topicId": "time",
+        "che": "тӀаьхьа",
+        "ru": "поздно",
+        "emoji": "⏳",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "time_always",
+        "topicId": "time",
+        "che": "гуттар",
+        "ru": "всегда",
+        "emoji": "♾️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "time_never",
+        "topicId": "time",
+        "che": "цкъа а",
+        "ru": "никогда",
+        "emoji": "🚫",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "time_sometimes",
+        "topicId": "time",
+        "che": "наггахь",
+        "ru": "иногда",
+        "emoji": "⏳",
+        "level": 2,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 15,
+    "cards": [
+      {
+        "id": "time_often",
+        "topicId": "time",
+        "che": "каст-каста",
+        "ru": "часто",
+        "emoji": "🔄",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "time_dawn",
+        "topicId": "time",
+        "che": "сахуьлу хан",
+        "ru": "рассвет, заря",
+        "emoji": "🌅",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "time_sunset",
+        "topicId": "time",
+        "che": "малхбузе",
+        "ru": "закат",
+        "emoji": "🌇",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "time_season",
+        "topicId": "time",
+        "che": "шеран хан",
+        "ru": "время года, сезон",
+        "emoji": "🍂",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "time_dayoff",
+        "topicId": "time",
+        "che": "садаӀаран де",
+        "ru": "выходной день",
+        "emoji": "🏖️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_doctor",
+        "topicId": "professions",
+        "che": "лор",
+        "ru": "врач",
+        "emoji": "👨‍⚕️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_teacher",
+        "topicId": "professions",
+        "che": "хьехархо",
+        "ru": "учитель",
+        "emoji": "👩‍🏫",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_driver",
+        "topicId": "professions",
+        "che": "машенхо",
+        "ru": "водитель",
+        "emoji": "🚗",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_cook",
+        "topicId": "professions",
+        "che": "кхачабанхо",
+        "ru": "повар",
+        "emoji": "👨‍🍳",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_engineer",
+        "topicId": "professions",
+        "che": "инженер",
+        "ru": "инженер",
+        "emoji": "👷",
+        "level": 2,
+        "source": "dictionary"
+      }
+    ]
+  },
+  {
+    "batchIndex": 16,
+    "cards": [
+      {
+        "id": "prof_builder",
+        "topicId": "professions",
+        "che": "гӀишлохо",
+        "ru": "строитель",
+        "emoji": "👷‍♂️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_farmer",
+        "topicId": "professions",
+        "che": "йуьртанхо",
+        "ru": "фермер",
+        "emoji": "🧑‍🌾",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_military",
+        "topicId": "professions",
+        "che": "эскархо",
+        "ru": "военный",
+        "emoji": "💂",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_police",
+        "topicId": "professions",
+        "che": "полицихо",
+        "ru": "полицейский",
+        "emoji": "👮",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_firefighter",
+        "topicId": "professions",
+        "che": "цӀеяйархо",
+        "ru": "пожарный",
+        "emoji": "🧑‍🚒",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_pilot",
+        "topicId": "professions",
+        "che": "кеманхо",
+        "ru": "пилот",
+        "emoji": "👨‍✈️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_sailor",
+        "topicId": "professions",
+        "che": "хинкеманхо",
+        "ru": "моряк",
+        "emoji": "⛵",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "prof_artist",
+        "topicId": "professions",
+        "che": "суртдиллархо",
+        "ru": "художник",
+        "emoji": "🎨",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_musician",
+        "topicId": "professions",
+        "che": "пондарча",
+        "ru": "музыкант",
+        "emoji": "🎵",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_writer",
+        "topicId": "professions",
+        "che": "яздархо",
+        "ru": "писатель",
+        "emoji": "📝",
+        "level": 2,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 17,
+    "cards": [
+      {
+        "id": "prof_scientist",
+        "topicId": "professions",
+        "che": "Ӏилманча",
+        "ru": "учёный",
+        "emoji": "🔬",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_accountant",
+        "topicId": "professions",
+        "che": "бухгалтер",
+        "ru": "бухгалтер",
+        "emoji": "🧾",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "prof_shopkeeper",
+        "topicId": "professions",
+        "che": "туькананхо",
+        "ru": "продавец",
+        "emoji": "🧑‍💼",
+        "level": 1,
+        "source": "dictionary"
+      },
+      {
+        "id": "prof_athlete",
+        "topicId": "professions",
+        "che": "спортхо",
+        "ru": "спортсмен",
+        "emoji": "🏃",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_chef",
+        "topicId": "professions",
+        "che": "коьрта кхачабанхо",
+        "ru": "шеф-повар",
+        "emoji": "👨‍🍳",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_dentist",
+        "topicId": "professions",
+        "che": "цергийн лор",
+        "ru": "стоматолог",
+        "emoji": "🦷",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_pharmacist",
+        "topicId": "professions",
+        "che": "молханхо",
+        "ru": "фармацевт",
+        "emoji": "💊",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_judge",
+        "topicId": "professions",
+        "che": "кхелахо",
+        "ru": "судья",
+        "emoji": "⚖️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_lawyer",
+        "topicId": "professions",
+        "che": "бакъоларйархо",
+        "ru": "юрист, адвокат",
+        "emoji": "👩‍⚖️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_manager",
+        "topicId": "professions",
+        "che": "куьйгалхо",
+        "ru": "руководитель, менеджер",
+        "emoji": "👔",
+        "level": 2,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 18,
+    "cards": [
+      {
+        "id": "prof_it",
+        "topicId": "professions",
+        "che": "программист",
+        "ru": "программист",
+        "emoji": "💻",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "prof_architect",
+        "topicId": "professions",
+        "che": "архитектор",
+        "ru": "архитектор",
+        "emoji": "🏛️",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "prof_journalist",
+        "topicId": "professions",
+        "che": "журналист",
+        "ru": "журналист",
+        "emoji": "📰",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "prof_shepherd",
+        "topicId": "professions",
+        "che": "Ӏу",
+        "ru": "чабан, пастух",
+        "emoji": "🐑",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_blacksmith",
+        "topicId": "professions",
+        "che": "пхьар",
+        "ru": "кузнец, мастер",
+        "emoji": "🔨",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_carpenter",
+        "topicId": "professions",
+        "che": "дечиг-пхьар",
+        "ru": "плотник, столяр",
+        "emoji": "🪚",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_tailor",
+        "topicId": "professions",
+        "che": "тегархо",
+        "ru": "портной, швея",
+        "emoji": "🪡",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_hunter",
+        "topicId": "professions",
+        "che": "таллархо",
+        "ru": "охотник",
+        "emoji": "🏹",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_fisherman",
+        "topicId": "professions",
+        "che": "чӀерийлецархо",
+        "ru": "рыбак",
+        "emoji": "🎣",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_singer",
+        "topicId": "professions",
+        "che": "эшархо",
+        "ru": "певец",
+        "emoji": "🎤",
+        "level": 1,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 19,
+    "cards": [
+      {
+        "id": "prof_dancer",
+        "topicId": "professions",
+        "che": "хелхархо",
+        "ru": "танцор",
+        "emoji": "💃",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_baker",
+        "topicId": "professions",
+        "che": "бепиг-доттархо",
+        "ru": "пекарь",
+        "emoji": "🥖",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "prof_shoemaker",
+        "topicId": "professions",
+        "che": "мачаш-пхьар",
+        "ru": "сапожник",
+        "emoji": "👞",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "city_street",
+        "topicId": "city",
+        "che": "урам",
+        "ru": "улица",
+        "emoji": "🛤️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "city_house",
+        "topicId": "city",
+        "che": "цӀа",
+        "ru": "дом",
+        "emoji": "🏡",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "city_building",
+        "topicId": "city",
+        "che": "гӀишло",
+        "ru": "здание / строение",
+        "emoji": "🏢",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "city_shop",
+        "topicId": "city",
+        "che": "туька",
+        "ru": "магазин",
+        "emoji": "🏪",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "city_market",
+        "topicId": "city",
+        "che": "базар",
+        "ru": "рынок",
+        "emoji": "🛒",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "city_school",
+        "topicId": "city",
+        "che": "школа",
+        "ru": "школа",
+        "emoji": "🏫",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "city_hospital",
+        "topicId": "city",
+        "che": "дарбанцӀа",
+        "ru": "больница",
+        "emoji": "🏥",
+        "level": 2,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 20,
+    "cards": [
+      {
+        "id": "city_park",
+        "topicId": "city",
+        "che": "парк",
+        "ru": "парк",
+        "emoji": "🌳",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "city_square",
+        "topicId": "city",
+        "che": "майдан",
+        "ru": "площадь",
+        "emoji": "⛲",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "city_bridge",
+        "topicId": "city",
+        "che": "тӀай",
+        "ru": "мост",
+        "emoji": "🌉",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "city_road",
+        "topicId": "city",
+        "che": "некъ",
+        "ru": "дорога",
+        "emoji": "🛣️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "city_railway",
+        "topicId": "city",
+        "che": "эчигнекъ",
+        "ru": "железная дорога",
+        "emoji": "🚆",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "city_airport",
+        "topicId": "city",
+        "che": "аэропорт",
+        "ru": "аэропорт",
+        "emoji": "🛫",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "city_port",
+        "topicId": "city",
+        "che": "порт",
+        "ru": "порт",
+        "emoji": "⛵",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "city_fountain",
+        "topicId": "city",
+        "che": "фонтан",
+        "ru": "фонтан",
+        "emoji": "⛲",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "city_monument",
+        "topicId": "city",
+        "che": "хӀоллам",
+        "ru": "памятник",
+        "emoji": "🗽",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "city_museum",
+        "topicId": "city",
+        "che": "музей",
+        "ru": "музей",
+        "emoji": "🏛️",
+        "level": 2,
+        "source": "dictionary"
+      }
+    ]
+  },
+  {
+    "batchIndex": 21,
+    "cards": [
+      {
+        "id": "city_theatre",
+        "topicId": "city",
+        "che": "театр",
+        "ru": "театр",
+        "emoji": "🎭",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "city_cinema",
+        "topicId": "city",
+        "che": "кинотеатр",
+        "ru": "кинотеатр",
+        "emoji": "🎬",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "city_bank",
+        "topicId": "city",
+        "che": "банк",
+        "ru": "банк",
+        "emoji": "🏦",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "city_hotel",
+        "topicId": "city",
+        "che": "хьешийн цӀа",
+        "ru": "гостиница",
+        "emoji": "🏨",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "city_restaurant",
+        "topicId": "city",
+        "che": "кхачан цӀа",
+        "ru": "ресторан / кафе",
+        "emoji": "🍽️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "city_cafe",
+        "topicId": "city",
+        "che": "хӀусам-туька",
+        "ru": "кафетерий",
+        "emoji": "☕",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "city_pharmacy",
+        "topicId": "city",
+        "che": "молханийн туька",
+        "ru": "аптека",
+        "emoji": "🏪",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "city_police",
+        "topicId": "city",
+        "che": "полици",
+        "ru": "полиция",
+        "emoji": "👮",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "city_firestation",
+        "topicId": "city",
+        "che": "цӀеяйаран дакъа",
+        "ru": "пожарная часть",
+        "emoji": "🚒",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "city_mosque",
+        "topicId": "city",
+        "che": "маьждиг",
+        "ru": "мечеть",
+        "emoji": "🕌",
+        "level": 1,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 22,
+    "cards": [
+      {
+        "id": "city_kindergarten",
+        "topicId": "city",
+        "che": "берийн беш",
+        "ru": "детский сад",
+        "emoji": "🧒",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "city_playground",
+        "topicId": "city",
+        "che": "ловзаран майда",
+        "ru": "детская площадка",
+        "emoji": "🛝",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "city_post",
+        "topicId": "city",
+        "che": "пошт",
+        "ru": "почта",
+        "emoji": "📮",
+        "level": 1,
+        "source": "dictionary"
+      },
+      {
+        "id": "city_crosswalk",
+        "topicId": "city",
+        "che": "гӀашлойн некъ",
+        "ru": "пешеходный переход",
+        "emoji": "🚶",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "city_lantern",
+        "topicId": "city",
+        "che": "ураман чиркх",
+        "ru": "уличный фонарь",
+        "emoji": "🏮",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "city_bench",
+        "topicId": "city",
+        "che": "лаьтта гӀант",
+        "ru": "скамейка",
+        "emoji": "🪑",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "city_bakery",
+        "topicId": "city",
+        "che": "бепиг дотту меттиг",
+        "ru": "пекарня",
+        "emoji": "🥖",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "city_zoo",
+        "topicId": "city",
+        "che": "дийнатийн беш",
+        "ru": "зоопарк",
+        "emoji": "🦁",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "city_library",
+        "topicId": "city",
+        "che": "библиотека",
+        "ru": "библиотека",
+        "emoji": "📚",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "city_stadium",
+        "topicId": "city",
+        "che": "стадион",
+        "ru": "стадион",
+        "emoji": "🏟️",
+        "level": 2,
+        "source": "dictionary"
+      }
+    ]
+  },
+  {
+    "batchIndex": 23,
+    "cards": [
+      {
+        "id": "house_room",
+        "topicId": "house",
+        "che": "чоь",
+        "ru": "комната",
+        "emoji": "🚪",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "house_kitchen",
+        "topicId": "house",
+        "che": "кхачабен чоь",
+        "ru": "кухня",
+        "emoji": "🍳",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "house_bedroom",
+        "topicId": "house",
+        "che": "дижаран чоь",
+        "ru": "спальня",
+        "emoji": "🛏️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "house_bathroom",
+        "topicId": "house",
+        "che": "лийчаран чоь",
+        "ru": "ванная",
+        "emoji": "🛁",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "house_living",
+        "topicId": "house",
+        "che": "хьешийн чоь",
+        "ru": "гостиная",
+        "emoji": "🛋️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "house_table",
+        "topicId": "house",
+        "che": "стол",
+        "ru": "стол",
+        "emoji": "🪑",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "house_chair",
+        "topicId": "house",
+        "che": "гӀант",
+        "ru": "стул",
+        "emoji": "🪑",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "house_bed",
+        "topicId": "house",
+        "che": "маьнга",
+        "ru": "кровать",
+        "emoji": "🛏️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "house_sofa",
+        "topicId": "house",
+        "che": "диван",
+        "ru": "диван",
+        "emoji": "🛋️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "house_wardrobe",
+        "topicId": "house",
+        "che": "шкаф",
+        "ru": "шкаф",
+        "emoji": "🗄️",
+        "level": 2,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 24,
+    "cards": [
+      {
+        "id": "house_shelf",
+        "topicId": "house",
+        "che": "полка",
+        "ru": "полка",
+        "emoji": "📚",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "house_tv",
+        "topicId": "house",
+        "che": "телевизор",
+        "ru": "телевизор",
+        "emoji": "📺",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "house_fridge",
+        "topicId": "house",
+        "che": "холодильник",
+        "ru": "холодильник",
+        "emoji": "🧊",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "house_microwave",
+        "topicId": "house",
+        "che": "микроволновка",
+        "ru": "микроволновка",
+        "emoji": "🍱",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "house_washing",
+        "topicId": "house",
+        "che": "бедаршюьтту машен",
+        "ru": "стиральная машина",
+        "emoji": "🧺",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "house_vacuum",
+        "topicId": "house",
+        "che": "пылесос",
+        "ru": "пылесос",
+        "emoji": "🧹",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "house_door",
+        "topicId": "house",
+        "che": "неӀ",
+        "ru": "дверь",
+        "emoji": "🚪",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "house_window",
+        "topicId": "house",
+        "che": "кор",
+        "ru": "окно",
+        "emoji": "🪟",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "house_roof",
+        "topicId": "house",
+        "che": "тхов",
+        "ru": "крыша",
+        "emoji": "🏠",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "house_floor",
+        "topicId": "house",
+        "che": "цӀенкъа",
+        "ru": "пол",
+        "emoji": "🪵",
+        "level": 2,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 25,
+    "cards": [
+      {
+        "id": "house_wall",
+        "topicId": "house",
+        "che": "пен",
+        "ru": "стена",
+        "emoji": "🧱",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "house_garden",
+        "topicId": "house",
+        "che": "беш",
+        "ru": "сад",
+        "emoji": "🌷",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "house_fence",
+        "topicId": "house",
+        "che": "керт",
+        "ru": "забор, ограда",
+        "emoji": "⛩️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "house_gate",
+        "topicId": "house",
+        "che": "ков",
+        "ru": "ворота",
+        "emoji": "🚧",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "house_curtain",
+        "topicId": "house",
+        "che": "пардо",
+        "ru": "занавеска, штора",
+        "emoji": "🪟",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "house_lamp",
+        "topicId": "house",
+        "che": "чиркх",
+        "ru": "лампа, светильник",
+        "emoji": "💡",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "house_stairs",
+        "topicId": "house",
+        "che": "лами",
+        "ru": "лестница",
+        "emoji": "🪜",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "house_ceiling",
+        "topicId": "house",
+        "che": "тхов-кӀело",
+        "ru": "потолок",
+        "emoji": "🏠",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "house_attic",
+        "topicId": "house",
+        "che": "тхов-тӀе",
+        "ru": "чердак",
+        "emoji": "🛖",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "house_chimney",
+        "topicId": "house",
+        "che": "кӀуьран биргӀа",
+        "ru": "печная труба, дымоход",
+        "emoji": "🧱",
+        "level": 2,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 26,
+    "cards": [
+      {
+        "id": "house_stove",
+        "topicId": "house",
+        "che": "пеш",
+        "ru": "печь, плита",
+        "emoji": "🔥",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "house_lock",
+        "topicId": "house",
+        "che": "догӀа",
+        "ru": "замок",
+        "emoji": "🔒",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "house_handle",
+        "topicId": "house",
+        "che": "тӀам",
+        "ru": "дверная ручка",
+        "emoji": "🚪",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "house_tap",
+        "topicId": "house",
+        "che": "кран",
+        "ru": "кран водопроводный",
+        "emoji": "🚰",
+        "level": 1,
+        "source": "dictionary"
+      },
+      {
+        "id": "house_trash",
+        "topicId": "house",
+        "che": "нехаш",
+        "ru": "мусор, урна",
+        "emoji": "🗑️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "house_iron",
+        "topicId": "house",
+        "che": "утюг",
+        "ru": "утюг",
+        "emoji": "👔",
+        "level": 1,
+        "source": "dictionary"
+      },
+      {
+        "id": "shop_store",
+        "topicId": "shopping",
+        "che": "туька",
+        "ru": "магазин",
+        "emoji": "🏪",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_market",
+        "topicId": "shopping",
+        "che": "базар",
+        "ru": "рынок",
+        "emoji": "🛒",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_supermarket",
+        "topicId": "shopping",
+        "che": "йоккха туька",
+        "ru": "супермаркет",
+        "emoji": "🛒",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_pharmacy",
+        "topicId": "shopping",
+        "che": "молханийн туька",
+        "ru": "аптека",
+        "emoji": "🏪",
+        "level": 2,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 27,
+    "cards": [
+      {
+        "id": "shop_bookshop",
+        "topicId": "shopping",
+        "che": "жайнаш дохка туька",
+        "ru": "книжный магазин",
+        "emoji": "📚",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_bread",
+        "topicId": "shopping",
+        "che": "бепиг",
+        "ru": "хлеб",
+        "emoji": "🍞",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_milk",
+        "topicId": "shopping",
+        "che": "шура",
+        "ru": "молоко",
+        "emoji": "🥛",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_meat",
+        "topicId": "shopping",
+        "che": "жижиг",
+        "ru": "мясо",
+        "emoji": "🍖",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_fish",
+        "topicId": "shopping",
+        "che": "чӀара",
+        "ru": "рыба",
+        "emoji": "🐟",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_eggs",
+        "topicId": "shopping",
+        "che": "хӀоа",
+        "ru": "яйца",
+        "emoji": "🥚",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_fruit",
+        "topicId": "shopping",
+        "che": "стом",
+        "ru": "фрукты",
+        "emoji": "🍎",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_veg",
+        "topicId": "shopping",
+        "che": "хасстоьмаш",
+        "ru": "овощи",
+        "emoji": "🥦",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_sugar",
+        "topicId": "shopping",
+        "che": "шекар",
+        "ru": "сахар",
+        "emoji": "🍬",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_salt",
+        "topicId": "shopping",
+        "che": "туьха",
+        "ru": "соль",
+        "emoji": "🧂",
+        "level": 1,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 28,
+    "cards": [
+      {
+        "id": "shop_oil",
+        "topicId": "shopping",
+        "che": "даьтта",
+        "ru": "масло",
+        "emoji": "🧈",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_juice",
+        "topicId": "shopping",
+        "che": "мутта",
+        "ru": "сок",
+        "emoji": "🧃",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_water",
+        "topicId": "shopping",
+        "che": "хи",
+        "ru": "вода",
+        "emoji": "💧",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_buy",
+        "topicId": "shopping",
+        "che": "эца",
+        "ru": "покупать",
+        "emoji": "💳",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_sell",
+        "topicId": "shopping",
+        "che": "дохка",
+        "ru": "продавать",
+        "emoji": "🏷️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_pay",
+        "topicId": "shopping",
+        "che": "мах бан",
+        "ru": "платить, рассчитываться",
+        "emoji": "💵",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_price",
+        "topicId": "shopping",
+        "che": "мах",
+        "ru": "цена",
+        "emoji": "🏷️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_money",
+        "topicId": "shopping",
+        "che": "ахча",
+        "ru": "деньги",
+        "emoji": "💰",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_change",
+        "topicId": "shopping",
+        "che": "юхалург",
+        "ru": "сдача",
+        "emoji": "🪙",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_basket",
+        "topicId": "shopping",
+        "che": "тускар",
+        "ru": "корзина",
+        "emoji": "🧺",
+        "level": 2,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 29,
+    "cards": [
+      {
+        "id": "shop_list",
+        "topicId": "shopping",
+        "che": "могӀам",
+        "ru": "список покупок",
+        "emoji": "📝",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_cart",
+        "topicId": "shopping",
+        "che": "гӀудалкх",
+        "ru": "магазинная тележка",
+        "emoji": "🛒",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_bag",
+        "topicId": "shopping",
+        "che": "тӀоьрмиг",
+        "ru": "сумка, пакет",
+        "emoji": "🛍️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_scales",
+        "topicId": "shopping",
+        "che": "терза",
+        "ru": "весы",
+        "emoji": "⚖️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_coins",
+        "topicId": "shopping",
+        "che": "кегий ахча",
+        "ru": "монеты, мелочь",
+        "emoji": "🪙",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_bankcard",
+        "topicId": "shopping",
+        "che": "банк-карта",
+        "ru": "банковская карта",
+        "emoji": "💳",
+        "level": 1,
+        "source": "dictionary"
+      },
+      {
+        "id": "shop_receipt",
+        "topicId": "shopping",
+        "che": "чек",
+        "ru": "чек, квитанция",
+        "emoji": "🧾",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "shop_cheap",
+        "topicId": "shopping",
+        "che": "дорах",
+        "ru": "дешёвый",
+        "emoji": "🏷️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "shop_expensive",
+        "topicId": "shopping",
+        "che": "деза мах",
+        "ru": "дорогой (по цене)",
+        "emoji": "💎",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "health_hand",
+        "topicId": "health",
+        "che": "куьг",
+        "ru": "рука",
+        "emoji": "✋",
+        "level": 1,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 30,
+    "cards": [
+      {
+        "id": "health_leg",
+        "topicId": "health",
+        "che": "ког",
+        "ru": "нога",
+        "emoji": "🦶",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "health_head",
+        "topicId": "health",
+        "che": "корта",
+        "ru": "голова",
+        "emoji": "🙂",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "health_eye",
+        "topicId": "health",
+        "che": "бӀаьрг",
+        "ru": "глаз",
+        "emoji": "👁️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "health_ear",
+        "topicId": "health",
+        "che": "лерг",
+        "ru": "ухо",
+        "emoji": "👂",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "health_nose",
+        "topicId": "health",
+        "che": "мара",
+        "ru": "нос",
+        "emoji": "👃",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "health_mouth",
+        "topicId": "health",
+        "che": "бага",
+        "ru": "рот",
+        "emoji": "👄",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "health_tooth",
+        "topicId": "health",
+        "che": "церг",
+        "ru": "зуб",
+        "emoji": "🦷",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "health_heart",
+        "topicId": "health",
+        "che": "дог",
+        "ru": "сердце",
+        "emoji": "❤️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "health_pain",
+        "topicId": "health",
+        "che": "лазар",
+        "ru": "боль",
+        "emoji": "🤕",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "health_flu",
+        "topicId": "health",
+        "che": "шелдалар",
+        "ru": "простуда / грипп",
+        "emoji": "🤒",
+        "level": 2,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 31,
+    "cards": [
+      {
+        "id": "health_fever",
+        "topicId": "health",
+        "che": "йовхо",
+        "ru": "жар / температура",
+        "emoji": "🌡️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "health_cough",
+        "topicId": "health",
+        "che": "йовхарш",
+        "ru": "кашель",
+        "emoji": "😷",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "health_headache",
+        "topicId": "health",
+        "che": "корта лазар",
+        "ru": "головная боль",
+        "emoji": "🤯",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "health_doctor",
+        "topicId": "health",
+        "che": "лор",
+        "ru": "врач",
+        "emoji": "👨‍⚕️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "health_nurse",
+        "topicId": "health",
+        "che": "лоьран гӀовс",
+        "ru": "медсестра",
+        "emoji": "👩‍⚕️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "health_medicine",
+        "topicId": "health",
+        "che": "молха",
+        "ru": "лекарство",
+        "emoji": "💊",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "health_hospital",
+        "topicId": "health",
+        "che": "дарбанцӀа",
+        "ru": "больница",
+        "emoji": "🏥",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "health_ambulance",
+        "topicId": "health",
+        "che": "сиха гӀо",
+        "ru": "скорая помощь",
+        "emoji": "🚑",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "health_pharmacy",
+        "topicId": "health",
+        "che": "молханийн туька",
+        "ru": "аптека",
+        "emoji": "🏪",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "health_sport",
+        "topicId": "health",
+        "che": "спорт",
+        "ru": "спорт",
+        "emoji": "🏋️",
+        "level": 1,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 32,
+    "cards": [
+      {
+        "id": "health_food",
+        "topicId": "health",
+        "che": "даар",
+        "ru": "еда",
+        "emoji": "🍎",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "health_water",
+        "topicId": "health",
+        "che": "хи",
+        "ru": "вода",
+        "emoji": "💧",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "health_rest",
+        "topicId": "health",
+        "che": "садаӀар",
+        "ru": "отдых",
+        "emoji": "😴",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "health_clean",
+        "topicId": "health",
+        "che": "цӀеналла",
+        "ru": "чистота",
+        "emoji": "🧼",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "health_soap",
+        "topicId": "health",
+        "che": "саба",
+        "ru": "мыло",
+        "emoji": "🧼",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "health_toothbrush",
+        "topicId": "health",
+        "che": "цергийн щетка",
+        "ru": "зубная щётка",
+        "emoji": "🪥",
+        "level": 1,
+        "source": "dictionary"
+      },
+      {
+        "id": "health_wound",
+        "topicId": "health",
+        "che": "чов",
+        "ru": "ранка, царапина",
+        "emoji": "🩹",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "health_bandage",
+        "topicId": "health",
+        "che": "бинт",
+        "ru": "бинт, повязка",
+        "emoji": "🩹",
+        "level": 1,
+        "source": "dictionary"
+      },
+      {
+        "id": "health_thermometer",
+        "topicId": "health",
+        "che": "градусник",
+        "ru": "термометр, градусник",
+        "emoji": "🌡️",
+        "level": 1,
+        "source": "dictionary"
+      },
+      {
+        "id": "health_vitamins",
+        "topicId": "health",
+        "che": "витаминаш",
+        "ru": "витамины",
+        "emoji": "💊",
+        "level": 1,
+        "source": "dictionary"
+      }
+    ]
+  },
+  {
+    "batchIndex": 33,
+    "cards": [
+      {
+        "id": "health_sleep",
+        "topicId": "health",
+        "che": "дижар",
+        "ru": "сон",
+        "emoji": "🛌",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "health_healthy",
+        "topicId": "health",
+        "che": "могаш",
+        "ru": "здоровый",
+        "emoji": "💪",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "sport_run",
+        "topicId": "sport",
+        "che": "хьадар",
+        "ru": "бег",
+        "emoji": "🏃",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "sport_swim",
+        "topicId": "sport",
+        "che": "нека дар",
+        "ru": "плавание",
+        "emoji": "🏊",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "sport_football",
+        "topicId": "sport",
+        "che": "футбол",
+        "ru": "футбол",
+        "emoji": "⚽",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "sport_volleyball",
+        "topicId": "sport",
+        "che": "волейбол",
+        "ru": "волейбол",
+        "emoji": "🏐",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "sport_basketball",
+        "topicId": "sport",
+        "che": "баскетбол",
+        "ru": "баскетбол",
+        "emoji": "🏀",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "sport_tennis",
+        "topicId": "sport",
+        "che": "теннис",
+        "ru": "теннис",
+        "emoji": "🎾",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "sport_boxing",
+        "topicId": "sport",
+        "che": "бокс",
+        "ru": "бокс",
+        "emoji": "🥊",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "sport_wrestling",
+        "topicId": "sport",
+        "che": "латар",
+        "ru": "борьба",
+        "emoji": "🤼",
+        "level": 2,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 34,
+    "cards": [
+      {
+        "id": "sport_gymnastics",
+        "topicId": "sport",
+        "che": "гимнастика",
+        "ru": "гимнастика",
+        "emoji": "🤸",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "sport_ski",
+        "topicId": "sport",
+        "che": "когсалаз",
+        "ru": "лыжи",
+        "emoji": "⛷️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "sport_cycle",
+        "topicId": "sport",
+        "che": "велосипед хахкар",
+        "ru": "велоспорт",
+        "emoji": "🚴",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "sport_ball",
+        "topicId": "sport",
+        "che": "буьрка",
+        "ru": "мяч",
+        "emoji": "⚽",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "sport_gate",
+        "topicId": "sport",
+        "che": "ков",
+        "ru": "ворота",
+        "emoji": "🥅",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "sport_bat",
+        "topicId": "sport",
+        "che": "гӀаж",
+        "ru": "бита, клюшка",
+        "emoji": "🏏",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "sport_play",
+        "topicId": "sport",
+        "che": "ловза",
+        "ru": "играть",
+        "emoji": "🎮",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "sport_win",
+        "topicId": "sport",
+        "che": "тола",
+        "ru": "побеждать",
+        "emoji": "🏆",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "sport_lose",
+        "topicId": "sport",
+        "che": "эша",
+        "ru": "проигрывать",
+        "emoji": "😔",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "sport_team",
+        "topicId": "sport",
+        "che": "тоба",
+        "ru": "команда",
+        "emoji": "👥",
+        "level": 2,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 35,
+    "cards": [
+      {
+        "id": "sport_train",
+        "topicId": "sport",
+        "che": "Ӏама",
+        "ru": "тренироваться, учиться",
+        "emoji": "💪",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "sport_stadium",
+        "topicId": "sport",
+        "che": "стадион",
+        "ru": "стадион",
+        "emoji": "🏟️",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "sport_medal",
+        "topicId": "sport",
+        "che": "мидал",
+        "ru": "медаль",
+        "emoji": "🥇",
+        "level": 1,
+        "source": "dictionary"
+      },
+      {
+        "id": "sport_cup",
+        "topicId": "sport",
+        "che": "кубок",
+        "ru": "кубок",
+        "emoji": "🏆",
+        "level": 1,
+        "source": "dictionary"
+      },
+      {
+        "id": "sport_whistle",
+        "topicId": "sport",
+        "che": "шатакх",
+        "ru": "свисток",
+        "emoji": "🪈",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "sport_jump",
+        "topicId": "sport",
+        "che": "кхоссадалар",
+        "ru": "прыжки",
+        "emoji": "🤸",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "sport_judo",
+        "topicId": "sport",
+        "che": "дзюдо",
+        "ru": "дзюдо",
+        "emoji": "🥋",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "sport_skates",
+        "topicId": "sport",
+        "che": "коньки",
+        "ru": "коньки",
+        "emoji": "⛸️",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "sport_boxing_gloves",
+        "topicId": "sport",
+        "che": "боксеран караш",
+        "ru": "боксёрские перчатки",
+        "emoji": "🥊",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "sport_coach",
+        "topicId": "sport",
+        "che": "тренер",
+        "ru": "тренер",
+        "emoji": "🧑‍🏫",
+        "level": 1,
+        "source": "dictionary"
+      }
+    ]
+  },
+  {
+    "batchIndex": 36,
+    "cards": [
+      {
+        "id": "toy_doll",
+        "topicId": "toys",
+        "che": "тайниг",
+        "ru": "кукла",
+        "emoji": "🎎",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_ball",
+        "topicId": "toys",
+        "che": "буьрка",
+        "ru": "мяч",
+        "emoji": "⚽",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_car",
+        "topicId": "toys",
+        "che": "машен",
+        "ru": "машинка",
+        "emoji": "🚗",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_bear",
+        "topicId": "toys",
+        "che": "ча",
+        "ru": "мишка",
+        "emoji": "🧸",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_blocks",
+        "topicId": "toys",
+        "che": "гӀодамаш",
+        "ru": "кубики",
+        "emoji": "🧱",
+        "level": 1,
+        "source": "dictionary"
+      },
+      {
+        "id": "toy_puzzle",
+        "topicId": "toys",
+        "che": "пазл",
+        "ru": "пазл",
+        "emoji": "🧩",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "toy_robot",
+        "topicId": "toys",
+        "che": "робот",
+        "ru": "робот",
+        "emoji": "🤖",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "toy_plane",
+        "topicId": "toys",
+        "che": "кема",
+        "ru": "самолётик",
+        "emoji": "✈️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_train",
+        "topicId": "toys",
+        "che": "цӀерпошт",
+        "ru": "поезд",
+        "emoji": "🚆",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_soldier",
+        "topicId": "toys",
+        "che": "эскархо",
+        "ru": "солдатик",
+        "emoji": "🎖️",
+        "level": 2,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 37,
+    "cards": [
+      {
+        "id": "toy_sword",
+        "topicId": "toys",
+        "che": "тур",
+        "ru": "меч",
+        "emoji": "🗡️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_gun",
+        "topicId": "toys",
+        "che": "топ",
+        "ru": "ружье, пистолет",
+        "emoji": "🔫",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_play",
+        "topicId": "toys",
+        "che": "ловза",
+        "ru": "играть",
+        "emoji": "🎮",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_hide",
+        "topicId": "toys",
+        "che": "лечкъа",
+        "ru": "прятаться",
+        "emoji": "🙈",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_seek",
+        "topicId": "toys",
+        "che": "лаха",
+        "ru": "искать",
+        "emoji": "🔍",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_run",
+        "topicId": "toys",
+        "che": "ида",
+        "ru": "бегать",
+        "emoji": "🏃",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_jump",
+        "topicId": "toys",
+        "che": "кхоссадала",
+        "ru": "прыгать",
+        "emoji": "🤸",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_drum",
+        "topicId": "toys",
+        "che": "вота",
+        "ru": "барабанчик",
+        "emoji": "🥁",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_kite",
+        "topicId": "toys",
+        "che": "хӀаваан саьрмик",
+        "ru": "воздушный змей",
+        "emoji": "🪁",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_swing",
+        "topicId": "toys",
+        "che": "агас",
+        "ru": "качели",
+        "emoji": "🎠",
+        "level": 1,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 38,
+    "cards": [
+      {
+        "id": "toy_slide",
+        "topicId": "toys",
+        "che": "хохкуьйриг",
+        "ru": "детская горка",
+        "emoji": "🛝",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_top",
+        "topicId": "toys",
+        "che": "горгам",
+        "ru": "юла, волчок",
+        "emoji": "🪀",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_dice",
+        "topicId": "toys",
+        "che": "зар",
+        "ru": "игральный кубик",
+        "emoji": "🎲",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_ship",
+        "topicId": "toys",
+        "che": "хикема",
+        "ru": "кораблик",
+        "emoji": "⛵",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_balloon",
+        "topicId": "toys",
+        "che": "хӀаваан шар",
+        "ru": "воздушный шарик",
+        "emoji": "🎈",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_pyramid",
+        "topicId": "toys",
+        "che": "пирамидка",
+        "ru": "пирамидка",
+        "emoji": "🪅",
+        "level": 1,
+        "source": "dictionary"
+      },
+      {
+        "id": "toy_whistle",
+        "topicId": "toys",
+        "che": "шок",
+        "ru": "свисток, свистулька",
+        "emoji": "🪈",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_bubbles",
+        "topicId": "toys",
+        "che": "сабанан ахкаргаш",
+        "ru": "мыльные пузыри",
+        "emoji": "🫧",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_sandbox",
+        "topicId": "toys",
+        "che": "гӀамаран майда",
+        "ru": "песочница",
+        "emoji": "🏖️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "toy_watergun",
+        "topicId": "toys",
+        "che": "хин топ",
+        "ru": "водяной пистолет",
+        "emoji": "🔫",
+        "level": 1,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 39,
+    "cards": [
+      {
+        "id": "toy_castle",
+        "topicId": "toys",
+        "che": "гӀала",
+        "ru": "игрушечный замок",
+        "emoji": "🏰",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "hol_newyear",
+        "topicId": "holidays",
+        "che": "керла шо",
+        "ru": "Новый год",
+        "emoji": "🎄",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "hol_birthday",
+        "topicId": "holidays",
+        "che": "вина де",
+        "ru": "День рождения",
+        "emoji": "🎂",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "hol_wedding",
+        "topicId": "holidays",
+        "che": "ловзар",
+        "ru": "свадьба",
+        "emoji": "💒",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "hol_eid",
+        "topicId": "holidays",
+        "che": "Мархадосту де",
+        "ru": "Ураза-байрам",
+        "emoji": "🕌",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "hol_kurban",
+        "topicId": "holidays",
+        "che": "ГӀурба",
+        "ru": "Курбан-байрам",
+        "emoji": "🐑",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "hol_victory",
+        "topicId": "holidays",
+        "che": "Толаман де",
+        "ru": "День Победы",
+        "emoji": "🎖️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "hol_constitution",
+        "topicId": "holidays",
+        "che": "Конституцин де",
+        "ru": "День Конституции",
+        "emoji": "📜",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "hol_gift",
+        "topicId": "holidays",
+        "che": "совгӀат",
+        "ru": "подарок",
+        "emoji": "🎁",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "hol_balloon",
+        "topicId": "holidays",
+        "che": "хӀаваан шар",
+        "ru": "воздушный шар",
+        "emoji": "🎈",
+        "level": 1,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 40,
+    "cards": [
+      {
+        "id": "hol_cake",
+        "topicId": "holidays",
+        "che": "торт",
+        "ru": "торт",
+        "emoji": "🎂",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "hol_candle",
+        "topicId": "holidays",
+        "che": "чӀурам",
+        "ru": "свеча",
+        "emoji": "🕯️",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "hol_fireworks",
+        "topicId": "holidays",
+        "che": "салют",
+        "ru": "фейерверк, салют",
+        "emoji": "🎆",
+        "level": 2,
+        "source": "dictionary"
+      },
+      {
+        "id": "hol_music",
+        "topicId": "holidays",
+        "che": "эшарш",
+        "ru": "музыка, песни",
+        "emoji": "🎵",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "hol_dance",
+        "topicId": "holidays",
+        "che": "хелхар",
+        "ru": "танец",
+        "emoji": "💃",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "hol_celebrate",
+        "topicId": "holidays",
+        "che": "даздан",
+        "ru": "праздновать",
+        "emoji": "🎉",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "hol_congratulate",
+        "topicId": "holidays",
+        "che": "декъалдан",
+        "ru": "поздравлять",
+        "emoji": "🤝",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "hol_table",
+        "topicId": "holidays",
+        "che": "шун",
+        "ru": "праздничный стол",
+        "emoji": "🍽️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "hol_joy",
+        "topicId": "holidays",
+        "che": "хазахетар",
+        "ru": "радость, веселье",
+        "emoji": "😃",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "hol_card",
+        "topicId": "holidays",
+        "che": "декъалден кехат",
+        "ru": "поздравительная открытка",
+        "emoji": "💌",
+        "level": 2,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 41,
+    "cards": [
+      {
+        "id": "hol_bouquet",
+        "topicId": "holidays",
+        "che": "зезагийн курс",
+        "ru": "букет цветов",
+        "emoji": "💐",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "hol_ribbon",
+        "topicId": "holidays",
+        "che": "лента",
+        "ru": "праздничная лента",
+        "emoji": "🎀",
+        "level": 1,
+        "source": "dictionary"
+      },
+      {
+        "id": "hol_applause",
+        "topicId": "holidays",
+        "che": "тӀараш деттар",
+        "ru": "аплодисменты",
+        "emoji": "👏",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "hol_chechen_dance",
+        "topicId": "holidays",
+        "che": "нохчийн хелхар",
+        "ru": "лезгинка, чеченский танец",
+        "emoji": "🕺",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "hol_blessing",
+        "topicId": "holidays",
+        "che": "доӀа",
+        "ru": "благопожелание, дуа",
+        "emoji": "🤲",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_go",
+        "topicId": "verbs",
+        "che": "ваха",
+        "ru": "идти",
+        "emoji": "🚶",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_come",
+        "topicId": "verbs",
+        "che": "ван",
+        "ru": "приходить",
+        "emoji": "🏃",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_run",
+        "topicId": "verbs",
+        "che": "хьада",
+        "ru": "бежать",
+        "emoji": "🏃",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_sit",
+        "topicId": "verbs",
+        "che": "хаа",
+        "ru": "сидеть",
+        "emoji": "🧘",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_stand",
+        "topicId": "verbs",
+        "che": "латта",
+        "ru": "стоять",
+        "emoji": "🧍",
+        "level": 1,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 42,
+    "cards": [
+      {
+        "id": "verb_eat",
+        "topicId": "verbs",
+        "che": "даа",
+        "ru": "есть (кушать)",
+        "emoji": "🍽️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_drink",
+        "topicId": "verbs",
+        "che": "мала",
+        "ru": "пить",
+        "emoji": "🥤",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_sleep",
+        "topicId": "verbs",
+        "che": "дижа",
+        "ru": "спать",
+        "emoji": "😴",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_wake",
+        "topicId": "verbs",
+        "che": "самадала",
+        "ru": "просыпаться",
+        "emoji": "🌅",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_work",
+        "topicId": "verbs",
+        "che": "болх бан",
+        "ru": "работать",
+        "emoji": "💼",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_study",
+        "topicId": "verbs",
+        "che": "деша",
+        "ru": "учиться",
+        "emoji": "📚",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_write",
+        "topicId": "verbs",
+        "che": "яздан",
+        "ru": "писать",
+        "emoji": "✍️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_speak",
+        "topicId": "verbs",
+        "che": "дийца",
+        "ru": "говорить",
+        "emoji": "🗣️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_listen",
+        "topicId": "verbs",
+        "che": "ладогӀа",
+        "ru": "слушать",
+        "emoji": "🎧",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_see",
+        "topicId": "verbs",
+        "che": "га",
+        "ru": "видеть",
+        "emoji": "👀",
+        "level": 1,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 43,
+    "cards": [
+      {
+        "id": "verb_look",
+        "topicId": "verbs",
+        "che": "хьажа",
+        "ru": "смотреть",
+        "emoji": "🔍",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_smile",
+        "topicId": "verbs",
+        "che": "дела",
+        "ru": "улыбаться, смеяться",
+        "emoji": "😊",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_cry",
+        "topicId": "verbs",
+        "che": "делха",
+        "ru": "плакать",
+        "emoji": "😭",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_play",
+        "topicId": "verbs",
+        "che": "ловза",
+        "ru": "играть",
+        "emoji": "🎮",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_draw",
+        "topicId": "verbs",
+        "che": "сурт дилла",
+        "ru": "рисовать",
+        "emoji": "🎨",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_dance",
+        "topicId": "verbs",
+        "che": "хелха дала",
+        "ru": "танцевать",
+        "emoji": "💃",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_sing",
+        "topicId": "verbs",
+        "che": "илли ала",
+        "ru": "петь",
+        "emoji": "🎤",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_swim",
+        "topicId": "verbs",
+        "che": "нека дан",
+        "ru": "плавать",
+        "emoji": "🏊",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_fly",
+        "topicId": "verbs",
+        "che": "гӀатта",
+        "ru": "лететь, взлетать",
+        "emoji": "🛫",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_ride",
+        "topicId": "verbs",
+        "che": "хахка",
+        "ru": "ехать, скакать",
+        "emoji": "🚗",
+        "level": 1,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 44,
+    "cards": [
+      {
+        "id": "verb_wash",
+        "topicId": "verbs",
+        "che": "дила",
+        "ru": "мыть",
+        "emoji": "🧼",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_clean",
+        "topicId": "verbs",
+        "che": "цӀандан",
+        "ru": "убирать, чистить",
+        "emoji": "🧹",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_cook",
+        "topicId": "verbs",
+        "che": "кхача бан",
+        "ru": "готовить еду",
+        "emoji": "🍳",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_walk",
+        "topicId": "verbs",
+        "che": "лела",
+        "ru": "гулять, ходить",
+        "emoji": "🚶‍♀️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_buy",
+        "topicId": "verbs",
+        "che": "эца",
+        "ru": "покупать",
+        "emoji": "🛍️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_sell",
+        "topicId": "verbs",
+        "che": "дохка",
+        "ru": "продавать",
+        "emoji": "💰",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_give",
+        "topicId": "verbs",
+        "che": "дала",
+        "ru": "давать",
+        "emoji": "🎁",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_take",
+        "topicId": "verbs",
+        "che": "схьаэца",
+        "ru": "брать",
+        "emoji": "🤲",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_think",
+        "topicId": "verbs",
+        "che": "ойла ян",
+        "ru": "думать",
+        "emoji": "🤔",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_know",
+        "topicId": "verbs",
+        "che": "хаа",
+        "ru": "знать",
+        "emoji": "🧠",
+        "level": 1,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 45,
+    "cards": [
+      {
+        "id": "verb_want",
+        "topicId": "verbs",
+        "che": "лаьа",
+        "ru": "хотеть",
+        "emoji": "💭",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_like",
+        "topicId": "verbs",
+        "che": "деза",
+        "ru": "нравиться, любить",
+        "emoji": "❤️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_must",
+        "topicId": "verbs",
+        "che": "деза",
+        "ru": "нужно, должен",
+        "emoji": "⚠️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_help",
+        "topicId": "verbs",
+        "che": "гӀо дан",
+        "ru": "помогать",
+        "emoji": "🤝",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_ask",
+        "topicId": "verbs",
+        "che": "хатта",
+        "ru": "спрашивать",
+        "emoji": "❓",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_answer",
+        "topicId": "verbs",
+        "che": "жоп дала",
+        "ru": "отвечать",
+        "emoji": "💬",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_find",
+        "topicId": "verbs",
+        "che": "каро",
+        "ru": "находить",
+        "emoji": "🔎",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_throw",
+        "topicId": "verbs",
+        "che": "кхосса",
+        "ru": "бросать",
+        "emoji": "🤾",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_catch",
+        "topicId": "verbs",
+        "che": "лаца",
+        "ru": "ловить",
+        "emoji": "🤲",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_open",
+        "topicId": "verbs",
+        "che": "схьаделла",
+        "ru": "открывать",
+        "emoji": "🚪",
+        "level": 1,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 46,
+    "cards": [
+      {
+        "id": "verb_close",
+        "topicId": "verbs",
+        "che": "дӀакъовла",
+        "ru": "закрывать",
+        "emoji": "🔒",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_bring",
+        "topicId": "verbs",
+        "che": "схьадахьа",
+        "ru": "приносить",
+        "emoji": "🎒",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_put",
+        "topicId": "verbs",
+        "che": "дилла",
+        "ru": "класть, положить",
+        "emoji": "📥",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_cut",
+        "topicId": "verbs",
+        "che": "хедо",
+        "ru": "резать",
+        "emoji": "✂️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_sew",
+        "topicId": "verbs",
+        "che": "тега",
+        "ru": "шить",
+        "emoji": "🪡",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_count",
+        "topicId": "verbs",
+        "che": "дагардан",
+        "ru": "считать",
+        "emoji": "🔢",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_show",
+        "topicId": "verbs",
+        "che": "гайта",
+        "ru": "показывать",
+        "emoji": "👉",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_hug",
+        "topicId": "verbs",
+        "che": "маракъовла",
+        "ru": "обнимать",
+        "emoji": "🫂",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_fall",
+        "topicId": "verbs",
+        "che": "дожа",
+        "ru": "падать",
+        "emoji": "🍂",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_build",
+        "topicId": "verbs",
+        "che": "дотта",
+        "ru": "строить, возводить",
+        "emoji": "🧱",
+        "level": 2,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 47,
+    "cards": [
+      {
+        "id": "verb_break",
+        "topicId": "verbs",
+        "che": "дохо",
+        "ru": "ломать",
+        "emoji": "🔨",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_fix",
+        "topicId": "verbs",
+        "che": "тодан",
+        "ru": "чинить, ремонтировать",
+        "emoji": "🔧",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_plant",
+        "topicId": "verbs",
+        "che": "ден",
+        "ru": "сажать (растения)",
+        "emoji": "🌱",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_water",
+        "topicId": "verbs",
+        "che": "хи тоха",
+        "ru": "поливать водой",
+        "emoji": "🚿",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_play_music",
+        "topicId": "verbs",
+        "che": "лакха",
+        "ru": "играть (на инструменте)",
+        "emoji": "🪕",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_climb",
+        "topicId": "verbs",
+        "che": "тӀевала",
+        "ru": "залезать, подниматься",
+        "emoji": "🧗",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_rest",
+        "topicId": "verbs",
+        "che": "садаӀа",
+        "ru": "отдыхать",
+        "emoji": "😴",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_dress",
+        "topicId": "verbs",
+        "che": "тӀеюха",
+        "ru": "одеваться, надевать",
+        "emoji": "👗",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_undress",
+        "topicId": "verbs",
+        "che": "тӀераяккха",
+        "ru": "раздеваться, снимать",
+        "emoji": "👕",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_comb",
+        "topicId": "verbs",
+        "che": "ехк хьакха",
+        "ru": "причёсываться",
+        "emoji": "💇",
+        "level": 1,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 48,
+    "cards": [
+      {
+        "id": "verb_breathe",
+        "topicId": "verbs",
+        "che": "садеӀа",
+        "ru": "дышать",
+        "emoji": "🫁",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_dive",
+        "topicId": "verbs",
+        "che": "чубуза",
+        "ru": "нырять",
+        "emoji": "🤿",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_shout",
+        "topicId": "verbs",
+        "che": "мохь хьакха",
+        "ru": "кричать",
+        "emoji": "📢",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_whisper",
+        "topicId": "verbs",
+        "che": "шабар-шибар дан",
+        "ru": "шептать",
+        "emoji": "🤫",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_praise",
+        "topicId": "verbs",
+        "che": "хесто",
+        "ru": "хвалить",
+        "emoji": "👍",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_remember",
+        "topicId": "verbs",
+        "che": "дагадан",
+        "ru": "вспоминать",
+        "emoji": "💡",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_memorize",
+        "topicId": "verbs",
+        "che": "дагахь латтадан",
+        "ru": "запоминать",
+        "emoji": "🧠",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_touch",
+        "topicId": "verbs",
+        "che": "куьг Ӏотта",
+        "ru": "дотрагиваться, трогать",
+        "emoji": "🖐️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_smell",
+        "topicId": "verbs",
+        "che": "хьожа яха",
+        "ru": "нюхать, чувствовать запах",
+        "emoji": "👃",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_protect",
+        "topicId": "verbs",
+        "che": "Ӏалашдан",
+        "ru": "оберегать, защищать",
+        "emoji": "🛡️",
+        "level": 2,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 49,
+    "cards": [
+      {
+        "id": "verb_repeat",
+        "topicId": "verbs",
+        "che": "юха ала",
+        "ru": "повторять",
+        "emoji": "🔁",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_greet",
+        "topicId": "verbs",
+        "che": "салам дала",
+        "ru": "здороваться",
+        "emoji": "🤝",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "verb_thank",
+        "topicId": "verbs",
+        "che": "баркалла ала",
+        "ru": "благодарить",
+        "emoji": "🙏",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_big",
+        "topicId": "adjectives",
+        "che": "доккха",
+        "ru": "большой",
+        "emoji": "🐘",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_small",
+        "topicId": "adjectives",
+        "che": "жима",
+        "ru": "маленький",
+        "emoji": "🐭",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_tall",
+        "topicId": "adjectives",
+        "che": "лекха",
+        "ru": "высокий",
+        "emoji": "🌳",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_short",
+        "topicId": "adjectives",
+        "che": "лоха",
+        "ru": "низкий",
+        "emoji": "🌱",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_wide",
+        "topicId": "adjectives",
+        "che": "шора",
+        "ru": "широкий",
+        "emoji": "📏",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_narrow",
+        "topicId": "adjectives",
+        "che": "готта",
+        "ru": "узкий",
+        "emoji": "📏",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_long",
+        "topicId": "adjectives",
+        "che": "деха",
+        "ru": "длинный",
+        "emoji": "🐍",
+        "level": 1,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 50,
+    "cards": [
+      {
+        "id": "adj_short_len",
+        "topicId": "adjectives",
+        "che": "доца",
+        "ru": "короткий (по длине)",
+        "emoji": "✏️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_hot",
+        "topicId": "adjectives",
+        "che": "довха",
+        "ru": "горячий",
+        "emoji": "🔥",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_cold",
+        "topicId": "adjectives",
+        "che": "шийла",
+        "ru": "холодный",
+        "emoji": "🧊",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_warm",
+        "topicId": "adjectives",
+        "che": "йовхо йолу",
+        "ru": "тёплый",
+        "emoji": "🌤️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_cool",
+        "topicId": "adjectives",
+        "che": "салкъина",
+        "ru": "прохладный",
+        "emoji": "🌬️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_red",
+        "topicId": "adjectives",
+        "che": "цӀен",
+        "ru": "красный",
+        "emoji": "🔴",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_blue",
+        "topicId": "adjectives",
+        "che": "сийна",
+        "ru": "синий",
+        "emoji": "🔵",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_green",
+        "topicId": "adjectives",
+        "che": "баьццара",
+        "ru": "зелёный",
+        "emoji": "🟢",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_yellow",
+        "topicId": "adjectives",
+        "che": "можа",
+        "ru": "жёлтый",
+        "emoji": "🟡",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_white",
+        "topicId": "adjectives",
+        "che": "кӀайн",
+        "ru": "белый",
+        "emoji": "⚪",
+        "level": 1,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 51,
+    "cards": [
+      {
+        "id": "adj_black",
+        "topicId": "adjectives",
+        "che": "Ӏаьржа",
+        "ru": "чёрный",
+        "emoji": "⚫",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_gray",
+        "topicId": "adjectives",
+        "che": "сира",
+        "ru": "серый",
+        "emoji": "🩶",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_brown",
+        "topicId": "adjectives",
+        "che": "боьмаша",
+        "ru": "коричневый",
+        "emoji": "🟤",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_sweet",
+        "topicId": "adjectives",
+        "che": "мерза",
+        "ru": "сладкий",
+        "emoji": "🍭",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_salty",
+        "topicId": "adjectives",
+        "che": "дуьра",
+        "ru": "солёный",
+        "emoji": "🧂",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_sour",
+        "topicId": "adjectives",
+        "che": "муьста",
+        "ru": "кислый",
+        "emoji": "🍋",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_bitter",
+        "topicId": "adjectives",
+        "che": "къаьхьа",
+        "ru": "горький",
+        "emoji": "☕",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_good",
+        "topicId": "adjectives",
+        "che": "дика",
+        "ru": "хороший",
+        "emoji": "👍",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_bad",
+        "topicId": "adjectives",
+        "che": "вон",
+        "ru": "плохой",
+        "emoji": "👎",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_beautiful",
+        "topicId": "adjectives",
+        "che": "хаза",
+        "ru": "красивый",
+        "emoji": "🌟",
+        "level": 1,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 52,
+    "cards": [
+      {
+        "id": "adj_ugly",
+        "topicId": "adjectives",
+        "che": "ирча",
+        "ru": "некрасивый",
+        "emoji": "😖",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_clean",
+        "topicId": "adjectives",
+        "che": "цӀена",
+        "ru": "чистый",
+        "emoji": "🧼",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_dirty",
+        "topicId": "adjectives",
+        "che": "боьха",
+        "ru": "грязный",
+        "emoji": "💩",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_light",
+        "topicId": "adjectives",
+        "che": "дайн",
+        "ru": "лёгкий (по весу)",
+        "emoji": "🪶",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_heavy",
+        "topicId": "adjectives",
+        "che": "деза",
+        "ru": "тяжёлый",
+        "emoji": "🪨",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_soft",
+        "topicId": "adjectives",
+        "che": "кӀеда",
+        "ru": "мягкий",
+        "emoji": "🧸",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_hard",
+        "topicId": "adjectives",
+        "che": "чӀогӀа",
+        "ru": "твёрдый, крепкий",
+        "emoji": "💎",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_happy",
+        "topicId": "adjectives",
+        "che": "самукъане",
+        "ru": "весёлый, радостный",
+        "emoji": "😄",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_sad",
+        "topicId": "adjectives",
+        "che": "гӀайгӀане",
+        "ru": "грустный",
+        "emoji": "😢",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_angry",
+        "topicId": "adjectives",
+        "che": "оьгӀазе",
+        "ru": "злой, сердитый",
+        "emoji": "😠",
+        "level": 2,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 53,
+    "cards": [
+      {
+        "id": "adj_scared",
+        "topicId": "adjectives",
+        "che": "кхийрина",
+        "ru": "испуганный",
+        "emoji": "😨",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_loving",
+        "topicId": "adjectives",
+        "che": "деза",
+        "ru": "любимый / дорогой",
+        "emoji": "🥰",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_fast",
+        "topicId": "adjectives",
+        "che": "сиха",
+        "ru": "быстрый",
+        "emoji": "⚡",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_slow",
+        "topicId": "adjectives",
+        "che": "меллаша",
+        "ru": "медленный",
+        "emoji": "🐢",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_new",
+        "topicId": "adjectives",
+        "che": "керла",
+        "ru": "новый",
+        "emoji": "🆕",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_old",
+        "topicId": "adjectives",
+        "che": "шира",
+        "ru": "старый (вещь)",
+        "emoji": "🏚️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_young",
+        "topicId": "adjectives",
+        "che": "къона",
+        "ru": "молодой, юный",
+        "emoji": "👦",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_old_age",
+        "topicId": "adjectives",
+        "che": "къена",
+        "ru": "старый (человек)",
+        "emoji": "👴",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_many",
+        "topicId": "adjectives",
+        "che": "дукха",
+        "ru": "много",
+        "emoji": "👥",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_few",
+        "topicId": "adjectives",
+        "che": "кӀеззиг",
+        "ru": "мало",
+        "emoji": "👤",
+        "level": 1,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 54,
+    "cards": [
+      {
+        "id": "adj_smart",
+        "topicId": "adjectives",
+        "che": "хьекъале",
+        "ru": "умный",
+        "emoji": "🧠",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_strong",
+        "topicId": "adjectives",
+        "che": "чӀогӀа",
+        "ru": "сильный, крепкий",
+        "emoji": "💪",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_kind",
+        "topicId": "adjectives",
+        "che": "дика",
+        "ru": "добрый",
+        "emoji": "😇",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_brave",
+        "topicId": "adjectives",
+        "che": "майра",
+        "ru": "храбрый",
+        "emoji": "🦁",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_lazy",
+        "topicId": "adjectives",
+        "che": "малонча",
+        "ru": "ленивый",
+        "emoji": "🦥",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_funny",
+        "topicId": "adjectives",
+        "che": "самукъане",
+        "ru": "смешной, весёлый",
+        "emoji": "😂",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_sharp",
+        "topicId": "adjectives",
+        "che": "ира",
+        "ru": "острый",
+        "emoji": "🗡️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_thick",
+        "topicId": "adjectives",
+        "che": "стомма",
+        "ru": "толстый",
+        "emoji": "📚",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_thin",
+        "topicId": "adjectives",
+        "che": "дуткъа",
+        "ru": "тонкий",
+        "emoji": "📄",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_deep",
+        "topicId": "adjectives",
+        "che": "кӀорга",
+        "ru": "глубокий",
+        "emoji": "🌊",
+        "level": 2,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 55,
+    "cards": [
+      {
+        "id": "adj_round",
+        "topicId": "adjectives",
+        "che": "горга",
+        "ru": "круглый",
+        "emoji": "⭕",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_smooth",
+        "topicId": "adjectives",
+        "che": "шера",
+        "ru": "гладкий, ровный",
+        "emoji": "🪞",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_bright",
+        "topicId": "adjectives",
+        "che": "сирла",
+        "ru": "светлый, яркий",
+        "emoji": "💡",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_dark",
+        "topicId": "adjectives",
+        "che": "бодане",
+        "ru": "тёмный",
+        "emoji": "🌑",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_quiet",
+        "topicId": "adjectives",
+        "che": "тийна",
+        "ru": "тихий, спокойный",
+        "emoji": "🤫",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_loud",
+        "topicId": "adjectives",
+        "che": "гӀовгӀане",
+        "ru": "громкий, шумный",
+        "emoji": "📢",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_wet",
+        "topicId": "adjectives",
+        "che": "тӀуьна",
+        "ru": "мокрый",
+        "emoji": "💦",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_dry",
+        "topicId": "adjectives",
+        "che": "декъа",
+        "ru": "сухой",
+        "emoji": "🏜️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_tasty",
+        "topicId": "adjectives",
+        "che": "чам болуш",
+        "ru": "вкусный, аппетитный",
+        "emoji": "😋",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_polite",
+        "topicId": "adjectives",
+        "che": "эсала",
+        "ru": "вежливый, скромный",
+        "emoji": "😇",
+        "level": 2,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 56,
+    "cards": [
+      {
+        "id": "adj_straight",
+        "topicId": "adjectives",
+        "che": "нийса",
+        "ru": "прямой, правильный",
+        "emoji": "📏",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_crooked",
+        "topicId": "adjectives",
+        "che": "гамма",
+        "ru": "кривой, изогнутый",
+        "emoji": "〰️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_generous",
+        "topicId": "adjectives",
+        "che": "комаьрша",
+        "ru": "щедрый",
+        "emoji": "🎁",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_greedy",
+        "topicId": "adjectives",
+        "che": "сутара",
+        "ru": "жадный",
+        "emoji": "🤑",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_honest",
+        "topicId": "adjectives",
+        "che": "бакъ",
+        "ru": "честный, правдивый",
+        "emoji": "⚖️",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_patient",
+        "topicId": "adjectives",
+        "che": "собаре",
+        "ru": "терпеливый",
+        "emoji": "🧘",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_safe",
+        "topicId": "adjectives",
+        "che": "кхерам боцу",
+        "ru": "безопасный",
+        "emoji": "🛡️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_dangerous",
+        "topicId": "adjectives",
+        "che": "кхераме",
+        "ru": "опасный",
+        "emoji": "⚠️",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_useful",
+        "topicId": "adjectives",
+        "che": "пайдане",
+        "ru": "полезный",
+        "emoji": "🍎",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "adj_pure",
+        "topicId": "adjectives",
+        "che": "цӀена",
+        "ru": "чистый, искренний",
+        "emoji": "✨",
+        "level": 1,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 57,
+    "cards": [
+      {
+        "id": "pron_i",
+        "topicId": "pronouns",
+        "che": "со",
+        "ru": "я",
+        "emoji": "🧑",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_you",
+        "topicId": "pronouns",
+        "che": "хьо",
+        "ru": "ты",
+        "emoji": "🧑",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_he",
+        "topicId": "pronouns",
+        "che": "иза",
+        "ru": "он",
+        "emoji": "👨",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_she",
+        "topicId": "pronouns",
+        "che": "иза",
+        "ru": "она",
+        "emoji": "👩",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_we",
+        "topicId": "pronouns",
+        "che": "тхо",
+        "ru": "мы",
+        "emoji": "👥",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_you_pl",
+        "topicId": "pronouns",
+        "che": "шу",
+        "ru": "вы",
+        "emoji": "👥",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_they",
+        "topicId": "pronouns",
+        "che": "уьш",
+        "ru": "они",
+        "emoji": "👥",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_my",
+        "topicId": "pronouns",
+        "che": "сан",
+        "ru": "мой",
+        "emoji": "👤",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_your",
+        "topicId": "pronouns",
+        "che": "хьан",
+        "ru": "твой",
+        "emoji": "👤",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_his",
+        "topicId": "pronouns",
+        "che": "цуьнан",
+        "ru": "его",
+        "emoji": "👤",
+        "level": 1,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 58,
+    "cards": [
+      {
+        "id": "pron_her",
+        "topicId": "pronouns",
+        "che": "цуьнан",
+        "ru": "её",
+        "emoji": "👤",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_our",
+        "topicId": "pronouns",
+        "che": "тхан",
+        "ru": "наш",
+        "emoji": "👥",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_your_pl",
+        "topicId": "pronouns",
+        "che": "шун",
+        "ru": "ваш",
+        "emoji": "👥",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_their",
+        "topicId": "pronouns",
+        "che": "церан",
+        "ru": "их",
+        "emoji": "👥",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_who",
+        "topicId": "pronouns",
+        "che": "мила",
+        "ru": "кто",
+        "emoji": "❓",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_what",
+        "topicId": "pronouns",
+        "che": "хӀун",
+        "ru": "что",
+        "emoji": "❓",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_where",
+        "topicId": "pronouns",
+        "che": "мичахь",
+        "ru": "где",
+        "emoji": "📍",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_when",
+        "topicId": "pronouns",
+        "che": "маца",
+        "ru": "когда",
+        "emoji": "⏰",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_why",
+        "topicId": "pronouns",
+        "che": "хӀунда",
+        "ru": "почему",
+        "emoji": "❓",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_how",
+        "topicId": "pronouns",
+        "che": "муха",
+        "ru": "как",
+        "emoji": "❓",
+        "level": 1,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 59,
+    "cards": [
+      {
+        "id": "pron_how_much",
+        "topicId": "pronouns",
+        "che": "маса",
+        "ru": "сколько",
+        "emoji": "🔢",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_which",
+        "topicId": "pronouns",
+        "che": "муьлха",
+        "ru": "какой, который",
+        "emoji": "❓",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_this",
+        "topicId": "pronouns",
+        "che": "хӀара",
+        "ru": "этот",
+        "emoji": "👉",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_that",
+        "topicId": "pronouns",
+        "che": "дӀора",
+        "ru": "тот, вон тот",
+        "emoji": "👈",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_these",
+        "topicId": "pronouns",
+        "che": "хӀараш",
+        "ru": "эти",
+        "emoji": "👉",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_those",
+        "topicId": "pronouns",
+        "che": "дӀораш",
+        "ru": "те, вон те",
+        "emoji": "👈",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_all",
+        "topicId": "pronouns",
+        "che": "дерриг",
+        "ru": "все, всё",
+        "emoji": "🌍",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_some",
+        "topicId": "pronouns",
+        "che": "цхьа",
+        "ru": "некоторый, один",
+        "emoji": "1️⃣",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_no",
+        "topicId": "pronouns",
+        "che": "хӀумма а",
+        "ru": "ничто, никакой",
+        "emoji": "🚫",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_every",
+        "topicId": "pronouns",
+        "che": "хӀора",
+        "ru": "каждый",
+        "emoji": "✅",
+        "level": 2,
+        "source": "corpus"
+      }
+    ]
+  },
+  {
+    "batchIndex": 60,
+    "cards": [
+      {
+        "id": "pron_other",
+        "topicId": "pronouns",
+        "che": "кхин",
+        "ru": "другой",
+        "emoji": "🔄",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_here",
+        "topicId": "pronouns",
+        "che": "кхузахь",
+        "ru": "здесь, тут",
+        "emoji": "📍",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_there",
+        "topicId": "pronouns",
+        "che": "цигахь",
+        "ru": "там",
+        "emoji": "📌",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_whither",
+        "topicId": "pronouns",
+        "che": "мича",
+        "ru": "куда",
+        "emoji": "🧭",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_whence",
+        "topicId": "pronouns",
+        "che": "мичара",
+        "ru": "откуда",
+        "emoji": "🛫",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_self",
+        "topicId": "pronouns",
+        "che": "ша",
+        "ru": "сам, себя",
+        "emoji": "👤",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_together",
+        "topicId": "pronouns",
+        "che": "цхьаьна",
+        "ru": "вместе",
+        "emoji": "🤝",
+        "level": 1,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_such",
+        "topicId": "pronouns",
+        "che": "иштта",
+        "ru": "такой, так",
+        "emoji": "👍",
+        "level": 2,
+        "source": "corpus"
+      },
+      {
+        "id": "pron_nobody",
+        "topicId": "pronouns",
+        "che": "цхьа а",
+        "ru": "никто, ни один",
+        "emoji": "👤",
+        "level": 2,
+        "source": "corpus"
+      }
+    ]
+  }
+]

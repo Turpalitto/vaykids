@@ -1,0 +1,4615 @@
+[
+  {
+    "batchIndex": 1,
+    "cards": [
+      {
+        "id": "animals_hedgehog",
+        "topicId": "animals",
+        "che": "Ӏаьрцак",
+        "ru": "ёж"
+      },
+      {
+        "id": "num16",
+        "topicId": "colors",
+        "che": "ялхийтта",
+        "ru": "шестнадцать"
+      },
+      {
+        "id": "body_fist",
+        "topicId": "body",
+        "che": "буй",
+        "ru": "кулак"
+      },
+      {
+        "id": "reza",
+        "topicId": "emotions",
+        "che": "реза",
+        "ru": "довольный"
+      },
+      {
+        "id": "bezam",
+        "topicId": "emotions",
+        "che": "безам",
+        "ru": "любовь"
+      },
+      {
+        "id": "lovza",
+        "topicId": "emotions",
+        "che": "ловза",
+        "ru": "играть"
+      },
+      {
+        "id": "mala",
+        "topicId": "emotions",
+        "che": "мала",
+        "ru": "пить"
+      },
+      {
+        "id": "hazha",
+        "topicId": "emotions",
+        "che": "хьажа",
+        "ru": "смотреть"
+      },
+      {
+        "id": "ladog1a",
+        "topicId": "emotions",
+        "che": "ладогӀа",
+        "ru": "слушать"
+      },
+      {
+        "id": "haa",
+        "topicId": "emotions",
+        "che": "хаа",
+        "ru": "сидеть"
+      }
+    ],
+    "cardIds": [
+      "animals_hedgehog",
+      "num16",
+      "body_fist",
+      "reza",
+      "bezam",
+      "lovza",
+      "mala",
+      "hazha",
+      "ladog1a",
+      "haa"
+    ]
+  },
+  {
+    "batchIndex": 2,
+    "cards": [
+      {
+        "id": "desha",
+        "topicId": "emotions",
+        "che": "деша",
+        "ru": "читать, учиться"
+      },
+      {
+        "id": "vela",
+        "topicId": "emotions",
+        "che": "дела",
+        "ru": "смеяться"
+      },
+      {
+        "id": "elkha",
+        "topicId": "emotions",
+        "che": "делха",
+        "ru": "плакать"
+      },
+      {
+        "id": "helkhar",
+        "topicId": "emotions",
+        "che": "хелхар",
+        "ru": "танец"
+      },
+      {
+        "id": "dika",
+        "topicId": "emotions",
+        "che": "дика",
+        "ru": "хорошо, хороший"
+      },
+      {
+        "id": "haza",
+        "topicId": "emotions",
+        "che": "хаза",
+        "ru": "красивый"
+      },
+      {
+        "id": "marshalla",
+        "topicId": "emotions",
+        "che": "маршалла",
+        "ru": "приветствие (здравствуй)"
+      },
+      {
+        "id": "barkalla",
+        "topicId": "emotions",
+        "che": "баркалла",
+        "ru": "спасибо"
+      },
+      {
+        "id": "emo_surprise",
+        "topicId": "emotions",
+        "che": "цецдалар",
+        "ru": "удивление"
+      },
+      {
+        "id": "emo_calm",
+        "topicId": "emotions",
+        "che": "паргӀат",
+        "ru": "спокойный, умиротворённый"
+      }
+    ],
+    "cardIds": [
+      "desha",
+      "vela",
+      "elkha",
+      "helkhar",
+      "dika",
+      "haza",
+      "marshalla",
+      "barkalla",
+      "emo_surprise",
+      "emo_calm"
+    ]
+  },
+  {
+    "batchIndex": 3,
+    "cards": [
+      {
+        "id": "emo_shy",
+        "topicId": "emotions",
+        "che": "эхьхетар",
+        "ru": "смущение, стыдливость"
+      },
+      {
+        "id": "emo_pride",
+        "topicId": "emotions",
+        "che": "дозалла",
+        "ru": "гордость, достоинство"
+      },
+      {
+        "id": "emo_tired",
+        "topicId": "emotions",
+        "che": "кӀадвалар",
+        "ru": "усталость"
+      },
+      {
+        "id": "emo_bravery",
+        "topicId": "emotions",
+        "che": "майралла",
+        "ru": "смелость, отвага"
+      },
+      {
+        "id": "emo_mercy",
+        "topicId": "emotions",
+        "che": "къинхетам",
+        "ru": "милосердие, сочувствие"
+      },
+      {
+        "id": "emo_hope",
+        "topicId": "emotions",
+        "che": "догдохар",
+        "ru": "надежда"
+      },
+      {
+        "id": "pheg1a",
+        "topicId": "traditions",
+        "che": "пхьегӀа",
+        "ru": "посуда"
+      },
+      {
+        "id": "shaelta",
+        "topicId": "traditions",
+        "che": "шаьлта",
+        "ru": "кинжал"
+      },
+      {
+        "id": "vota",
+        "topicId": "traditions",
+        "che": "вота",
+        "ru": "барабан"
+      },
+      {
+        "id": "istang",
+        "topicId": "traditions",
+        "che": "истанг",
+        "ru": "войлочный ковёр"
+      }
+    ],
+    "cardIds": [
+      "emo_shy",
+      "emo_pride",
+      "emo_tired",
+      "emo_bravery",
+      "emo_mercy",
+      "emo_hope",
+      "pheg1a",
+      "shaelta",
+      "vota",
+      "istang"
+    ]
+  },
+  {
+    "batchIndex": 4,
+    "cards": [
+      {
+        "id": "verta",
+        "topicId": "traditions",
+        "che": "верта",
+        "ru": "бурка"
+      },
+      {
+        "id": "khaba",
+        "topicId": "traditions",
+        "che": "кхаба",
+        "ru": "глиняный кувшин"
+      },
+      {
+        "id": "choa",
+        "topicId": "traditions",
+        "che": "чоа",
+        "ru": "черкеска"
+      },
+      {
+        "id": "yurt",
+        "topicId": "traditions",
+        "che": "юрт",
+        "ru": "село, аул"
+      },
+      {
+        "id": "g1ala",
+        "topicId": "traditions",
+        "che": "гӀала",
+        "ru": "город"
+      },
+      {
+        "id": "trad_shield",
+        "topicId": "traditions",
+        "che": "турс",
+        "ru": "щит"
+      },
+      {
+        "id": "trad_hearth",
+        "topicId": "traditions",
+        "che": "кхерч",
+        "ru": "очаг"
+      },
+      {
+        "id": "trad_chain",
+        "topicId": "traditions",
+        "che": "зӀе",
+        "ru": "очажная цепь"
+      },
+      {
+        "id": "trad_scythe",
+        "topicId": "traditions",
+        "che": "мангал",
+        "ru": "коса (орудие)"
+      },
+      {
+        "id": "trad_chest",
+        "topicId": "traditions",
+        "che": "тӀорказ",
+        "ru": "сундук"
+      }
+    ],
+    "cardIds": [
+      "verta",
+      "khaba",
+      "choa",
+      "yurt",
+      "g1ala",
+      "trad_shield",
+      "trad_hearth",
+      "trad_chain",
+      "trad_scythe",
+      "trad_chest"
+    ]
+  },
+  {
+    "batchIndex": 5,
+    "cards": [
+      {
+        "id": "trad_plow",
+        "topicId": "traditions",
+        "che": "нох",
+        "ru": "плуг"
+      },
+      {
+        "id": "trad_etiquette",
+        "topicId": "traditions",
+        "che": "гӀиллакх",
+        "ru": "обычай, этикет"
+      },
+      {
+        "id": "trad_language",
+        "topicId": "traditions",
+        "che": "нохчийн мотт",
+        "ru": "чеченский язык"
+      },
+      {
+        "id": "trad_belt",
+        "topicId": "traditions",
+        "che": "детин доьхка",
+        "ru": "серебряный пояс"
+      },
+      {
+        "id": "trad_cradle",
+        "topicId": "traditions",
+        "che": "ага",
+        "ru": "люлька, колыбель"
+      },
+      {
+        "id": "trad_bow",
+        "topicId": "traditions",
+        "che": "Ӏад",
+        "ru": "лук (оружие)"
+      },
+      {
+        "id": "trad_horn",
+        "topicId": "traditions",
+        "che": "маӀа",
+        "ru": "рог (сосуд/сигнальный)"
+      },
+      {
+        "id": "trad_saddle",
+        "topicId": "traditions",
+        "che": "нуьйр",
+        "ru": "седло"
+      },
+      {
+        "id": "trad_mill",
+        "topicId": "traditions",
+        "che": "хьера",
+        "ru": "мельница"
+      },
+      {
+        "id": "trad_horseshoe",
+        "topicId": "traditions",
+        "che": "нала",
+        "ru": "подкова"
+      }
+    ],
+    "cardIds": [
+      "trad_plow",
+      "trad_etiquette",
+      "trad_language",
+      "trad_belt",
+      "trad_cradle",
+      "trad_bow",
+      "trad_horn",
+      "trad_saddle",
+      "trad_mill",
+      "trad_horseshoe"
+    ]
+  },
+  {
+    "batchIndex": 6,
+    "cards": [
+      {
+        "id": "lam",
+        "topicId": "mountains",
+        "che": "лам",
+        "ru": "гора"
+      },
+      {
+        "id": "hi2",
+        "topicId": "mountains",
+        "che": "хи",
+        "ru": "река"
+      },
+      {
+        "id": "1am",
+        "topicId": "mountains",
+        "che": "Ӏам",
+        "ru": "озеро"
+      },
+      {
+        "id": "are",
+        "topicId": "mountains",
+        "che": "аре",
+        "ru": "поле, равнина"
+      },
+      {
+        "id": "shovda",
+        "topicId": "mountains",
+        "che": "шовда",
+        "ru": "родник"
+      },
+      {
+        "id": "1in",
+        "topicId": "mountains",
+        "che": "Ӏин",
+        "ru": "ущелье"
+      },
+      {
+        "id": "berd",
+        "topicId": "mountains",
+        "che": "берд",
+        "ru": "берег, обрыв"
+      },
+      {
+        "id": "hekh",
+        "topicId": "mountains",
+        "che": "хьех",
+        "ru": "пещера"
+      },
+      {
+        "id": "sha",
+        "topicId": "mountains",
+        "che": "ша",
+        "ru": "лёд"
+      },
+      {
+        "id": "duq",
+        "topicId": "mountains",
+        "che": "дукъ",
+        "ru": "хребет"
+      }
+    ],
+    "cardIds": [
+      "lam",
+      "hi2",
+      "1am",
+      "are",
+      "shovda",
+      "1in",
+      "berd",
+      "hekh",
+      "sha",
+      "duq"
+    ]
+  },
+  {
+    "batchIndex": 7,
+    "cards": [
+      {
+        "id": "g1ayre",
+        "topicId": "mountains",
+        "che": "гӀайре",
+        "ru": "остров"
+      },
+      {
+        "id": "tog1i",
+        "topicId": "mountains",
+        "che": "тогӀи",
+        "ru": "долина"
+      },
+      {
+        "id": "mokhk",
+        "topicId": "mountains",
+        "che": "мохк",
+        "ru": "край, страна"
+      },
+      {
+        "id": "mount_waterfall",
+        "topicId": "mountains",
+        "che": "чухчари",
+        "ru": "водопад"
+      },
+      {
+        "id": "mount_peak",
+        "topicId": "mountains",
+        "che": "бохь",
+        "ru": "вершина, пик"
+      },
+      {
+        "id": "mount_snowpeak",
+        "topicId": "mountains",
+        "che": "башлам",
+        "ru": "снежная вершина, ледник"
+      },
+      {
+        "id": "mount_cliff",
+        "topicId": "mountains",
+        "che": "тарх",
+        "ru": "скала, утёс"
+      },
+      {
+        "id": "mount_canyon",
+        "topicId": "mountains",
+        "che": "чӀож",
+        "ru": "теснина, каньон"
+      },
+      {
+        "id": "mount_pass",
+        "topicId": "mountains",
+        "che": "асу",
+        "ru": "перевал"
+      },
+      {
+        "id": "mount_moss",
+        "topicId": "mountains",
+        "che": "кхарз",
+        "ru": "мох на скалах"
+      }
+    ],
+    "cardIds": [
+      "g1ayre",
+      "tog1i",
+      "mokhk",
+      "mount_waterfall",
+      "mount_peak",
+      "mount_snowpeak",
+      "mount_cliff",
+      "mount_canyon",
+      "mount_pass",
+      "mount_moss"
+    ]
+  },
+  {
+    "batchIndex": 8,
+    "cards": [
+      {
+        "id": "mount_trail",
+        "topicId": "mountains",
+        "che": "ирхе",
+        "ru": "подъём, горная тропа"
+      },
+      {
+        "id": "weather_malkh",
+        "topicId": "weather",
+        "che": "малх",
+        "ru": "солнце"
+      },
+      {
+        "id": "weather_butt",
+        "topicId": "weather",
+        "che": "бутт",
+        "ru": "луна"
+      },
+      {
+        "id": "weather_seda",
+        "topicId": "weather",
+        "che": "седа",
+        "ru": "звезда"
+      },
+      {
+        "id": "weather_stigal",
+        "topicId": "weather",
+        "che": "стигал",
+        "ru": "небо"
+      },
+      {
+        "id": "weather_lo",
+        "topicId": "weather",
+        "che": "ло",
+        "ru": "снег"
+      },
+      {
+        "id": "weather_dog1a",
+        "topicId": "weather",
+        "che": "догӀа",
+        "ru": "дождь"
+      },
+      {
+        "id": "weather_mokh",
+        "topicId": "weather",
+        "che": "мох",
+        "ru": "ветер"
+      },
+      {
+        "id": "weather_markha",
+        "topicId": "weather",
+        "che": "марха",
+        "ru": "облако"
+      },
+      {
+        "id": "weather_1in",
+        "topicId": "weather",
+        "che": "дохк",
+        "ru": "туман"
+      }
+    ],
+    "cardIds": [
+      "mount_trail",
+      "weather_malkh",
+      "weather_butt",
+      "weather_seda",
+      "weather_stigal",
+      "weather_lo",
+      "weather_dog1a",
+      "weather_mokh",
+      "weather_markha",
+      "weather_1in"
+    ]
+  },
+  {
+    "batchIndex": 9,
+    "cards": [
+      {
+        "id": "weather_g1ar",
+        "topicId": "weather",
+        "che": "къора",
+        "ru": "град"
+      },
+      {
+        "id": "weather_t1ul",
+        "topicId": "weather",
+        "che": "сецакъ",
+        "ru": "молния"
+      },
+      {
+        "id": "weather_mokhaza",
+        "topicId": "weather",
+        "che": "ткъес",
+        "ru": "гроза"
+      },
+      {
+        "id": "weather_shila",
+        "topicId": "weather",
+        "che": "шийла",
+        "ru": "холодный"
+      },
+      {
+        "id": "weather_dova",
+        "topicId": "weather",
+        "che": "довха",
+        "ru": "тёплый"
+      },
+      {
+        "id": "weather_bekha",
+        "topicId": "weather",
+        "che": "довха",
+        "ru": "жаркий"
+      },
+      {
+        "id": "weather_sheena",
+        "topicId": "weather",
+        "che": "салкхене",
+        "ru": "прохладный"
+      },
+      {
+        "id": "weather_bier",
+        "topicId": "weather",
+        "che": "бӀаьсте",
+        "ru": "весна"
+      },
+      {
+        "id": "weather_aekha",
+        "topicId": "weather",
+        "che": "аьхке",
+        "ru": "лето"
+      },
+      {
+        "id": "weather_guoy",
+        "topicId": "weather",
+        "che": "гуьйре",
+        "ru": "осень"
+      }
+    ],
+    "cardIds": [
+      "weather_g1ar",
+      "weather_t1ul",
+      "weather_mokhaza",
+      "weather_shila",
+      "weather_dova",
+      "weather_bekha",
+      "weather_sheena",
+      "weather_bier",
+      "weather_aekha",
+      "weather_guoy"
+    ]
+  },
+  {
+    "batchIndex": 10,
+    "cards": [
+      {
+        "id": "weather_1a",
+        "topicId": "weather",
+        "che": "Ӏа",
+        "ru": "зима"
+      },
+      {
+        "id": "weather_jan",
+        "topicId": "weather",
+        "che": "январь",
+        "ru": "январь"
+      },
+      {
+        "id": "weather_feb",
+        "topicId": "weather",
+        "che": "февраль",
+        "ru": "февраль"
+      },
+      {
+        "id": "weather_mar",
+        "topicId": "weather",
+        "che": "март",
+        "ru": "март"
+      },
+      {
+        "id": "weather_apr",
+        "topicId": "weather",
+        "che": "апрель",
+        "ru": "апрель"
+      },
+      {
+        "id": "weather_may",
+        "topicId": "weather",
+        "che": "май",
+        "ru": "май"
+      },
+      {
+        "id": "weather_jun",
+        "topicId": "weather",
+        "che": "июнь",
+        "ru": "июнь"
+      },
+      {
+        "id": "weather_jul",
+        "topicId": "weather",
+        "che": "июль",
+        "ru": "июль"
+      },
+      {
+        "id": "weather_aug",
+        "topicId": "weather",
+        "che": "август",
+        "ru": "август"
+      },
+      {
+        "id": "weather_sep",
+        "topicId": "weather",
+        "che": "сентябрь",
+        "ru": "сентябрь"
+      }
+    ],
+    "cardIds": [
+      "weather_1a",
+      "weather_jan",
+      "weather_feb",
+      "weather_mar",
+      "weather_apr",
+      "weather_may",
+      "weather_jun",
+      "weather_jul",
+      "weather_aug",
+      "weather_sep"
+    ]
+  },
+  {
+    "batchIndex": 11,
+    "cards": [
+      {
+        "id": "weather_oct",
+        "topicId": "weather",
+        "che": "октябрь",
+        "ru": "октябрь"
+      },
+      {
+        "id": "weather_nov",
+        "topicId": "weather",
+        "che": "ноябрь",
+        "ru": "ноябрь"
+      },
+      {
+        "id": "weather_dec",
+        "topicId": "weather",
+        "che": "декабрь",
+        "ru": "декабрь"
+      },
+      {
+        "id": "weather_mon",
+        "topicId": "weather",
+        "che": "оршот",
+        "ru": "понедельник"
+      },
+      {
+        "id": "weather_tue",
+        "topicId": "weather",
+        "che": "шинара",
+        "ru": "вторник"
+      },
+      {
+        "id": "weather_wed",
+        "topicId": "weather",
+        "che": "кхаара",
+        "ru": "среда"
+      },
+      {
+        "id": "weather_thu",
+        "topicId": "weather",
+        "che": "еара",
+        "ru": "четверг"
+      },
+      {
+        "id": "weather_fri",
+        "topicId": "weather",
+        "che": "пӀераска",
+        "ru": "пятница"
+      },
+      {
+        "id": "weather_sat",
+        "topicId": "weather",
+        "che": "шота",
+        "ru": "суббота"
+      },
+      {
+        "id": "weather_sun",
+        "topicId": "weather",
+        "che": "кӀиранде",
+        "ru": "воскресенье"
+      }
+    ],
+    "cardIds": [
+      "weather_oct",
+      "weather_nov",
+      "weather_dec",
+      "weather_mon",
+      "weather_tue",
+      "weather_wed",
+      "weather_thu",
+      "weather_fri",
+      "weather_sat",
+      "weather_sun"
+    ]
+  },
+  {
+    "batchIndex": 12,
+    "cards": [
+      {
+        "id": "weather_blizzard",
+        "topicId": "weather",
+        "che": "дарц",
+        "ru": "метель, буран"
+      },
+      {
+        "id": "weather_frost",
+        "topicId": "weather",
+        "che": "шело",
+        "ru": "мороз, стужа"
+      },
+      {
+        "id": "weather_heat",
+        "topicId": "weather",
+        "che": "йовхо",
+        "ru": "жара, зной"
+      },
+      {
+        "id": "weather_puddle",
+        "topicId": "weather",
+        "che": "ӀаммагӀа",
+        "ru": "лужа"
+      },
+      {
+        "id": "weather_whirlwind",
+        "topicId": "weather",
+        "che": "хьовзам",
+        "ru": "вихрь, смерч"
+      },
+      {
+        "id": "weather_breeze",
+        "topicId": "weather",
+        "che": "салкхенан мох",
+        "ru": "прохладный ветерок"
+      },
+      {
+        "id": "weather_icicle",
+        "topicId": "weather",
+        "che": "шанан чӀурам",
+        "ru": "сосулька"
+      },
+      {
+        "id": "time_day",
+        "topicId": "time",
+        "che": "де",
+        "ru": "день"
+      },
+      {
+        "id": "time_night",
+        "topicId": "time",
+        "che": "буьйса",
+        "ru": "ночь"
+      },
+      {
+        "id": "time_morning",
+        "topicId": "time",
+        "che": "Ӏуьйре",
+        "ru": "утро"
+      }
+    ],
+    "cardIds": [
+      "weather_blizzard",
+      "weather_frost",
+      "weather_heat",
+      "weather_puddle",
+      "weather_whirlwind",
+      "weather_breeze",
+      "weather_icicle",
+      "time_day",
+      "time_night",
+      "time_morning"
+    ]
+  },
+  {
+    "batchIndex": 13,
+    "cards": [
+      {
+        "id": "time_evening",
+        "topicId": "time",
+        "che": "суьйре",
+        "ru": "вечер"
+      },
+      {
+        "id": "time_noon",
+        "topicId": "time",
+        "che": "делкъе",
+        "ru": "полдень"
+      },
+      {
+        "id": "time_midnight",
+        "topicId": "time",
+        "che": "буьйсанан юккъ",
+        "ru": "полночь"
+      },
+      {
+        "id": "time_hour",
+        "topicId": "time",
+        "che": "сахьт",
+        "ru": "час"
+      },
+      {
+        "id": "time_minute",
+        "topicId": "time",
+        "che": "минот",
+        "ru": "минута"
+      },
+      {
+        "id": "time_second",
+        "topicId": "time",
+        "che": "секунд",
+        "ru": "секунда"
+      },
+      {
+        "id": "time_today",
+        "topicId": "time",
+        "che": "тахана",
+        "ru": "сегодня"
+      },
+      {
+        "id": "time_yesterday",
+        "topicId": "time",
+        "che": "селхана",
+        "ru": "вчера"
+      },
+      {
+        "id": "time_tomorrow",
+        "topicId": "time",
+        "che": "кхана",
+        "ru": "завтра"
+      },
+      {
+        "id": "time_week",
+        "topicId": "time",
+        "che": "кӀира",
+        "ru": "неделя"
+      }
+    ],
+    "cardIds": [
+      "time_evening",
+      "time_noon",
+      "time_midnight",
+      "time_hour",
+      "time_minute",
+      "time_second",
+      "time_today",
+      "time_yesterday",
+      "time_tomorrow",
+      "time_week"
+    ]
+  },
+  {
+    "batchIndex": 14,
+    "cards": [
+      {
+        "id": "time_month",
+        "topicId": "time",
+        "che": "бутт",
+        "ru": "месяц"
+      },
+      {
+        "id": "time_year",
+        "topicId": "time",
+        "che": "шо",
+        "ru": "год"
+      },
+      {
+        "id": "time_century",
+        "topicId": "time",
+        "che": "бӀешо",
+        "ru": "век"
+      },
+      {
+        "id": "time_now",
+        "topicId": "time",
+        "che": "хӀинца",
+        "ru": "сейчас"
+      },
+      {
+        "id": "time_later",
+        "topicId": "time",
+        "che": "тӀаьхьа",
+        "ru": "позже"
+      },
+      {
+        "id": "time_early",
+        "topicId": "time",
+        "che": "хьалхе",
+        "ru": "рано"
+      },
+      {
+        "id": "time_late",
+        "topicId": "time",
+        "che": "тӀаьхьа",
+        "ru": "поздно"
+      },
+      {
+        "id": "time_always",
+        "topicId": "time",
+        "che": "гуттар",
+        "ru": "всегда"
+      },
+      {
+        "id": "time_never",
+        "topicId": "time",
+        "che": "цкъа а",
+        "ru": "никогда"
+      },
+      {
+        "id": "time_sometimes",
+        "topicId": "time",
+        "che": "наггахь",
+        "ru": "иногда"
+      }
+    ],
+    "cardIds": [
+      "time_month",
+      "time_year",
+      "time_century",
+      "time_now",
+      "time_later",
+      "time_early",
+      "time_late",
+      "time_always",
+      "time_never",
+      "time_sometimes"
+    ]
+  },
+  {
+    "batchIndex": 15,
+    "cards": [
+      {
+        "id": "time_often",
+        "topicId": "time",
+        "che": "каст-каста",
+        "ru": "часто"
+      },
+      {
+        "id": "time_dawn",
+        "topicId": "time",
+        "che": "сахуьлу хан",
+        "ru": "рассвет, заря"
+      },
+      {
+        "id": "time_sunset",
+        "topicId": "time",
+        "che": "малхбузе",
+        "ru": "закат"
+      },
+      {
+        "id": "time_season",
+        "topicId": "time",
+        "che": "шеран хан",
+        "ru": "время года, сезон"
+      },
+      {
+        "id": "time_dayoff",
+        "topicId": "time",
+        "che": "садаӀаран де",
+        "ru": "выходной день"
+      },
+      {
+        "id": "prof_doctor",
+        "topicId": "professions",
+        "che": "лор",
+        "ru": "врач"
+      },
+      {
+        "id": "prof_teacher",
+        "topicId": "professions",
+        "che": "хьехархо",
+        "ru": "учитель"
+      },
+      {
+        "id": "prof_driver",
+        "topicId": "professions",
+        "che": "машенхо",
+        "ru": "водитель"
+      },
+      {
+        "id": "prof_cook",
+        "topicId": "professions",
+        "che": "кхачабанхо",
+        "ru": "повар"
+      },
+      {
+        "id": "prof_engineer",
+        "topicId": "professions",
+        "che": "инженер",
+        "ru": "инженер"
+      }
+    ],
+    "cardIds": [
+      "time_often",
+      "time_dawn",
+      "time_sunset",
+      "time_season",
+      "time_dayoff",
+      "prof_doctor",
+      "prof_teacher",
+      "prof_driver",
+      "prof_cook",
+      "prof_engineer"
+    ]
+  },
+  {
+    "batchIndex": 16,
+    "cards": [
+      {
+        "id": "prof_builder",
+        "topicId": "professions",
+        "che": "гӀишлохо",
+        "ru": "строитель"
+      },
+      {
+        "id": "prof_farmer",
+        "topicId": "professions",
+        "che": "йуьртанхо",
+        "ru": "фермер"
+      },
+      {
+        "id": "prof_military",
+        "topicId": "professions",
+        "che": "эскархо",
+        "ru": "военный"
+      },
+      {
+        "id": "prof_police",
+        "topicId": "professions",
+        "che": "полицихо",
+        "ru": "полицейский"
+      },
+      {
+        "id": "prof_firefighter",
+        "topicId": "professions",
+        "che": "цӀеяйархо",
+        "ru": "пожарный"
+      },
+      {
+        "id": "prof_pilot",
+        "topicId": "professions",
+        "che": "кеманхо",
+        "ru": "пилот"
+      },
+      {
+        "id": "prof_sailor",
+        "topicId": "professions",
+        "che": "хинкеманхо",
+        "ru": "моряк"
+      },
+      {
+        "id": "prof_artist",
+        "topicId": "professions",
+        "che": "суртдиллархо",
+        "ru": "художник"
+      },
+      {
+        "id": "prof_musician",
+        "topicId": "professions",
+        "che": "пондарча",
+        "ru": "музыкант"
+      },
+      {
+        "id": "prof_writer",
+        "topicId": "professions",
+        "che": "яздархо",
+        "ru": "писатель"
+      }
+    ],
+    "cardIds": [
+      "prof_builder",
+      "prof_farmer",
+      "prof_military",
+      "prof_police",
+      "prof_firefighter",
+      "prof_pilot",
+      "prof_sailor",
+      "prof_artist",
+      "prof_musician",
+      "prof_writer"
+    ]
+  },
+  {
+    "batchIndex": 17,
+    "cards": [
+      {
+        "id": "prof_scientist",
+        "topicId": "professions",
+        "che": "Ӏилманча",
+        "ru": "учёный"
+      },
+      {
+        "id": "prof_accountant",
+        "topicId": "professions",
+        "che": "бухгалтер",
+        "ru": "бухгалтер"
+      },
+      {
+        "id": "prof_shopkeeper",
+        "topicId": "professions",
+        "che": "туькананхо",
+        "ru": "продавец"
+      },
+      {
+        "id": "prof_athlete",
+        "topicId": "professions",
+        "che": "спортхо",
+        "ru": "спортсмен"
+      },
+      {
+        "id": "prof_chef",
+        "topicId": "professions",
+        "che": "коьрта кхачабанхо",
+        "ru": "шеф-повар"
+      },
+      {
+        "id": "prof_dentist",
+        "topicId": "professions",
+        "che": "цергийн лор",
+        "ru": "стоматолог"
+      },
+      {
+        "id": "prof_pharmacist",
+        "topicId": "professions",
+        "che": "молханхо",
+        "ru": "фармацевт"
+      },
+      {
+        "id": "prof_judge",
+        "topicId": "professions",
+        "che": "кхелахо",
+        "ru": "судья"
+      },
+      {
+        "id": "prof_lawyer",
+        "topicId": "professions",
+        "che": "бакъоларйархо",
+        "ru": "юрист, адвокат"
+      },
+      {
+        "id": "prof_manager",
+        "topicId": "professions",
+        "che": "куьйгалхо",
+        "ru": "руководитель, менеджер"
+      }
+    ],
+    "cardIds": [
+      "prof_scientist",
+      "prof_accountant",
+      "prof_shopkeeper",
+      "prof_athlete",
+      "prof_chef",
+      "prof_dentist",
+      "prof_pharmacist",
+      "prof_judge",
+      "prof_lawyer",
+      "prof_manager"
+    ]
+  },
+  {
+    "batchIndex": 18,
+    "cards": [
+      {
+        "id": "prof_it",
+        "topicId": "professions",
+        "che": "программист",
+        "ru": "программист"
+      },
+      {
+        "id": "prof_architect",
+        "topicId": "professions",
+        "che": "архитектор",
+        "ru": "архитектор"
+      },
+      {
+        "id": "prof_journalist",
+        "topicId": "professions",
+        "che": "журналист",
+        "ru": "журналист"
+      },
+      {
+        "id": "prof_shepherd",
+        "topicId": "professions",
+        "che": "Ӏу",
+        "ru": "чабан, пастух"
+      },
+      {
+        "id": "prof_blacksmith",
+        "topicId": "professions",
+        "che": "пхьар",
+        "ru": "кузнец, мастер"
+      },
+      {
+        "id": "prof_carpenter",
+        "topicId": "professions",
+        "che": "дечиг-пхьар",
+        "ru": "плотник, столяр"
+      },
+      {
+        "id": "prof_tailor",
+        "topicId": "professions",
+        "che": "тегархо",
+        "ru": "портной, швея"
+      },
+      {
+        "id": "prof_hunter",
+        "topicId": "professions",
+        "che": "таллархо",
+        "ru": "охотник"
+      },
+      {
+        "id": "prof_fisherman",
+        "topicId": "professions",
+        "che": "чӀерийлецархо",
+        "ru": "рыбак"
+      },
+      {
+        "id": "prof_singer",
+        "topicId": "professions",
+        "che": "эшархо",
+        "ru": "певец"
+      }
+    ],
+    "cardIds": [
+      "prof_it",
+      "prof_architect",
+      "prof_journalist",
+      "prof_shepherd",
+      "prof_blacksmith",
+      "prof_carpenter",
+      "prof_tailor",
+      "prof_hunter",
+      "prof_fisherman",
+      "prof_singer"
+    ]
+  },
+  {
+    "batchIndex": 19,
+    "cards": [
+      {
+        "id": "prof_dancer",
+        "topicId": "professions",
+        "che": "хелхархо",
+        "ru": "танцор"
+      },
+      {
+        "id": "prof_baker",
+        "topicId": "professions",
+        "che": "бепиг-доттархо",
+        "ru": "пекарь"
+      },
+      {
+        "id": "prof_shoemaker",
+        "topicId": "professions",
+        "che": "мачаш-пхьар",
+        "ru": "сапожник"
+      },
+      {
+        "id": "city_street",
+        "topicId": "city",
+        "che": "урам",
+        "ru": "улица"
+      },
+      {
+        "id": "city_house",
+        "topicId": "city",
+        "che": "цӀа",
+        "ru": "дом"
+      },
+      {
+        "id": "city_building",
+        "topicId": "city",
+        "che": "гӀишло",
+        "ru": "здание / строение"
+      },
+      {
+        "id": "city_shop",
+        "topicId": "city",
+        "che": "туька",
+        "ru": "магазин"
+      },
+      {
+        "id": "city_market",
+        "topicId": "city",
+        "che": "базар",
+        "ru": "рынок"
+      },
+      {
+        "id": "city_school",
+        "topicId": "city",
+        "che": "школа",
+        "ru": "школа"
+      },
+      {
+        "id": "city_hospital",
+        "topicId": "city",
+        "che": "дарбанцӀа",
+        "ru": "больница"
+      }
+    ],
+    "cardIds": [
+      "prof_dancer",
+      "prof_baker",
+      "prof_shoemaker",
+      "city_street",
+      "city_house",
+      "city_building",
+      "city_shop",
+      "city_market",
+      "city_school",
+      "city_hospital"
+    ]
+  },
+  {
+    "batchIndex": 20,
+    "cards": [
+      {
+        "id": "city_park",
+        "topicId": "city",
+        "che": "парк",
+        "ru": "парк"
+      },
+      {
+        "id": "city_square",
+        "topicId": "city",
+        "che": "майдан",
+        "ru": "площадь"
+      },
+      {
+        "id": "city_bridge",
+        "topicId": "city",
+        "che": "тӀай",
+        "ru": "мост"
+      },
+      {
+        "id": "city_road",
+        "topicId": "city",
+        "che": "некъ",
+        "ru": "дорога"
+      },
+      {
+        "id": "city_railway",
+        "topicId": "city",
+        "che": "эчигнекъ",
+        "ru": "железная дорога"
+      },
+      {
+        "id": "city_airport",
+        "topicId": "city",
+        "che": "аэропорт",
+        "ru": "аэропорт"
+      },
+      {
+        "id": "city_port",
+        "topicId": "city",
+        "che": "порт",
+        "ru": "порт"
+      },
+      {
+        "id": "city_fountain",
+        "topicId": "city",
+        "che": "фонтан",
+        "ru": "фонтан"
+      },
+      {
+        "id": "city_monument",
+        "topicId": "city",
+        "che": "хӀоллам",
+        "ru": "памятник"
+      },
+      {
+        "id": "city_museum",
+        "topicId": "city",
+        "che": "музей",
+        "ru": "музей"
+      }
+    ],
+    "cardIds": [
+      "city_park",
+      "city_square",
+      "city_bridge",
+      "city_road",
+      "city_railway",
+      "city_airport",
+      "city_port",
+      "city_fountain",
+      "city_monument",
+      "city_museum"
+    ]
+  },
+  {
+    "batchIndex": 21,
+    "cards": [
+      {
+        "id": "city_theatre",
+        "topicId": "city",
+        "che": "театр",
+        "ru": "театр"
+      },
+      {
+        "id": "city_cinema",
+        "topicId": "city",
+        "che": "кинотеатр",
+        "ru": "кинотеатр"
+      },
+      {
+        "id": "city_bank",
+        "topicId": "city",
+        "che": "банк",
+        "ru": "банк"
+      },
+      {
+        "id": "city_hotel",
+        "topicId": "city",
+        "che": "хьешийн цӀа",
+        "ru": "гостиница"
+      },
+      {
+        "id": "city_restaurant",
+        "topicId": "city",
+        "che": "кхачан цӀа",
+        "ru": "ресторан / кафе"
+      },
+      {
+        "id": "city_cafe",
+        "topicId": "city",
+        "che": "хӀусам-туька",
+        "ru": "кафетерий"
+      },
+      {
+        "id": "city_pharmacy",
+        "topicId": "city",
+        "che": "молханийн туька",
+        "ru": "аптека"
+      },
+      {
+        "id": "city_police",
+        "topicId": "city",
+        "che": "полици",
+        "ru": "полиция"
+      },
+      {
+        "id": "city_firestation",
+        "topicId": "city",
+        "che": "цӀеяйаран дакъа",
+        "ru": "пожарная часть"
+      },
+      {
+        "id": "city_mosque",
+        "topicId": "city",
+        "che": "маьждиг",
+        "ru": "мечеть"
+      }
+    ],
+    "cardIds": [
+      "city_theatre",
+      "city_cinema",
+      "city_bank",
+      "city_hotel",
+      "city_restaurant",
+      "city_cafe",
+      "city_pharmacy",
+      "city_police",
+      "city_firestation",
+      "city_mosque"
+    ]
+  },
+  {
+    "batchIndex": 22,
+    "cards": [
+      {
+        "id": "city_kindergarten",
+        "topicId": "city",
+        "che": "берийн беш",
+        "ru": "детский сад"
+      },
+      {
+        "id": "city_playground",
+        "topicId": "city",
+        "che": "ловзаран майда",
+        "ru": "детская площадка"
+      },
+      {
+        "id": "city_post",
+        "topicId": "city",
+        "che": "пошт",
+        "ru": "почта"
+      },
+      {
+        "id": "city_crosswalk",
+        "topicId": "city",
+        "che": "гӀашлойн некъ",
+        "ru": "пешеходный переход"
+      },
+      {
+        "id": "city_lantern",
+        "topicId": "city",
+        "che": "ураман чиркх",
+        "ru": "уличный фонарь"
+      },
+      {
+        "id": "city_bench",
+        "topicId": "city",
+        "che": "лаьтта гӀант",
+        "ru": "скамейка"
+      },
+      {
+        "id": "city_bakery",
+        "topicId": "city",
+        "che": "бепиг дотту меттиг",
+        "ru": "пекарня"
+      },
+      {
+        "id": "city_zoo",
+        "topicId": "city",
+        "che": "дийнатийн беш",
+        "ru": "зоопарк"
+      },
+      {
+        "id": "city_library",
+        "topicId": "city",
+        "che": "библиотека",
+        "ru": "библиотека"
+      },
+      {
+        "id": "city_stadium",
+        "topicId": "city",
+        "che": "стадион",
+        "ru": "стадион"
+      }
+    ],
+    "cardIds": [
+      "city_kindergarten",
+      "city_playground",
+      "city_post",
+      "city_crosswalk",
+      "city_lantern",
+      "city_bench",
+      "city_bakery",
+      "city_zoo",
+      "city_library",
+      "city_stadium"
+    ]
+  },
+  {
+    "batchIndex": 23,
+    "cards": [
+      {
+        "id": "house_room",
+        "topicId": "house",
+        "che": "чоь",
+        "ru": "комната"
+      },
+      {
+        "id": "house_kitchen",
+        "topicId": "house",
+        "che": "кхачабен чоь",
+        "ru": "кухня"
+      },
+      {
+        "id": "house_bedroom",
+        "topicId": "house",
+        "che": "дижаран чоь",
+        "ru": "спальня"
+      },
+      {
+        "id": "house_bathroom",
+        "topicId": "house",
+        "che": "лийчаран чоь",
+        "ru": "ванная"
+      },
+      {
+        "id": "house_living",
+        "topicId": "house",
+        "che": "хьешийн чоь",
+        "ru": "гостиная"
+      },
+      {
+        "id": "house_table",
+        "topicId": "house",
+        "che": "стол",
+        "ru": "стол"
+      },
+      {
+        "id": "house_chair",
+        "topicId": "house",
+        "che": "гӀант",
+        "ru": "стул"
+      },
+      {
+        "id": "house_bed",
+        "topicId": "house",
+        "che": "маьнга",
+        "ru": "кровать"
+      },
+      {
+        "id": "house_sofa",
+        "topicId": "house",
+        "che": "диван",
+        "ru": "диван"
+      },
+      {
+        "id": "house_wardrobe",
+        "topicId": "house",
+        "che": "шкаф",
+        "ru": "шкаф"
+      }
+    ],
+    "cardIds": [
+      "house_room",
+      "house_kitchen",
+      "house_bedroom",
+      "house_bathroom",
+      "house_living",
+      "house_table",
+      "house_chair",
+      "house_bed",
+      "house_sofa",
+      "house_wardrobe"
+    ]
+  },
+  {
+    "batchIndex": 24,
+    "cards": [
+      {
+        "id": "house_shelf",
+        "topicId": "house",
+        "che": "полка",
+        "ru": "полка"
+      },
+      {
+        "id": "house_tv",
+        "topicId": "house",
+        "che": "телевизор",
+        "ru": "телевизор"
+      },
+      {
+        "id": "house_fridge",
+        "topicId": "house",
+        "che": "холодильник",
+        "ru": "холодильник"
+      },
+      {
+        "id": "house_microwave",
+        "topicId": "house",
+        "che": "микроволновка",
+        "ru": "микроволновка"
+      },
+      {
+        "id": "house_washing",
+        "topicId": "house",
+        "che": "бедаршюьтту машен",
+        "ru": "стиральная машина"
+      },
+      {
+        "id": "house_vacuum",
+        "topicId": "house",
+        "che": "пылесос",
+        "ru": "пылесос"
+      },
+      {
+        "id": "house_door",
+        "topicId": "house",
+        "che": "неӀ",
+        "ru": "дверь"
+      },
+      {
+        "id": "house_window",
+        "topicId": "house",
+        "che": "кор",
+        "ru": "окно"
+      },
+      {
+        "id": "house_roof",
+        "topicId": "house",
+        "che": "тхов",
+        "ru": "крыша"
+      },
+      {
+        "id": "house_floor",
+        "topicId": "house",
+        "che": "цӀенкъа",
+        "ru": "пол"
+      }
+    ],
+    "cardIds": [
+      "house_shelf",
+      "house_tv",
+      "house_fridge",
+      "house_microwave",
+      "house_washing",
+      "house_vacuum",
+      "house_door",
+      "house_window",
+      "house_roof",
+      "house_floor"
+    ]
+  },
+  {
+    "batchIndex": 25,
+    "cards": [
+      {
+        "id": "house_wall",
+        "topicId": "house",
+        "che": "пен",
+        "ru": "стена"
+      },
+      {
+        "id": "house_garden",
+        "topicId": "house",
+        "che": "беш",
+        "ru": "сад"
+      },
+      {
+        "id": "house_fence",
+        "topicId": "house",
+        "che": "керт",
+        "ru": "забор, ограда"
+      },
+      {
+        "id": "house_gate",
+        "topicId": "house",
+        "che": "ков",
+        "ru": "ворота"
+      },
+      {
+        "id": "house_curtain",
+        "topicId": "house",
+        "che": "пардо",
+        "ru": "занавеска, штора"
+      },
+      {
+        "id": "house_lamp",
+        "topicId": "house",
+        "che": "чиркх",
+        "ru": "лампа, светильник"
+      },
+      {
+        "id": "house_stairs",
+        "topicId": "house",
+        "che": "лами",
+        "ru": "лестница"
+      },
+      {
+        "id": "house_ceiling",
+        "topicId": "house",
+        "che": "тхов-кӀело",
+        "ru": "потолок"
+      },
+      {
+        "id": "house_attic",
+        "topicId": "house",
+        "che": "тхов-тӀе",
+        "ru": "чердак"
+      },
+      {
+        "id": "house_chimney",
+        "topicId": "house",
+        "che": "кӀуьран биргӀа",
+        "ru": "печная труба, дымоход"
+      }
+    ],
+    "cardIds": [
+      "house_wall",
+      "house_garden",
+      "house_fence",
+      "house_gate",
+      "house_curtain",
+      "house_lamp",
+      "house_stairs",
+      "house_ceiling",
+      "house_attic",
+      "house_chimney"
+    ]
+  },
+  {
+    "batchIndex": 26,
+    "cards": [
+      {
+        "id": "house_stove",
+        "topicId": "house",
+        "che": "пеш",
+        "ru": "печь, плита"
+      },
+      {
+        "id": "house_lock",
+        "topicId": "house",
+        "che": "догӀа",
+        "ru": "замок"
+      },
+      {
+        "id": "house_handle",
+        "topicId": "house",
+        "che": "тӀам",
+        "ru": "дверная ручка"
+      },
+      {
+        "id": "house_tap",
+        "topicId": "house",
+        "che": "кран",
+        "ru": "кран водопроводный"
+      },
+      {
+        "id": "house_trash",
+        "topicId": "house",
+        "che": "нехаш",
+        "ru": "мусор, урна"
+      },
+      {
+        "id": "house_iron",
+        "topicId": "house",
+        "che": "утюг",
+        "ru": "утюг"
+      },
+      {
+        "id": "shop_store",
+        "topicId": "shopping",
+        "che": "туька",
+        "ru": "магазин"
+      },
+      {
+        "id": "shop_market",
+        "topicId": "shopping",
+        "che": "базар",
+        "ru": "рынок"
+      },
+      {
+        "id": "shop_supermarket",
+        "topicId": "shopping",
+        "che": "йоккха туька",
+        "ru": "супермаркет"
+      },
+      {
+        "id": "shop_pharmacy",
+        "topicId": "shopping",
+        "che": "молханийн туька",
+        "ru": "аптека"
+      }
+    ],
+    "cardIds": [
+      "house_stove",
+      "house_lock",
+      "house_handle",
+      "house_tap",
+      "house_trash",
+      "house_iron",
+      "shop_store",
+      "shop_market",
+      "shop_supermarket",
+      "shop_pharmacy"
+    ]
+  },
+  {
+    "batchIndex": 27,
+    "cards": [
+      {
+        "id": "shop_bookshop",
+        "topicId": "shopping",
+        "che": "жайнаш дохка туька",
+        "ru": "книжный магазин"
+      },
+      {
+        "id": "shop_bread",
+        "topicId": "shopping",
+        "che": "бепиг",
+        "ru": "хлеб"
+      },
+      {
+        "id": "shop_milk",
+        "topicId": "shopping",
+        "che": "шура",
+        "ru": "молоко"
+      },
+      {
+        "id": "shop_meat",
+        "topicId": "shopping",
+        "che": "жижиг",
+        "ru": "мясо"
+      },
+      {
+        "id": "shop_fish",
+        "topicId": "shopping",
+        "che": "чӀара",
+        "ru": "рыба"
+      },
+      {
+        "id": "shop_eggs",
+        "topicId": "shopping",
+        "che": "хӀоа",
+        "ru": "яйца"
+      },
+      {
+        "id": "shop_fruit",
+        "topicId": "shopping",
+        "che": "стом",
+        "ru": "фрукты"
+      },
+      {
+        "id": "shop_veg",
+        "topicId": "shopping",
+        "che": "хасстоьмаш",
+        "ru": "овощи"
+      },
+      {
+        "id": "shop_sugar",
+        "topicId": "shopping",
+        "che": "шекар",
+        "ru": "сахар"
+      },
+      {
+        "id": "shop_salt",
+        "topicId": "shopping",
+        "che": "туьха",
+        "ru": "соль"
+      }
+    ],
+    "cardIds": [
+      "shop_bookshop",
+      "shop_bread",
+      "shop_milk",
+      "shop_meat",
+      "shop_fish",
+      "shop_eggs",
+      "shop_fruit",
+      "shop_veg",
+      "shop_sugar",
+      "shop_salt"
+    ]
+  },
+  {
+    "batchIndex": 28,
+    "cards": [
+      {
+        "id": "shop_oil",
+        "topicId": "shopping",
+        "che": "даьтта",
+        "ru": "масло"
+      },
+      {
+        "id": "shop_juice",
+        "topicId": "shopping",
+        "che": "мутта",
+        "ru": "сок"
+      },
+      {
+        "id": "shop_water",
+        "topicId": "shopping",
+        "che": "хи",
+        "ru": "вода"
+      },
+      {
+        "id": "shop_buy",
+        "topicId": "shopping",
+        "che": "эца",
+        "ru": "покупать"
+      },
+      {
+        "id": "shop_sell",
+        "topicId": "shopping",
+        "che": "дохка",
+        "ru": "продавать"
+      },
+      {
+        "id": "shop_pay",
+        "topicId": "shopping",
+        "che": "мах бан",
+        "ru": "платить, рассчитываться"
+      },
+      {
+        "id": "shop_price",
+        "topicId": "shopping",
+        "che": "мах",
+        "ru": "цена"
+      },
+      {
+        "id": "shop_money",
+        "topicId": "shopping",
+        "che": "ахча",
+        "ru": "деньги"
+      },
+      {
+        "id": "shop_change",
+        "topicId": "shopping",
+        "che": "юхалург",
+        "ru": "сдача"
+      },
+      {
+        "id": "shop_basket",
+        "topicId": "shopping",
+        "che": "тускар",
+        "ru": "корзина"
+      }
+    ],
+    "cardIds": [
+      "shop_oil",
+      "shop_juice",
+      "shop_water",
+      "shop_buy",
+      "shop_sell",
+      "shop_pay",
+      "shop_price",
+      "shop_money",
+      "shop_change",
+      "shop_basket"
+    ]
+  },
+  {
+    "batchIndex": 29,
+    "cards": [
+      {
+        "id": "shop_list",
+        "topicId": "shopping",
+        "che": "могӀам",
+        "ru": "список покупок"
+      },
+      {
+        "id": "shop_cart",
+        "topicId": "shopping",
+        "che": "гӀудалкх",
+        "ru": "магазинная тележка"
+      },
+      {
+        "id": "shop_bag",
+        "topicId": "shopping",
+        "che": "тӀоьрмиг",
+        "ru": "сумка, пакет"
+      },
+      {
+        "id": "shop_scales",
+        "topicId": "shopping",
+        "che": "терза",
+        "ru": "весы"
+      },
+      {
+        "id": "shop_coins",
+        "topicId": "shopping",
+        "che": "кегий ахча",
+        "ru": "монеты, мелочь"
+      },
+      {
+        "id": "shop_bankcard",
+        "topicId": "shopping",
+        "che": "банк-карта",
+        "ru": "банковская карта"
+      },
+      {
+        "id": "shop_receipt",
+        "topicId": "shopping",
+        "che": "чек",
+        "ru": "чек, квитанция"
+      },
+      {
+        "id": "shop_cheap",
+        "topicId": "shopping",
+        "che": "дорах",
+        "ru": "дешёвый"
+      },
+      {
+        "id": "shop_expensive",
+        "topicId": "shopping",
+        "che": "деза мах",
+        "ru": "дорогой (по цене)"
+      },
+      {
+        "id": "health_hand",
+        "topicId": "health",
+        "che": "куьг",
+        "ru": "рука"
+      }
+    ],
+    "cardIds": [
+      "shop_list",
+      "shop_cart",
+      "shop_bag",
+      "shop_scales",
+      "shop_coins",
+      "shop_bankcard",
+      "shop_receipt",
+      "shop_cheap",
+      "shop_expensive",
+      "health_hand"
+    ]
+  },
+  {
+    "batchIndex": 30,
+    "cards": [
+      {
+        "id": "health_leg",
+        "topicId": "health",
+        "che": "ког",
+        "ru": "нога"
+      },
+      {
+        "id": "health_head",
+        "topicId": "health",
+        "che": "корта",
+        "ru": "голова"
+      },
+      {
+        "id": "health_eye",
+        "topicId": "health",
+        "che": "бӀаьрг",
+        "ru": "глаз"
+      },
+      {
+        "id": "health_ear",
+        "topicId": "health",
+        "che": "лерг",
+        "ru": "ухо"
+      },
+      {
+        "id": "health_nose",
+        "topicId": "health",
+        "che": "мара",
+        "ru": "нос"
+      },
+      {
+        "id": "health_mouth",
+        "topicId": "health",
+        "che": "бага",
+        "ru": "рот"
+      },
+      {
+        "id": "health_tooth",
+        "topicId": "health",
+        "che": "церг",
+        "ru": "зуб"
+      },
+      {
+        "id": "health_heart",
+        "topicId": "health",
+        "che": "дог",
+        "ru": "сердце"
+      },
+      {
+        "id": "health_pain",
+        "topicId": "health",
+        "che": "лазар",
+        "ru": "боль"
+      },
+      {
+        "id": "health_flu",
+        "topicId": "health",
+        "che": "шелдалар",
+        "ru": "простуда / грипп"
+      }
+    ],
+    "cardIds": [
+      "health_leg",
+      "health_head",
+      "health_eye",
+      "health_ear",
+      "health_nose",
+      "health_mouth",
+      "health_tooth",
+      "health_heart",
+      "health_pain",
+      "health_flu"
+    ]
+  },
+  {
+    "batchIndex": 31,
+    "cards": [
+      {
+        "id": "health_fever",
+        "topicId": "health",
+        "che": "йовхо",
+        "ru": "жар / температура"
+      },
+      {
+        "id": "health_cough",
+        "topicId": "health",
+        "che": "йовхарш",
+        "ru": "кашель"
+      },
+      {
+        "id": "health_headache",
+        "topicId": "health",
+        "che": "корта лазар",
+        "ru": "головная боль"
+      },
+      {
+        "id": "health_doctor",
+        "topicId": "health",
+        "che": "лор",
+        "ru": "врач"
+      },
+      {
+        "id": "health_nurse",
+        "topicId": "health",
+        "che": "лоьран гӀовс",
+        "ru": "медсестра"
+      },
+      {
+        "id": "health_medicine",
+        "topicId": "health",
+        "che": "молха",
+        "ru": "лекарство"
+      },
+      {
+        "id": "health_hospital",
+        "topicId": "health",
+        "che": "дарбанцӀа",
+        "ru": "больница"
+      },
+      {
+        "id": "health_ambulance",
+        "topicId": "health",
+        "che": "сиха гӀо",
+        "ru": "скорая помощь"
+      },
+      {
+        "id": "health_pharmacy",
+        "topicId": "health",
+        "che": "молханийн туька",
+        "ru": "аптека"
+      },
+      {
+        "id": "health_sport",
+        "topicId": "health",
+        "che": "спорт",
+        "ru": "спорт"
+      }
+    ],
+    "cardIds": [
+      "health_fever",
+      "health_cough",
+      "health_headache",
+      "health_doctor",
+      "health_nurse",
+      "health_medicine",
+      "health_hospital",
+      "health_ambulance",
+      "health_pharmacy",
+      "health_sport"
+    ]
+  },
+  {
+    "batchIndex": 32,
+    "cards": [
+      {
+        "id": "health_food",
+        "topicId": "health",
+        "che": "даар",
+        "ru": "еда"
+      },
+      {
+        "id": "health_water",
+        "topicId": "health",
+        "che": "хи",
+        "ru": "вода"
+      },
+      {
+        "id": "health_rest",
+        "topicId": "health",
+        "che": "садаӀар",
+        "ru": "отдых"
+      },
+      {
+        "id": "health_clean",
+        "topicId": "health",
+        "che": "цӀеналла",
+        "ru": "чистота"
+      },
+      {
+        "id": "health_soap",
+        "topicId": "health",
+        "che": "саба",
+        "ru": "мыло"
+      },
+      {
+        "id": "health_toothbrush",
+        "topicId": "health",
+        "che": "цергийн щетка",
+        "ru": "зубная щётка"
+      },
+      {
+        "id": "health_wound",
+        "topicId": "health",
+        "che": "чов",
+        "ru": "ранка, царапина"
+      },
+      {
+        "id": "health_bandage",
+        "topicId": "health",
+        "che": "бинт",
+        "ru": "бинт, повязка"
+      },
+      {
+        "id": "health_thermometer",
+        "topicId": "health",
+        "che": "градусник",
+        "ru": "термометр, градусник"
+      },
+      {
+        "id": "health_vitamins",
+        "topicId": "health",
+        "che": "витаминаш",
+        "ru": "витамины"
+      }
+    ],
+    "cardIds": [
+      "health_food",
+      "health_water",
+      "health_rest",
+      "health_clean",
+      "health_soap",
+      "health_toothbrush",
+      "health_wound",
+      "health_bandage",
+      "health_thermometer",
+      "health_vitamins"
+    ]
+  },
+  {
+    "batchIndex": 33,
+    "cards": [
+      {
+        "id": "health_sleep",
+        "topicId": "health",
+        "che": "дижар",
+        "ru": "сон"
+      },
+      {
+        "id": "health_healthy",
+        "topicId": "health",
+        "che": "могаш",
+        "ru": "здоровый"
+      },
+      {
+        "id": "sport_run",
+        "topicId": "sport",
+        "che": "хьадар",
+        "ru": "бег"
+      },
+      {
+        "id": "sport_swim",
+        "topicId": "sport",
+        "che": "нека дар",
+        "ru": "плавание"
+      },
+      {
+        "id": "sport_football",
+        "topicId": "sport",
+        "che": "футбол",
+        "ru": "футбол"
+      },
+      {
+        "id": "sport_volleyball",
+        "topicId": "sport",
+        "che": "волейбол",
+        "ru": "волейбол"
+      },
+      {
+        "id": "sport_basketball",
+        "topicId": "sport",
+        "che": "баскетбол",
+        "ru": "баскетбол"
+      },
+      {
+        "id": "sport_tennis",
+        "topicId": "sport",
+        "che": "теннис",
+        "ru": "теннис"
+      },
+      {
+        "id": "sport_boxing",
+        "topicId": "sport",
+        "che": "бокс",
+        "ru": "бокс"
+      },
+      {
+        "id": "sport_wrestling",
+        "topicId": "sport",
+        "che": "латар",
+        "ru": "борьба"
+      }
+    ],
+    "cardIds": [
+      "health_sleep",
+      "health_healthy",
+      "sport_run",
+      "sport_swim",
+      "sport_football",
+      "sport_volleyball",
+      "sport_basketball",
+      "sport_tennis",
+      "sport_boxing",
+      "sport_wrestling"
+    ]
+  },
+  {
+    "batchIndex": 34,
+    "cards": [
+      {
+        "id": "sport_gymnastics",
+        "topicId": "sport",
+        "che": "гимнастика",
+        "ru": "гимнастика"
+      },
+      {
+        "id": "sport_ski",
+        "topicId": "sport",
+        "che": "когсалаз",
+        "ru": "лыжи"
+      },
+      {
+        "id": "sport_cycle",
+        "topicId": "sport",
+        "che": "велосипед хахкар",
+        "ru": "велоспорт"
+      },
+      {
+        "id": "sport_ball",
+        "topicId": "sport",
+        "che": "буьрка",
+        "ru": "мяч"
+      },
+      {
+        "id": "sport_gate",
+        "topicId": "sport",
+        "che": "ков",
+        "ru": "ворота"
+      },
+      {
+        "id": "sport_bat",
+        "topicId": "sport",
+        "che": "гӀаж",
+        "ru": "бита, клюшка"
+      },
+      {
+        "id": "sport_play",
+        "topicId": "sport",
+        "che": "ловза",
+        "ru": "играть"
+      },
+      {
+        "id": "sport_win",
+        "topicId": "sport",
+        "che": "тола",
+        "ru": "побеждать"
+      },
+      {
+        "id": "sport_lose",
+        "topicId": "sport",
+        "che": "эша",
+        "ru": "проигрывать"
+      },
+      {
+        "id": "sport_team",
+        "topicId": "sport",
+        "che": "тоба",
+        "ru": "команда"
+      }
+    ],
+    "cardIds": [
+      "sport_gymnastics",
+      "sport_ski",
+      "sport_cycle",
+      "sport_ball",
+      "sport_gate",
+      "sport_bat",
+      "sport_play",
+      "sport_win",
+      "sport_lose",
+      "sport_team"
+    ]
+  },
+  {
+    "batchIndex": 35,
+    "cards": [
+      {
+        "id": "sport_train",
+        "topicId": "sport",
+        "che": "Ӏама",
+        "ru": "тренироваться, учиться"
+      },
+      {
+        "id": "sport_stadium",
+        "topicId": "sport",
+        "che": "стадион",
+        "ru": "стадион"
+      },
+      {
+        "id": "sport_medal",
+        "topicId": "sport",
+        "che": "мидал",
+        "ru": "медаль"
+      },
+      {
+        "id": "sport_cup",
+        "topicId": "sport",
+        "che": "кубок",
+        "ru": "кубок"
+      },
+      {
+        "id": "sport_whistle",
+        "topicId": "sport",
+        "che": "шатакх",
+        "ru": "свисток"
+      },
+      {
+        "id": "sport_jump",
+        "topicId": "sport",
+        "che": "кхоссадалар",
+        "ru": "прыжки"
+      },
+      {
+        "id": "sport_judo",
+        "topicId": "sport",
+        "che": "дзюдо",
+        "ru": "дзюдо"
+      },
+      {
+        "id": "sport_skates",
+        "topicId": "sport",
+        "che": "коньки",
+        "ru": "коньки"
+      },
+      {
+        "id": "sport_boxing_gloves",
+        "topicId": "sport",
+        "che": "боксеран караш",
+        "ru": "боксёрские перчатки"
+      },
+      {
+        "id": "sport_coach",
+        "topicId": "sport",
+        "che": "тренер",
+        "ru": "тренер"
+      }
+    ],
+    "cardIds": [
+      "sport_train",
+      "sport_stadium",
+      "sport_medal",
+      "sport_cup",
+      "sport_whistle",
+      "sport_jump",
+      "sport_judo",
+      "sport_skates",
+      "sport_boxing_gloves",
+      "sport_coach"
+    ]
+  },
+  {
+    "batchIndex": 36,
+    "cards": [
+      {
+        "id": "toy_doll",
+        "topicId": "toys",
+        "che": "тайниг",
+        "ru": "кукла"
+      },
+      {
+        "id": "toy_ball",
+        "topicId": "toys",
+        "che": "буьрка",
+        "ru": "мяч"
+      },
+      {
+        "id": "toy_car",
+        "topicId": "toys",
+        "che": "машен",
+        "ru": "машинка"
+      },
+      {
+        "id": "toy_bear",
+        "topicId": "toys",
+        "che": "ча",
+        "ru": "мишка"
+      },
+      {
+        "id": "toy_blocks",
+        "topicId": "toys",
+        "che": "гӀодамаш",
+        "ru": "кубики"
+      },
+      {
+        "id": "toy_puzzle",
+        "topicId": "toys",
+        "che": "пазл",
+        "ru": "пазл"
+      },
+      {
+        "id": "toy_robot",
+        "topicId": "toys",
+        "che": "робот",
+        "ru": "робот"
+      },
+      {
+        "id": "toy_plane",
+        "topicId": "toys",
+        "che": "кема",
+        "ru": "самолётик"
+      },
+      {
+        "id": "toy_train",
+        "topicId": "toys",
+        "che": "цӀерпошт",
+        "ru": "поезд"
+      },
+      {
+        "id": "toy_soldier",
+        "topicId": "toys",
+        "che": "эскархо",
+        "ru": "солдатик"
+      }
+    ],
+    "cardIds": [
+      "toy_doll",
+      "toy_ball",
+      "toy_car",
+      "toy_bear",
+      "toy_blocks",
+      "toy_puzzle",
+      "toy_robot",
+      "toy_plane",
+      "toy_train",
+      "toy_soldier"
+    ]
+  },
+  {
+    "batchIndex": 37,
+    "cards": [
+      {
+        "id": "toy_sword",
+        "topicId": "toys",
+        "che": "тур",
+        "ru": "меч"
+      },
+      {
+        "id": "toy_gun",
+        "topicId": "toys",
+        "che": "топ",
+        "ru": "ружье, пистолет"
+      },
+      {
+        "id": "toy_play",
+        "topicId": "toys",
+        "che": "ловза",
+        "ru": "играть"
+      },
+      {
+        "id": "toy_hide",
+        "topicId": "toys",
+        "che": "лечкъа",
+        "ru": "прятаться"
+      },
+      {
+        "id": "toy_seek",
+        "topicId": "toys",
+        "che": "лаха",
+        "ru": "искать"
+      },
+      {
+        "id": "toy_run",
+        "topicId": "toys",
+        "che": "ида",
+        "ru": "бегать"
+      },
+      {
+        "id": "toy_jump",
+        "topicId": "toys",
+        "che": "кхоссадала",
+        "ru": "прыгать"
+      },
+      {
+        "id": "toy_drum",
+        "topicId": "toys",
+        "che": "вота",
+        "ru": "барабанчик"
+      },
+      {
+        "id": "toy_kite",
+        "topicId": "toys",
+        "che": "хӀаваан саьрмик",
+        "ru": "воздушный змей"
+      },
+      {
+        "id": "toy_swing",
+        "topicId": "toys",
+        "che": "агас",
+        "ru": "качели"
+      }
+    ],
+    "cardIds": [
+      "toy_sword",
+      "toy_gun",
+      "toy_play",
+      "toy_hide",
+      "toy_seek",
+      "toy_run",
+      "toy_jump",
+      "toy_drum",
+      "toy_kite",
+      "toy_swing"
+    ]
+  },
+  {
+    "batchIndex": 38,
+    "cards": [
+      {
+        "id": "toy_slide",
+        "topicId": "toys",
+        "che": "хохкуьйриг",
+        "ru": "детская горка"
+      },
+      {
+        "id": "toy_top",
+        "topicId": "toys",
+        "che": "горгам",
+        "ru": "юла, волчок"
+      },
+      {
+        "id": "toy_dice",
+        "topicId": "toys",
+        "che": "зар",
+        "ru": "игральный кубик"
+      },
+      {
+        "id": "toy_ship",
+        "topicId": "toys",
+        "che": "хикема",
+        "ru": "кораблик"
+      },
+      {
+        "id": "toy_balloon",
+        "topicId": "toys",
+        "che": "хӀаваан шар",
+        "ru": "воздушный шарик"
+      },
+      {
+        "id": "toy_pyramid",
+        "topicId": "toys",
+        "che": "пирамидка",
+        "ru": "пирамидка"
+      },
+      {
+        "id": "toy_whistle",
+        "topicId": "toys",
+        "che": "шок",
+        "ru": "свисток, свистулька"
+      },
+      {
+        "id": "toy_bubbles",
+        "topicId": "toys",
+        "che": "сабанан ахкаргаш",
+        "ru": "мыльные пузыри"
+      },
+      {
+        "id": "toy_sandbox",
+        "topicId": "toys",
+        "che": "гӀамаран майда",
+        "ru": "песочница"
+      },
+      {
+        "id": "toy_watergun",
+        "topicId": "toys",
+        "che": "хин топ",
+        "ru": "водяной пистолет"
+      }
+    ],
+    "cardIds": [
+      "toy_slide",
+      "toy_top",
+      "toy_dice",
+      "toy_ship",
+      "toy_balloon",
+      "toy_pyramid",
+      "toy_whistle",
+      "toy_bubbles",
+      "toy_sandbox",
+      "toy_watergun"
+    ]
+  },
+  {
+    "batchIndex": 39,
+    "cards": [
+      {
+        "id": "toy_castle",
+        "topicId": "toys",
+        "che": "гӀала",
+        "ru": "игрушечный замок"
+      },
+      {
+        "id": "hol_newyear",
+        "topicId": "holidays",
+        "che": "керла шо",
+        "ru": "Новый год"
+      },
+      {
+        "id": "hol_birthday",
+        "topicId": "holidays",
+        "che": "вина де",
+        "ru": "День рождения"
+      },
+      {
+        "id": "hol_wedding",
+        "topicId": "holidays",
+        "che": "ловзар",
+        "ru": "свадьба"
+      },
+      {
+        "id": "hol_eid",
+        "topicId": "holidays",
+        "che": "Мархадосту де",
+        "ru": "Ураза-байрам"
+      },
+      {
+        "id": "hol_kurban",
+        "topicId": "holidays",
+        "che": "ГӀурба",
+        "ru": "Курбан-байрам"
+      },
+      {
+        "id": "hol_victory",
+        "topicId": "holidays",
+        "che": "Толаман де",
+        "ru": "День Победы"
+      },
+      {
+        "id": "hol_constitution",
+        "topicId": "holidays",
+        "che": "Конституцин де",
+        "ru": "День Конституции"
+      },
+      {
+        "id": "hol_gift",
+        "topicId": "holidays",
+        "che": "совгӀат",
+        "ru": "подарок"
+      },
+      {
+        "id": "hol_balloon",
+        "topicId": "holidays",
+        "che": "хӀаваан шар",
+        "ru": "воздушный шар"
+      }
+    ],
+    "cardIds": [
+      "toy_castle",
+      "hol_newyear",
+      "hol_birthday",
+      "hol_wedding",
+      "hol_eid",
+      "hol_kurban",
+      "hol_victory",
+      "hol_constitution",
+      "hol_gift",
+      "hol_balloon"
+    ]
+  },
+  {
+    "batchIndex": 40,
+    "cards": [
+      {
+        "id": "hol_cake",
+        "topicId": "holidays",
+        "che": "торт",
+        "ru": "торт"
+      },
+      {
+        "id": "hol_candle",
+        "topicId": "holidays",
+        "che": "чӀурам",
+        "ru": "свеча"
+      },
+      {
+        "id": "hol_fireworks",
+        "topicId": "holidays",
+        "che": "салют",
+        "ru": "фейерверк, салют"
+      },
+      {
+        "id": "hol_music",
+        "topicId": "holidays",
+        "che": "эшарш",
+        "ru": "музыка, песни"
+      },
+      {
+        "id": "hol_dance",
+        "topicId": "holidays",
+        "che": "хелхар",
+        "ru": "танец"
+      },
+      {
+        "id": "hol_celebrate",
+        "topicId": "holidays",
+        "che": "даздан",
+        "ru": "праздновать"
+      },
+      {
+        "id": "hol_congratulate",
+        "topicId": "holidays",
+        "che": "декъалдан",
+        "ru": "поздравлять"
+      },
+      {
+        "id": "hol_table",
+        "topicId": "holidays",
+        "che": "шун",
+        "ru": "праздничный стол"
+      },
+      {
+        "id": "hol_joy",
+        "topicId": "holidays",
+        "che": "хазахетар",
+        "ru": "радость, веселье"
+      },
+      {
+        "id": "hol_card",
+        "topicId": "holidays",
+        "che": "декъалден кехат",
+        "ru": "поздравительная открытка"
+      }
+    ],
+    "cardIds": [
+      "hol_cake",
+      "hol_candle",
+      "hol_fireworks",
+      "hol_music",
+      "hol_dance",
+      "hol_celebrate",
+      "hol_congratulate",
+      "hol_table",
+      "hol_joy",
+      "hol_card"
+    ]
+  },
+  {
+    "batchIndex": 41,
+    "cards": [
+      {
+        "id": "hol_bouquet",
+        "topicId": "holidays",
+        "che": "зезагийн курс",
+        "ru": "букет цветов"
+      },
+      {
+        "id": "hol_ribbon",
+        "topicId": "holidays",
+        "che": "лента",
+        "ru": "праздничная лента"
+      },
+      {
+        "id": "hol_applause",
+        "topicId": "holidays",
+        "che": "тӀараш деттар",
+        "ru": "аплодисменты"
+      },
+      {
+        "id": "hol_chechen_dance",
+        "topicId": "holidays",
+        "che": "нохчийн хелхар",
+        "ru": "лезгинка, чеченский танец"
+      },
+      {
+        "id": "hol_blessing",
+        "topicId": "holidays",
+        "che": "доӀа",
+        "ru": "благопожелание, дуа"
+      },
+      {
+        "id": "verb_go",
+        "topicId": "verbs",
+        "che": "ваха",
+        "ru": "идти"
+      },
+      {
+        "id": "verb_come",
+        "topicId": "verbs",
+        "che": "ван",
+        "ru": "приходить"
+      },
+      {
+        "id": "verb_run",
+        "topicId": "verbs",
+        "che": "хьада",
+        "ru": "бежать"
+      },
+      {
+        "id": "verb_sit",
+        "topicId": "verbs",
+        "che": "хаа",
+        "ru": "сидеть"
+      },
+      {
+        "id": "verb_stand",
+        "topicId": "verbs",
+        "che": "латта",
+        "ru": "стоять"
+      }
+    ],
+    "cardIds": [
+      "hol_bouquet",
+      "hol_ribbon",
+      "hol_applause",
+      "hol_chechen_dance",
+      "hol_blessing",
+      "verb_go",
+      "verb_come",
+      "verb_run",
+      "verb_sit",
+      "verb_stand"
+    ]
+  },
+  {
+    "batchIndex": 42,
+    "cards": [
+      {
+        "id": "verb_eat",
+        "topicId": "verbs",
+        "che": "даа",
+        "ru": "есть (кушать)"
+      },
+      {
+        "id": "verb_drink",
+        "topicId": "verbs",
+        "che": "мала",
+        "ru": "пить"
+      },
+      {
+        "id": "verb_sleep",
+        "topicId": "verbs",
+        "che": "дижа",
+        "ru": "спать"
+      },
+      {
+        "id": "verb_wake",
+        "topicId": "verbs",
+        "che": "самадала",
+        "ru": "просыпаться"
+      },
+      {
+        "id": "verb_work",
+        "topicId": "verbs",
+        "che": "болх бан",
+        "ru": "работать"
+      },
+      {
+        "id": "verb_study",
+        "topicId": "verbs",
+        "che": "деша",
+        "ru": "учиться"
+      },
+      {
+        "id": "verb_write",
+        "topicId": "verbs",
+        "che": "яздан",
+        "ru": "писать"
+      },
+      {
+        "id": "verb_speak",
+        "topicId": "verbs",
+        "che": "дийца",
+        "ru": "говорить"
+      },
+      {
+        "id": "verb_listen",
+        "topicId": "verbs",
+        "che": "ладогӀа",
+        "ru": "слушать"
+      },
+      {
+        "id": "verb_see",
+        "topicId": "verbs",
+        "che": "га",
+        "ru": "видеть"
+      }
+    ],
+    "cardIds": [
+      "verb_eat",
+      "verb_drink",
+      "verb_sleep",
+      "verb_wake",
+      "verb_work",
+      "verb_study",
+      "verb_write",
+      "verb_speak",
+      "verb_listen",
+      "verb_see"
+    ]
+  },
+  {
+    "batchIndex": 43,
+    "cards": [
+      {
+        "id": "verb_look",
+        "topicId": "verbs",
+        "che": "хьажа",
+        "ru": "смотреть"
+      },
+      {
+        "id": "verb_smile",
+        "topicId": "verbs",
+        "che": "дела",
+        "ru": "улыбаться, смеяться"
+      },
+      {
+        "id": "verb_cry",
+        "topicId": "verbs",
+        "che": "делха",
+        "ru": "плакать"
+      },
+      {
+        "id": "verb_play",
+        "topicId": "verbs",
+        "che": "ловза",
+        "ru": "играть"
+      },
+      {
+        "id": "verb_draw",
+        "topicId": "verbs",
+        "che": "сурт дилла",
+        "ru": "рисовать"
+      },
+      {
+        "id": "verb_dance",
+        "topicId": "verbs",
+        "che": "хелха дала",
+        "ru": "танцевать"
+      },
+      {
+        "id": "verb_sing",
+        "topicId": "verbs",
+        "che": "илли ала",
+        "ru": "петь"
+      },
+      {
+        "id": "verb_swim",
+        "topicId": "verbs",
+        "che": "нека дан",
+        "ru": "плавать"
+      },
+      {
+        "id": "verb_fly",
+        "topicId": "verbs",
+        "che": "гӀатта",
+        "ru": "лететь, взлетать"
+      },
+      {
+        "id": "verb_ride",
+        "topicId": "verbs",
+        "che": "хахка",
+        "ru": "ехать, скакать"
+      }
+    ],
+    "cardIds": [
+      "verb_look",
+      "verb_smile",
+      "verb_cry",
+      "verb_play",
+      "verb_draw",
+      "verb_dance",
+      "verb_sing",
+      "verb_swim",
+      "verb_fly",
+      "verb_ride"
+    ]
+  },
+  {
+    "batchIndex": 44,
+    "cards": [
+      {
+        "id": "verb_wash",
+        "topicId": "verbs",
+        "che": "дила",
+        "ru": "мыть"
+      },
+      {
+        "id": "verb_clean",
+        "topicId": "verbs",
+        "che": "цӀандан",
+        "ru": "убирать, чистить"
+      },
+      {
+        "id": "verb_cook",
+        "topicId": "verbs",
+        "che": "кхача бан",
+        "ru": "готовить еду"
+      },
+      {
+        "id": "verb_walk",
+        "topicId": "verbs",
+        "che": "лела",
+        "ru": "гулять, ходить"
+      },
+      {
+        "id": "verb_buy",
+        "topicId": "verbs",
+        "che": "эца",
+        "ru": "покупать"
+      },
+      {
+        "id": "verb_sell",
+        "topicId": "verbs",
+        "che": "дохка",
+        "ru": "продавать"
+      },
+      {
+        "id": "verb_give",
+        "topicId": "verbs",
+        "che": "дала",
+        "ru": "давать"
+      },
+      {
+        "id": "verb_take",
+        "topicId": "verbs",
+        "che": "схьаэца",
+        "ru": "брать"
+      },
+      {
+        "id": "verb_think",
+        "topicId": "verbs",
+        "che": "ойла ян",
+        "ru": "думать"
+      },
+      {
+        "id": "verb_know",
+        "topicId": "verbs",
+        "che": "хаа",
+        "ru": "знать"
+      }
+    ],
+    "cardIds": [
+      "verb_wash",
+      "verb_clean",
+      "verb_cook",
+      "verb_walk",
+      "verb_buy",
+      "verb_sell",
+      "verb_give",
+      "verb_take",
+      "verb_think",
+      "verb_know"
+    ]
+  },
+  {
+    "batchIndex": 45,
+    "cards": [
+      {
+        "id": "verb_want",
+        "topicId": "verbs",
+        "che": "лаьа",
+        "ru": "хотеть"
+      },
+      {
+        "id": "verb_like",
+        "topicId": "verbs",
+        "che": "деза",
+        "ru": "нравиться, любить"
+      },
+      {
+        "id": "verb_must",
+        "topicId": "verbs",
+        "che": "деза",
+        "ru": "нужно, должен"
+      },
+      {
+        "id": "verb_help",
+        "topicId": "verbs",
+        "che": "гӀо дан",
+        "ru": "помогать"
+      },
+      {
+        "id": "verb_ask",
+        "topicId": "verbs",
+        "che": "хатта",
+        "ru": "спрашивать"
+      },
+      {
+        "id": "verb_answer",
+        "topicId": "verbs",
+        "che": "жоп дала",
+        "ru": "отвечать"
+      },
+      {
+        "id": "verb_find",
+        "topicId": "verbs",
+        "che": "каро",
+        "ru": "находить"
+      },
+      {
+        "id": "verb_throw",
+        "topicId": "verbs",
+        "che": "кхосса",
+        "ru": "бросать"
+      },
+      {
+        "id": "verb_catch",
+        "topicId": "verbs",
+        "che": "лаца",
+        "ru": "ловить"
+      },
+      {
+        "id": "verb_open",
+        "topicId": "verbs",
+        "che": "схьаделла",
+        "ru": "открывать"
+      }
+    ],
+    "cardIds": [
+      "verb_want",
+      "verb_like",
+      "verb_must",
+      "verb_help",
+      "verb_ask",
+      "verb_answer",
+      "verb_find",
+      "verb_throw",
+      "verb_catch",
+      "verb_open"
+    ]
+  },
+  {
+    "batchIndex": 46,
+    "cards": [
+      {
+        "id": "verb_close",
+        "topicId": "verbs",
+        "che": "дӀакъовла",
+        "ru": "закрывать"
+      },
+      {
+        "id": "verb_bring",
+        "topicId": "verbs",
+        "che": "схьадахьа",
+        "ru": "приносить"
+      },
+      {
+        "id": "verb_put",
+        "topicId": "verbs",
+        "che": "дилла",
+        "ru": "класть, положить"
+      },
+      {
+        "id": "verb_cut",
+        "topicId": "verbs",
+        "che": "хедо",
+        "ru": "резать"
+      },
+      {
+        "id": "verb_sew",
+        "topicId": "verbs",
+        "che": "тега",
+        "ru": "шить"
+      },
+      {
+        "id": "verb_count",
+        "topicId": "verbs",
+        "che": "дагардан",
+        "ru": "считать"
+      },
+      {
+        "id": "verb_show",
+        "topicId": "verbs",
+        "che": "гайта",
+        "ru": "показывать"
+      },
+      {
+        "id": "verb_hug",
+        "topicId": "verbs",
+        "che": "маракъовла",
+        "ru": "обнимать"
+      },
+      {
+        "id": "verb_fall",
+        "topicId": "verbs",
+        "che": "дожа",
+        "ru": "падать"
+      },
+      {
+        "id": "verb_build",
+        "topicId": "verbs",
+        "che": "дотта",
+        "ru": "строить, возводить"
+      }
+    ],
+    "cardIds": [
+      "verb_close",
+      "verb_bring",
+      "verb_put",
+      "verb_cut",
+      "verb_sew",
+      "verb_count",
+      "verb_show",
+      "verb_hug",
+      "verb_fall",
+      "verb_build"
+    ]
+  },
+  {
+    "batchIndex": 47,
+    "cards": [
+      {
+        "id": "verb_break",
+        "topicId": "verbs",
+        "che": "дохо",
+        "ru": "ломать"
+      },
+      {
+        "id": "verb_fix",
+        "topicId": "verbs",
+        "che": "тодан",
+        "ru": "чинить, ремонтировать"
+      },
+      {
+        "id": "verb_plant",
+        "topicId": "verbs",
+        "che": "ден",
+        "ru": "сажать (растения)"
+      },
+      {
+        "id": "verb_water",
+        "topicId": "verbs",
+        "che": "хи тоха",
+        "ru": "поливать водой"
+      },
+      {
+        "id": "verb_play_music",
+        "topicId": "verbs",
+        "che": "лакха",
+        "ru": "играть (на инструменте)"
+      },
+      {
+        "id": "verb_climb",
+        "topicId": "verbs",
+        "che": "тӀевала",
+        "ru": "залезать, подниматься"
+      },
+      {
+        "id": "verb_rest",
+        "topicId": "verbs",
+        "che": "садаӀа",
+        "ru": "отдыхать"
+      },
+      {
+        "id": "verb_dress",
+        "topicId": "verbs",
+        "che": "тӀеюха",
+        "ru": "одеваться, надевать"
+      },
+      {
+        "id": "verb_undress",
+        "topicId": "verbs",
+        "che": "тӀераяккха",
+        "ru": "раздеваться, снимать"
+      },
+      {
+        "id": "verb_comb",
+        "topicId": "verbs",
+        "che": "ехк хьакха",
+        "ru": "причёсываться"
+      }
+    ],
+    "cardIds": [
+      "verb_break",
+      "verb_fix",
+      "verb_plant",
+      "verb_water",
+      "verb_play_music",
+      "verb_climb",
+      "verb_rest",
+      "verb_dress",
+      "verb_undress",
+      "verb_comb"
+    ]
+  },
+  {
+    "batchIndex": 48,
+    "cards": [
+      {
+        "id": "verb_breathe",
+        "topicId": "verbs",
+        "che": "садеӀа",
+        "ru": "дышать"
+      },
+      {
+        "id": "verb_dive",
+        "topicId": "verbs",
+        "che": "чубуза",
+        "ru": "нырять"
+      },
+      {
+        "id": "verb_shout",
+        "topicId": "verbs",
+        "che": "мохь хьакха",
+        "ru": "кричать"
+      },
+      {
+        "id": "verb_whisper",
+        "topicId": "verbs",
+        "che": "шабар-шибар дан",
+        "ru": "шептать"
+      },
+      {
+        "id": "verb_praise",
+        "topicId": "verbs",
+        "che": "хесто",
+        "ru": "хвалить"
+      },
+      {
+        "id": "verb_remember",
+        "topicId": "verbs",
+        "che": "дагадан",
+        "ru": "вспоминать"
+      },
+      {
+        "id": "verb_memorize",
+        "topicId": "verbs",
+        "che": "дагахь латтадан",
+        "ru": "запоминать"
+      },
+      {
+        "id": "verb_touch",
+        "topicId": "verbs",
+        "che": "куьг Ӏотта",
+        "ru": "дотрагиваться, трогать"
+      },
+      {
+        "id": "verb_smell",
+        "topicId": "verbs",
+        "che": "хьожа яха",
+        "ru": "нюхать, чувствовать запах"
+      },
+      {
+        "id": "verb_protect",
+        "topicId": "verbs",
+        "che": "Ӏалашдан",
+        "ru": "оберегать, защищать"
+      }
+    ],
+    "cardIds": [
+      "verb_breathe",
+      "verb_dive",
+      "verb_shout",
+      "verb_whisper",
+      "verb_praise",
+      "verb_remember",
+      "verb_memorize",
+      "verb_touch",
+      "verb_smell",
+      "verb_protect"
+    ]
+  },
+  {
+    "batchIndex": 49,
+    "cards": [
+      {
+        "id": "verb_repeat",
+        "topicId": "verbs",
+        "che": "юха ала",
+        "ru": "повторять"
+      },
+      {
+        "id": "verb_greet",
+        "topicId": "verbs",
+        "che": "салам дала",
+        "ru": "здороваться"
+      },
+      {
+        "id": "verb_thank",
+        "topicId": "verbs",
+        "che": "баркалла ала",
+        "ru": "благодарить"
+      },
+      {
+        "id": "adj_big",
+        "topicId": "adjectives",
+        "che": "доккха",
+        "ru": "большой"
+      },
+      {
+        "id": "adj_small",
+        "topicId": "adjectives",
+        "che": "жима",
+        "ru": "маленький"
+      },
+      {
+        "id": "adj_tall",
+        "topicId": "adjectives",
+        "che": "лекха",
+        "ru": "высокий"
+      },
+      {
+        "id": "adj_short",
+        "topicId": "adjectives",
+        "che": "лоха",
+        "ru": "низкий"
+      },
+      {
+        "id": "adj_wide",
+        "topicId": "adjectives",
+        "che": "шора",
+        "ru": "широкий"
+      },
+      {
+        "id": "adj_narrow",
+        "topicId": "adjectives",
+        "che": "готта",
+        "ru": "узкий"
+      },
+      {
+        "id": "adj_long",
+        "topicId": "adjectives",
+        "che": "деха",
+        "ru": "длинный"
+      }
+    ],
+    "cardIds": [
+      "verb_repeat",
+      "verb_greet",
+      "verb_thank",
+      "adj_big",
+      "adj_small",
+      "adj_tall",
+      "adj_short",
+      "adj_wide",
+      "adj_narrow",
+      "adj_long"
+    ]
+  },
+  {
+    "batchIndex": 50,
+    "cards": [
+      {
+        "id": "adj_short_len",
+        "topicId": "adjectives",
+        "che": "доца",
+        "ru": "короткий (по длине)"
+      },
+      {
+        "id": "adj_hot",
+        "topicId": "adjectives",
+        "che": "довха",
+        "ru": "горячий"
+      },
+      {
+        "id": "adj_cold",
+        "topicId": "adjectives",
+        "che": "шийла",
+        "ru": "холодный"
+      },
+      {
+        "id": "adj_warm",
+        "topicId": "adjectives",
+        "che": "йовхо йолу",
+        "ru": "тёплый"
+      },
+      {
+        "id": "adj_cool",
+        "topicId": "adjectives",
+        "che": "салкъина",
+        "ru": "прохладный"
+      },
+      {
+        "id": "adj_red",
+        "topicId": "adjectives",
+        "che": "цӀен",
+        "ru": "красный"
+      },
+      {
+        "id": "adj_blue",
+        "topicId": "adjectives",
+        "che": "сийна",
+        "ru": "синий"
+      },
+      {
+        "id": "adj_green",
+        "topicId": "adjectives",
+        "che": "баьццара",
+        "ru": "зелёный"
+      },
+      {
+        "id": "adj_yellow",
+        "topicId": "adjectives",
+        "che": "можа",
+        "ru": "жёлтый"
+      },
+      {
+        "id": "adj_white",
+        "topicId": "adjectives",
+        "che": "кӀайн",
+        "ru": "белый"
+      }
+    ],
+    "cardIds": [
+      "adj_short_len",
+      "adj_hot",
+      "adj_cold",
+      "adj_warm",
+      "adj_cool",
+      "adj_red",
+      "adj_blue",
+      "adj_green",
+      "adj_yellow",
+      "adj_white"
+    ]
+  },
+  {
+    "batchIndex": 51,
+    "cards": [
+      {
+        "id": "adj_black",
+        "topicId": "adjectives",
+        "che": "Ӏаьржа",
+        "ru": "чёрный"
+      },
+      {
+        "id": "adj_gray",
+        "topicId": "adjectives",
+        "che": "сира",
+        "ru": "серый"
+      },
+      {
+        "id": "adj_brown",
+        "topicId": "adjectives",
+        "che": "боьмаша",
+        "ru": "коричневый"
+      },
+      {
+        "id": "adj_sweet",
+        "topicId": "adjectives",
+        "che": "мерза",
+        "ru": "сладкий"
+      },
+      {
+        "id": "adj_salty",
+        "topicId": "adjectives",
+        "che": "дуьра",
+        "ru": "солёный"
+      },
+      {
+        "id": "adj_sour",
+        "topicId": "adjectives",
+        "che": "муьста",
+        "ru": "кислый"
+      },
+      {
+        "id": "adj_bitter",
+        "topicId": "adjectives",
+        "che": "къаьхьа",
+        "ru": "горький"
+      },
+      {
+        "id": "adj_good",
+        "topicId": "adjectives",
+        "che": "дика",
+        "ru": "хороший"
+      },
+      {
+        "id": "adj_bad",
+        "topicId": "adjectives",
+        "che": "вон",
+        "ru": "плохой"
+      },
+      {
+        "id": "adj_beautiful",
+        "topicId": "adjectives",
+        "che": "хаза",
+        "ru": "красивый"
+      }
+    ],
+    "cardIds": [
+      "adj_black",
+      "adj_gray",
+      "adj_brown",
+      "adj_sweet",
+      "adj_salty",
+      "adj_sour",
+      "adj_bitter",
+      "adj_good",
+      "adj_bad",
+      "adj_beautiful"
+    ]
+  },
+  {
+    "batchIndex": 52,
+    "cards": [
+      {
+        "id": "adj_ugly",
+        "topicId": "adjectives",
+        "che": "ирча",
+        "ru": "некрасивый"
+      },
+      {
+        "id": "adj_clean",
+        "topicId": "adjectives",
+        "che": "цӀена",
+        "ru": "чистый"
+      },
+      {
+        "id": "adj_dirty",
+        "topicId": "adjectives",
+        "che": "боьха",
+        "ru": "грязный"
+      },
+      {
+        "id": "adj_light",
+        "topicId": "adjectives",
+        "che": "дайн",
+        "ru": "лёгкий (по весу)"
+      },
+      {
+        "id": "adj_heavy",
+        "topicId": "adjectives",
+        "che": "деза",
+        "ru": "тяжёлый"
+      },
+      {
+        "id": "adj_soft",
+        "topicId": "adjectives",
+        "che": "кӀеда",
+        "ru": "мягкий"
+      },
+      {
+        "id": "adj_hard",
+        "topicId": "adjectives",
+        "che": "чӀогӀа",
+        "ru": "твёрдый, крепкий"
+      },
+      {
+        "id": "adj_happy",
+        "topicId": "adjectives",
+        "che": "самукъане",
+        "ru": "весёлый, радостный"
+      },
+      {
+        "id": "adj_sad",
+        "topicId": "adjectives",
+        "che": "гӀайгӀане",
+        "ru": "грустный"
+      },
+      {
+        "id": "adj_angry",
+        "topicId": "adjectives",
+        "che": "оьгӀазе",
+        "ru": "злой, сердитый"
+      }
+    ],
+    "cardIds": [
+      "adj_ugly",
+      "adj_clean",
+      "adj_dirty",
+      "adj_light",
+      "adj_heavy",
+      "adj_soft",
+      "adj_hard",
+      "adj_happy",
+      "adj_sad",
+      "adj_angry"
+    ]
+  },
+  {
+    "batchIndex": 53,
+    "cards": [
+      {
+        "id": "adj_scared",
+        "topicId": "adjectives",
+        "che": "кхийрина",
+        "ru": "испуганный"
+      },
+      {
+        "id": "adj_loving",
+        "topicId": "adjectives",
+        "che": "деза",
+        "ru": "любимый / дорогой"
+      },
+      {
+        "id": "adj_fast",
+        "topicId": "adjectives",
+        "che": "сиха",
+        "ru": "быстрый"
+      },
+      {
+        "id": "adj_slow",
+        "topicId": "adjectives",
+        "che": "меллаша",
+        "ru": "медленный"
+      },
+      {
+        "id": "adj_new",
+        "topicId": "adjectives",
+        "che": "керла",
+        "ru": "новый"
+      },
+      {
+        "id": "adj_old",
+        "topicId": "adjectives",
+        "che": "шира",
+        "ru": "старый (вещь)"
+      },
+      {
+        "id": "adj_young",
+        "topicId": "adjectives",
+        "che": "къона",
+        "ru": "молодой, юный"
+      },
+      {
+        "id": "adj_old_age",
+        "topicId": "adjectives",
+        "che": "къена",
+        "ru": "старый (человек)"
+      },
+      {
+        "id": "adj_many",
+        "topicId": "adjectives",
+        "che": "дукха",
+        "ru": "много"
+      },
+      {
+        "id": "adj_few",
+        "topicId": "adjectives",
+        "che": "кӀеззиг",
+        "ru": "мало"
+      }
+    ],
+    "cardIds": [
+      "adj_scared",
+      "adj_loving",
+      "adj_fast",
+      "adj_slow",
+      "adj_new",
+      "adj_old",
+      "adj_young",
+      "adj_old_age",
+      "adj_many",
+      "adj_few"
+    ]
+  },
+  {
+    "batchIndex": 54,
+    "cards": [
+      {
+        "id": "adj_smart",
+        "topicId": "adjectives",
+        "che": "хьекъале",
+        "ru": "умный"
+      },
+      {
+        "id": "adj_strong",
+        "topicId": "adjectives",
+        "che": "чӀогӀа",
+        "ru": "сильный, крепкий"
+      },
+      {
+        "id": "adj_kind",
+        "topicId": "adjectives",
+        "che": "дика",
+        "ru": "добрый"
+      },
+      {
+        "id": "adj_brave",
+        "topicId": "adjectives",
+        "che": "майра",
+        "ru": "храбрый"
+      },
+      {
+        "id": "adj_lazy",
+        "topicId": "adjectives",
+        "che": "малонча",
+        "ru": "ленивый"
+      },
+      {
+        "id": "adj_funny",
+        "topicId": "adjectives",
+        "che": "самукъане",
+        "ru": "смешной, весёлый"
+      },
+      {
+        "id": "adj_sharp",
+        "topicId": "adjectives",
+        "che": "ира",
+        "ru": "острый"
+      },
+      {
+        "id": "adj_thick",
+        "topicId": "adjectives",
+        "che": "стомма",
+        "ru": "толстый"
+      },
+      {
+        "id": "adj_thin",
+        "topicId": "adjectives",
+        "che": "дуткъа",
+        "ru": "тонкий"
+      },
+      {
+        "id": "adj_deep",
+        "topicId": "adjectives",
+        "che": "кӀорга",
+        "ru": "глубокий"
+      }
+    ],
+    "cardIds": [
+      "adj_smart",
+      "adj_strong",
+      "adj_kind",
+      "adj_brave",
+      "adj_lazy",
+      "adj_funny",
+      "adj_sharp",
+      "adj_thick",
+      "adj_thin",
+      "adj_deep"
+    ]
+  },
+  {
+    "batchIndex": 55,
+    "cards": [
+      {
+        "id": "adj_round",
+        "topicId": "adjectives",
+        "che": "горга",
+        "ru": "круглый"
+      },
+      {
+        "id": "adj_smooth",
+        "topicId": "adjectives",
+        "che": "шера",
+        "ru": "гладкий, ровный"
+      },
+      {
+        "id": "adj_bright",
+        "topicId": "adjectives",
+        "che": "сирла",
+        "ru": "светлый, яркий"
+      },
+      {
+        "id": "adj_dark",
+        "topicId": "adjectives",
+        "che": "бодане",
+        "ru": "тёмный"
+      },
+      {
+        "id": "adj_quiet",
+        "topicId": "adjectives",
+        "che": "тийна",
+        "ru": "тихий, спокойный"
+      },
+      {
+        "id": "adj_loud",
+        "topicId": "adjectives",
+        "che": "гӀовгӀане",
+        "ru": "громкий, шумный"
+      },
+      {
+        "id": "adj_wet",
+        "topicId": "adjectives",
+        "che": "тӀуьна",
+        "ru": "мокрый"
+      },
+      {
+        "id": "adj_dry",
+        "topicId": "adjectives",
+        "che": "декъа",
+        "ru": "сухой"
+      },
+      {
+        "id": "adj_tasty",
+        "topicId": "adjectives",
+        "che": "чам болуш",
+        "ru": "вкусный, аппетитный"
+      },
+      {
+        "id": "adj_polite",
+        "topicId": "adjectives",
+        "che": "эсала",
+        "ru": "вежливый, скромный"
+      }
+    ],
+    "cardIds": [
+      "adj_round",
+      "adj_smooth",
+      "adj_bright",
+      "adj_dark",
+      "adj_quiet",
+      "adj_loud",
+      "adj_wet",
+      "adj_dry",
+      "adj_tasty",
+      "adj_polite"
+    ]
+  },
+  {
+    "batchIndex": 56,
+    "cards": [
+      {
+        "id": "adj_straight",
+        "topicId": "adjectives",
+        "che": "нийса",
+        "ru": "прямой, правильный"
+      },
+      {
+        "id": "adj_crooked",
+        "topicId": "adjectives",
+        "che": "гамма",
+        "ru": "кривой, изогнутый"
+      },
+      {
+        "id": "adj_generous",
+        "topicId": "adjectives",
+        "che": "комаьрша",
+        "ru": "щедрый"
+      },
+      {
+        "id": "adj_greedy",
+        "topicId": "adjectives",
+        "che": "сутара",
+        "ru": "жадный"
+      },
+      {
+        "id": "adj_honest",
+        "topicId": "adjectives",
+        "che": "бакъ",
+        "ru": "честный, правдивый"
+      },
+      {
+        "id": "adj_patient",
+        "topicId": "adjectives",
+        "che": "собаре",
+        "ru": "терпеливый"
+      },
+      {
+        "id": "adj_safe",
+        "topicId": "adjectives",
+        "che": "кхерам боцу",
+        "ru": "безопасный"
+      },
+      {
+        "id": "adj_dangerous",
+        "topicId": "adjectives",
+        "che": "кхераме",
+        "ru": "опасный"
+      },
+      {
+        "id": "adj_useful",
+        "topicId": "adjectives",
+        "che": "пайдане",
+        "ru": "полезный"
+      },
+      {
+        "id": "adj_pure",
+        "topicId": "adjectives",
+        "che": "цӀена",
+        "ru": "чистый, искренний"
+      }
+    ],
+    "cardIds": [
+      "adj_straight",
+      "adj_crooked",
+      "adj_generous",
+      "adj_greedy",
+      "adj_honest",
+      "adj_patient",
+      "adj_safe",
+      "adj_dangerous",
+      "adj_useful",
+      "adj_pure"
+    ]
+  },
+  {
+    "batchIndex": 57,
+    "cards": [
+      {
+        "id": "pron_i",
+        "topicId": "pronouns",
+        "che": "со",
+        "ru": "я"
+      },
+      {
+        "id": "pron_you",
+        "topicId": "pronouns",
+        "che": "хьо",
+        "ru": "ты"
+      },
+      {
+        "id": "pron_he",
+        "topicId": "pronouns",
+        "che": "иза",
+        "ru": "он"
+      },
+      {
+        "id": "pron_she",
+        "topicId": "pronouns",
+        "che": "иза",
+        "ru": "она"
+      },
+      {
+        "id": "pron_we",
+        "topicId": "pronouns",
+        "che": "тхо",
+        "ru": "мы"
+      },
+      {
+        "id": "pron_you_pl",
+        "topicId": "pronouns",
+        "che": "шу",
+        "ru": "вы"
+      },
+      {
+        "id": "pron_they",
+        "topicId": "pronouns",
+        "che": "уьш",
+        "ru": "они"
+      },
+      {
+        "id": "pron_my",
+        "topicId": "pronouns",
+        "che": "сан",
+        "ru": "мой"
+      },
+      {
+        "id": "pron_your",
+        "topicId": "pronouns",
+        "che": "хьан",
+        "ru": "твой"
+      },
+      {
+        "id": "pron_his",
+        "topicId": "pronouns",
+        "che": "цуьнан",
+        "ru": "его"
+      }
+    ],
+    "cardIds": [
+      "pron_i",
+      "pron_you",
+      "pron_he",
+      "pron_she",
+      "pron_we",
+      "pron_you_pl",
+      "pron_they",
+      "pron_my",
+      "pron_your",
+      "pron_his"
+    ]
+  },
+  {
+    "batchIndex": 58,
+    "cards": [
+      {
+        "id": "pron_her",
+        "topicId": "pronouns",
+        "che": "цуьнан",
+        "ru": "её"
+      },
+      {
+        "id": "pron_our",
+        "topicId": "pronouns",
+        "che": "тхан",
+        "ru": "наш"
+      },
+      {
+        "id": "pron_your_pl",
+        "topicId": "pronouns",
+        "che": "шун",
+        "ru": "ваш"
+      },
+      {
+        "id": "pron_their",
+        "topicId": "pronouns",
+        "che": "церан",
+        "ru": "их"
+      },
+      {
+        "id": "pron_who",
+        "topicId": "pronouns",
+        "che": "мила",
+        "ru": "кто"
+      },
+      {
+        "id": "pron_what",
+        "topicId": "pronouns",
+        "che": "хӀун",
+        "ru": "что"
+      },
+      {
+        "id": "pron_where",
+        "topicId": "pronouns",
+        "che": "мичахь",
+        "ru": "где"
+      },
+      {
+        "id": "pron_when",
+        "topicId": "pronouns",
+        "che": "маца",
+        "ru": "когда"
+      },
+      {
+        "id": "pron_why",
+        "topicId": "pronouns",
+        "che": "хӀунда",
+        "ru": "почему"
+      },
+      {
+        "id": "pron_how",
+        "topicId": "pronouns",
+        "che": "муха",
+        "ru": "как"
+      }
+    ],
+    "cardIds": [
+      "pron_her",
+      "pron_our",
+      "pron_your_pl",
+      "pron_their",
+      "pron_who",
+      "pron_what",
+      "pron_where",
+      "pron_when",
+      "pron_why",
+      "pron_how"
+    ]
+  },
+  {
+    "batchIndex": 59,
+    "cards": [
+      {
+        "id": "pron_how_much",
+        "topicId": "pronouns",
+        "che": "маса",
+        "ru": "сколько"
+      },
+      {
+        "id": "pron_which",
+        "topicId": "pronouns",
+        "che": "муьлха",
+        "ru": "какой, который"
+      },
+      {
+        "id": "pron_this",
+        "topicId": "pronouns",
+        "che": "хӀара",
+        "ru": "этот"
+      },
+      {
+        "id": "pron_that",
+        "topicId": "pronouns",
+        "che": "дӀора",
+        "ru": "тот, вон тот"
+      },
+      {
+        "id": "pron_these",
+        "topicId": "pronouns",
+        "che": "хӀараш",
+        "ru": "эти"
+      },
+      {
+        "id": "pron_those",
+        "topicId": "pronouns",
+        "che": "дӀораш",
+        "ru": "те, вон те"
+      },
+      {
+        "id": "pron_all",
+        "topicId": "pronouns",
+        "che": "дерриг",
+        "ru": "все, всё"
+      },
+      {
+        "id": "pron_some",
+        "topicId": "pronouns",
+        "che": "цхьа",
+        "ru": "некоторый, один"
+      },
+      {
+        "id": "pron_no",
+        "topicId": "pronouns",
+        "che": "хӀумма а",
+        "ru": "ничто, никакой"
+      },
+      {
+        "id": "pron_every",
+        "topicId": "pronouns",
+        "che": "хӀора",
+        "ru": "каждый"
+      }
+    ],
+    "cardIds": [
+      "pron_how_much",
+      "pron_which",
+      "pron_this",
+      "pron_that",
+      "pron_these",
+      "pron_those",
+      "pron_all",
+      "pron_some",
+      "pron_no",
+      "pron_every"
+    ]
+  },
+  {
+    "batchIndex": 60,
+    "cards": [
+      {
+        "id": "pron_other",
+        "topicId": "pronouns",
+        "che": "кхин",
+        "ru": "другой"
+      },
+      {
+        "id": "pron_here",
+        "topicId": "pronouns",
+        "che": "кхузахь",
+        "ru": "здесь, тут"
+      },
+      {
+        "id": "pron_there",
+        "topicId": "pronouns",
+        "che": "цигахь",
+        "ru": "там"
+      },
+      {
+        "id": "pron_whither",
+        "topicId": "pronouns",
+        "che": "мича",
+        "ru": "куда"
+      },
+      {
+        "id": "pron_whence",
+        "topicId": "pronouns",
+        "che": "мичара",
+        "ru": "откуда"
+      },
+      {
+        "id": "pron_self",
+        "topicId": "pronouns",
+        "che": "ша",
+        "ru": "сам, себя"
+      },
+      {
+        "id": "pron_together",
+        "topicId": "pronouns",
+        "che": "цхьаьна",
+        "ru": "вместе"
+      },
+      {
+        "id": "pron_such",
+        "topicId": "pronouns",
+        "che": "иштта",
+        "ru": "такой, так"
+      },
+      {
+        "id": "pron_nobody",
+        "topicId": "pronouns",
+        "che": "цхьа а",
+        "ru": "никто, ни один"
+      }
+    ],
+    "cardIds": [
+      "pron_other",
+      "pron_here",
+      "pron_there",
+      "pron_whither",
+      "pron_whence",
+      "pron_self",
+      "pron_together",
+      "pron_such",
+      "pron_nobody"
+    ]
+  }
+]

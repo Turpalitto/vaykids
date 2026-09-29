@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
-import { useEffect, useMemo, type ReactNode, type CSSProperties } from "react";
+import { useEffect, useMemo, useState, type ReactNode, type CSSProperties } from "react";
 import { T, HELPER_LINES } from "@/data/ui";
 import { sfx } from "@/lib/audio";
 import { useStore, useHydrate } from "@/lib/store";
@@ -145,7 +145,76 @@ export function Helper({ text, size = "md", mood = "happy" }: { text?: string; s
 }
 
 /* ---------- Иллюстрация карточки ---------- */
-export function CardArt({ card, className = "", emojiSize = "text-7xl" }: { card: Pick<Card, "emoji" | "image" | "che">; className?: string; emojiSize?: string }) {
+export function emojiToCode(emoji: string): string | null {
+  if (!emoji || typeof emoji !== "string") return null;
+  if (emoji.includes(" ")) return null;
+  const clean = emoji.replace(/\uFE0F/g, "");
+  const chars = Array.from(clean);
+  if (chars.length > 1 && !chars.includes("\u200D")) return null;
+  const parts: string[] = [];
+  for (const ch of chars) {
+    const cp = ch.codePointAt(0);
+    if (cp) parts.push(cp.toString(16));
+  }
+  return parts.length > 0 && parts.length <= 4 ? parts.join("-") : null;
+}
+
+function CardArtEmoji({
+  code,
+  che,
+  fallbackEmoji,
+  className,
+  emojiSize,
+}: {
+  code: string | null;
+  che: string;
+  fallbackEmoji: string;
+  className: string;
+  emojiSize: string;
+}) {
+  const [loadStage, setLoadStage] = useState<"local" | "cdn" | "emoji">("local");
+
+  if (code && loadStage !== "emoji") {
+    const src =
+      loadStage === "local"
+        ? `/img/emoji/${code}.webp`
+        : `https://cdn.jsdelivr.net/npm/@lobehub/fluent-emoji-3d@1.1.0/assets/${code}.webp`;
+
+    return (
+      <div className={`relative grid place-items-center overflow-hidden p-2 ${className}`} aria-hidden>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={src}
+          alt={che}
+          loading="lazy"
+          decoding="async"
+          onError={() => {
+            setLoadStage((prev) => (prev === "local" ? "cdn" : "emoji"));
+          }}
+          className="w-full h-full object-contain drop-shadow-[0_8px_14px_rgba(0,0,0,0.14)] select-none anim-pop transition-transform duration-200"
+        />
+      </div>
+    );
+  }
+
+  return (
+    <div className={`grid place-items-center ${className}`} aria-hidden>
+      <span className={`${emojiSize} leading-none drop-shadow-sm select-none anim-float`}>{fallbackEmoji}</span>
+    </div>
+  );
+}
+
+export function CardArt({
+  card,
+  className = "",
+  emojiSize = "text-7xl",
+}: {
+  card: Pick<Card, "emoji" | "image" | "che">;
+  className?: string;
+  emojiSize?: string;
+}) {
+  const code = useMemo(() => emojiToCode(card.emoji), [card.emoji]);
+
   if (card.image) {
     return (
       <div className={`relative overflow-hidden ${className}`}>
@@ -153,10 +222,16 @@ export function CardArt({ card, className = "", emojiSize = "text-7xl" }: { card
       </div>
     );
   }
+
   return (
-    <div className={`grid place-items-center ${className}`} aria-hidden>
-      <span className={`${emojiSize} leading-none drop-shadow-sm select-none`}>{card.emoji}</span>
-    </div>
+    <CardArtEmoji
+      key={code ?? card.emoji}
+      code={code}
+      che={card.che}
+      fallbackEmoji={card.emoji}
+      className={className}
+      emojiSize={emojiSize}
+    />
   );
 }
 

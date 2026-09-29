@@ -1,12 +1,25 @@
 import { describe, expect, it } from "vitest";
 import { graphemes } from "@/lib/useContent";
-import { levelFromXp, sanitizeProgress } from "@/lib/store";
+import { levelFromXp, sanitizeProgress, sanitizeSettings } from "@/lib/store";
 import { ParentChallengeSchema, ProgressUpdateSchema } from "@/lib/validation";
+import { emojiToCode } from "@/components/ui";
 
 describe("обучающий движок", () => {
   it("сохраняет чеченские диграфы одной плиткой", () => {
     expect(graphemes("кӀант")).toEqual(["кӀ", "а", "н", "т"]);
     expect(graphemes("хьоьга")).toEqual(["хь", "оь", "г", "а"]);
+    expect(graphemes("чӀара")).toEqual(["чӀ", "а", "р", "а"]);
+    expect(graphemes("гӀала")).toEqual(["гӀ", "а", "л", "а"]);
+  });
+
+  it("корректно канонизирует чеченскую палочку (U+04C0 и U+04CF)", () => {
+    // В JS "Ӏ".toLowerCase() превращается в "ӏ" (\u04CF)
+    const upper = "Ӏ";
+    const lower = "Ӏ".toLowerCase();
+    const canon = (s: string) => s.toLowerCase().replaceAll("ӏ", "Ӏ").trim();
+    expect(canon("КӀАНТ")).toBe(canon("кӏант"));
+    expect(canon(upper)).toBe("Ӏ");
+    expect(canon(lower)).toBe("Ӏ");
   });
 
   it("безопасно восстанавливает повреждённый прогресс", () => {
@@ -17,9 +30,26 @@ describe("обучающий движок", () => {
     expect(progress.seen).toEqual({ one: 3 });
   });
 
+  it("корректно валидирует настройки и режим погружения (immersive)", () => {
+    const s1 = sanitizeSettings({ immersive: true, volume: 0.8 });
+    expect(s1.immersive).toBe(true);
+    expect(s1.volume).toBe(0.8);
+
+    const s2 = sanitizeSettings({ immersive: "invalid", volume: 5 });
+    expect(s2.immersive).toBe(false);
+    expect(s2.volume).toBe(1);
+  });
+
   it("уровень не уходит ниже первого", () => {
     expect(levelFromXp(-100)).toBe(1);
     expect(levelFromXp(25)).toBe(2);
+  });
+
+  it("корректно преобразует эмодзи в коды 3D-иллюстраций", () => {
+    expect(emojiToCode("🍎")).toBe("1f34e");
+    expect(emojiToCode("🐶")).toBe("1f436");
+    expect(emojiToCode("✏️")).toBe("270f");
+    expect(emojiToCode("🐺🌲")).toBeNull();
   });
 });
 
